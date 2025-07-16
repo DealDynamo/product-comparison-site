@@ -170,9 +170,11 @@
       const category = document.getElementById('category').value;
       const products = document.querySelectorAll('.card');
       products.forEach(product => {
-        product.style.display = (category === 'all' || product.dataset.category === category)
-          ? 'block'
-          : 'none';
+        if (category === 'all' || product.dataset.category === category) {
+          product.style.removeProperty('display'); // Restore to grid layout
+        } else {
+          product.style.display = 'none'; // Hide
+        }
       });
     }
   </script>
