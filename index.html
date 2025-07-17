@@ -26,6 +26,15 @@
       font-size: 1rem;
       margin-top: 0.5rem;
     }
+    .social-bar {
+      margin-top: 1rem;
+    }
+    .social-bar a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
     main {
       padding: 2rem;
       background: #fff4ee;
@@ -112,11 +121,17 @@
   <header>
     <h1>🔥 DealDynamo360 🔥</h1>
     <p class="tagline">Your Daily Dose of the Best Online Deals</p>
+    <div class="social-bar">
+      <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a> |
+      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a> |
+      <a href="https://www.facebook.com/dealdynamo360" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a>
+    </div>
   </header>
 
   <main>
     <div class="section-header">
-      <h2>🔒 Top Deals This Week</h2>
+      <h2>🛒 Top Deals This Week</h2>
       <p>Updated daily with trending, high-conversion, fast-selling products.</p>
     </div>
 
@@ -170,11 +185,9 @@
       const category = document.getElementById('category').value;
       const products = document.querySelectorAll('.card');
       products.forEach(product => {
-        if (category === 'all' || product.dataset.category === category) {
-          product.style.removeProperty('display'); // Restore to grid layout
-        } else {
-          product.style.display = 'none'; // Hide
-        }
+        product.style.display = (category === 'all' || product.dataset.category === category)
+          ? 'block'
+          : 'none';
       });
     }
   </script>
