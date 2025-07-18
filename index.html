@@ -3,213 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DealDynamo360 – Compare Prices & Hot Deals</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="https://s.skimresources.com/js/288802X1775572.skimlinks.js"></script>
+  <title>DealDynamo360 - Compare Prices</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
   <style>
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #fff;
+      margin: 0;
+      background: #ffeee6;
       color: #333;
     }
     header {
       background: linear-gradient(to right, #ff512f, #dd2476);
       color: white;
-      text-align: center;
       padding: 2rem 1rem;
+      text-align: center;
     }
-    h1 {
+    header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
-    .tagline {
-      font-size: 1rem;
-      margin-top: 0.5rem;
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
     }
-    main {
-      padding: 2rem;
-      background: #fff4ee;
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-    .section-header {
+    .section-title {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .filter {
       text-align: center;
       margin-bottom: 2rem;
-    }
-    .filter-bar {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .filter-bar select {
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      border-radius: 8px;
-      border: 1px solid #ccc;
     }
     .products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
+      gap: 1.5rem;
     }
-    .card {
-      background: white;
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
       padding: 1rem;
-      border-radius: 16px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    .card img {
+    .product-card img {
       width: 100%;
       height: 180px;
-      object-fit: cover;
-      border-radius: 12px;
+      object-fit: contain;
+      margin-bottom: 1rem;
     }
-    .card h3 {
+    .product-title {
+      font-weight: 600;
       font-size: 1.1rem;
-      margin: 1rem 0 0.5rem;
     }
-    .card p {
+    .product-description {
       font-size: 0.95rem;
+      margin: 0.5rem 0 1rem;
     }
-    .card .buttons {
-      display: flex;
-      gap: 0.5rem;
-      margin-top: 1rem;
-      flex-wrap: wrap;
-    }
-    .card .buttons a {
-      flex: 1;
-      padding: 0.6rem 1rem;
-      background: #ff6600;
+    .buy-button {
+      background-color: #ff6600;
       color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.6rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
       text-align: center;
       text-decoration: none;
-      border-radius: 10px;
-      font-weight: 600;
-      font-size: 0.9rem;
     }
-    .newsletter {
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .newsletter input[type="email"] {
-      padding: 0.75rem;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      width: 250px;
-      font-size: 1rem;
-    }
-    .newsletter button {
-      padding: 0.75rem 1.5rem;
-      border: none;
-      background: #0077ff;
-      color: white;
-      font-size: 1rem;
-      margin-left: 0.5rem;
-      border-radius: 10px;
-      cursor: pointer;
+    .buy-button:hover {
+      background-color: #cc5200;
     }
     footer {
       text-align: center;
-      padding: 1.5rem;
-      background: #f9f9f9;
       font-size: 0.9rem;
-      color: #666;
-    }
-    .social-links {
-      margin-top: 1rem;
-    }
-    .social-links a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #555;
-      font-weight: 600;
+      padding: 1rem;
+      margin-top: 3rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>🔥 DealDynamo360 🔥</h1>
-    <p class="tagline">Compare Prices. Shop Smarter. Save Bigger.</p>
+    <p>Compare Prices. Shop Smarter. Save Bigger.</p>
   </header>
 
-  <main>
-    <div class="section-header">
-      <h2>🛍️ Top Deals This Week</h2>
-      <p>Price comparisons on fast-selling, high-converting products. Updated daily.</p>
-    </div>
+  <div class="container">
+    <h2 class="section-title">📊 Top Deals This Week</h2>
 
-    <div class="filter-bar">
-      <label for="category">Filter by Category: </label>
+    <div class="filter">
+      <label for="category">Filter by Category:</label>
       <select id="category" onchange="filterProducts()">
-        <option value="all">All</option>
-        <option value="tech">Tech</option>
-        <option value="fitness">Fitness</option>
-        <option value="travel">Travel</option>
+        <option value="All">All</option>
+        <option value="Headphones">Headphones</option>
+        <option value="Smartwatch">Smartwatch</option>
+        <option value="Powerbank">Powerbank</option>
       </select>
     </div>
 
-    <div class="products" id="productGrid">
-      <div class="card" data-category="tech">
-        <img src="https://m.media-amazon.com/images/I/61N6+U6xg+L._AC_SL1500_.jpg" alt="Wireless Headphones">
-        <h3>Noise-Cancelling Wireless Headphones</h3>
-        <p>Crystal-clear sound and 40+ hour battery life.</p>
-        <div class="buttons">
-          <a href="https://www.amazon.com/dp/B098FKXT8L?tag=dealdynamo360-20" target="_blank">Shop Now</a>
-          <a href="https://www.amazon.com/dp/B098FKXT8L?tag=dealdynamo360-20" target="_blank">View Deal</a>
-          <a href="https://www.amazon.com/dp/B098FKXT8L?tag=dealdynamo360-20" target="_blank">Buy Now</a>
-        </div>
+    <div class="products" id="products">
+
+      <!-- Headphones -->
+      <div class="product-card" data-category="Headphones">
+        <img src="https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg" alt="Wireless Headphones">
+        <div class="product-title">Noise-Cancelling Wireless Headphones</div>
+        <div class="product-description">Crystal-clear sound and 40+ hour battery life.</div>
+        <a class="buy-button" href="https://www.amazon.com/dp/B07Y2H9D57" target="_blank">Buy Now</a>
       </div>
 
-      <div class="card" data-category="fitness">
-        <img src="https://m.media-amazon.com/images/I/71svPSFZxFL._AC_SL1500_.jpg" alt="Smart Watch">
-        <h3>Smart Fitness Watch</h3>
-        <p>Track workouts, heart rate, and notifications with style.</p>
-        <div class="buttons">
-          <a href="https://www.amazon.com/dp/B07Y2H9D57?tag=dealdynamo360-20" target="_blank">Shop Now</a>
-          <a href="https://www.amazon.com/dp/B07Y2H9D57?tag=dealdynamo360-20" target="_blank">View Deal</a>
-          <a href="https://www.amazon.com/dp/B07Y2H9D57?tag=dealdynamo360-20" target="_blank">Buy Now</a>
-        </div>
+      <!-- Smartwatch -->
+      <div class="product-card" data-category="Smartwatch">
+        <img src="https://m.media-amazon.com/images/I/61b5Xz2GVBL._AC_SL1500_.jpg" alt="Smart Watch">
+        <div class="product-title">Smart Fitness Watch</div>
+        <div class="product-description">Track workouts, heart rate, and notifications with style.</div>
+        <a class="buy-button" href="https://www.amazon.com/dp/B0B2MZZK3G" target="_blank">Buy Now</a>
       </div>
 
-      <div class="card" data-category="travel">
-        <img src="https://m.media-amazon.com/images/I/61smqGZCcDL._AC_SL1500_.jpg" alt="Power Bank">
-        <h3>Ultra-Compact Power Bank</h3>
-        <p>Fast charge your devices on the go. Ideal for travel.</p>
-        <div class="buttons">
-          <a href="https://www.amazon.com/dp/B082ZTZLK9?tag=dealdynamo360-20" target="_blank">Shop Now</a>
-          <a href="https://www.amazon.com/dp/B082ZTZLK9?tag=dealdynamo360-20" target="_blank">View Deal</a>
-          <a href="https://www.amazon.com/dp/B082ZTZLK9?tag=dealdynamo360-20" target="_blank">Buy Now</a>
-        </div>
+      <!-- Power Bank -->
+      <div class="product-card" data-category="Powerbank">
+        <img src="https://m.media-amazon.com/images/I/61Tgw+eNRuL._AC_SL1500_.jpg" alt="Power Bank">
+        <div class="product-title">Ultra-Compact Power Bank</div>
+        <div class="product-description">Fast charge on the go. Ideal for travel.</div>
+        <a class="buy-button" href="https://www.amazon.com/dp/B0899VXM8F" target="_blank">Buy Now</a>
       </div>
+
     </div>
-
-    <div class="newsletter">
-      <h3>📬 Join Our Newsletter</h3>
-      <p>Be the first to hear about hot deals and daily discounts.</p>
-      <input type="email" placeholder="Enter your email" />
-      <button>Subscribe</button>
-    </div>
-  </main>
+  </div>
 
   <footer>
     &copy; 2025 DealDynamo360. All rights reserved.
-    <div class="social-links">
-      <a href="https://www.facebook.com/DealDynamo360" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a> |
-      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a> |
-      <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a>
-    </div>
   </footer>
 
+  <!-- Skimlinks Script (Single Instance) -->
+  <script type="text/javascript" src="https://s.skimresources.com/js/288802X1775572.skimlinks.js"></script>
+
+  <!-- Category Filter Script -->
   <script>
     function filterProducts() {
-      const category = document.getElementById('category').value;
-      const products = document.querySelectorAll('.card');
-      products.forEach(product => {
-        product.style.display = (category === 'all' || product.dataset.category === category)
-          ? 'block'
-          : 'none';
+      const selected = document.getElementById('category').value;
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        card.style.display = selected === 'All' || card.dataset.category === selected ? 'block' : 'none';
       });
     }
   </script>
+
 </body>
 </html>
