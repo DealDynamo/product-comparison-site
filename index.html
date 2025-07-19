@@ -1,164 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DealDynamo360 – Best Product Deals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DealDynamo360 - Best Daily Deals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f5f5f5;
-    }
-    header {
-      background-color: #141414;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
+      font-family: 'Roboto', sans-serif;
       margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
     }
-    .search {
-      margin: 20px;
+
+    header {
+      background-color: #ff6f00;
+      color: #fff;
+      padding: 1rem;
       text-align: center;
     }
-    .search input {
-      width: 50%;
-      padding: 10px;
-      font-size: 16px;
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
     }
-    .products {
+
+    .daily-deals {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .deal {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .product {
-      background-color: white;
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
-    }
-    .product img {
+
+    .deal img {
+      max-width: 250px;
       width: 100%;
-      height: auto;
+      border-radius: 10px 0 0 10px;
     }
-    .product h3 {
-      margin: 10px 0;
-      font-size: 18px;
+
+    .deal-content {
+      flex: 1;
+      padding: 1rem;
     }
-    .product p {
-      font-size: 14px;
-      padding: 0 10px;
+
+    .deal-content h2 {
+      margin-top: 0;
     }
-    .product a.button {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #007bff;
+
+    .buy-now-btn {
+      background-color: #28a745;
       color: white;
-      text-decoration: none;
+      padding: 0.75rem 1.25rem;
+      border: none;
       border-radius: 5px;
-    }
-    .product a.button:hover {
-      background-color: #0056b3;
-    }
-    footer {
-      background-color: #222;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .socials a {
-      margin: 0 10px;
-      color: #fff;
+      font-size: 1rem;
       text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
     }
-    .subscribe {
-      margin-top: 20px;
+
+    .buy-now-btn:hover {
+      background-color: #218838;
     }
-    .subscribe input {
-      padding: 8px;
-      width: 200px;
-    }
-    .subscribe button {
-      padding: 8px 12px;
-      margin-left: 5px;
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eee;
     }
   </style>
 </head>
+
 <body>
+  <header>
+    <h1>🔥 DealDynamo360 - Today’s Best Daily Deals</h1>
+  </header>
 
-<header>
-  <h1>🔥 DealDynamo360 🔥</h1>
-  <p>Top Trending Deals at Your Fingertips!</p>
-</header>
+  <section class="daily-deals">
+    <div class="deal">
+      <img src="https://m.media-amazon.com/images/I/61vX0tOQhIL._AC_SX679_.jpg" alt="Smart Watch">
+      <div class="deal-content">
+        <h2>Smart Fitness Watch</h2>
+        <p>Track your fitness, monitor your health, and stay connected with this stylish smartwatch.</p>
+        <a class="buy-now-btn" href="https://www.amazon.com/dp/B09DPPT89M?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+      </div>
+    </div>
 
-<div class="search">
-  <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Search for products...">
-</div>
+    <div class="deal">
+      <img src="https://m.media-amazon.com/images/I/61v1XL7y36L._AC_SX679_.jpg" alt="Power Bank">
+      <div class="deal-content">
+        <h2>Fast Charging Power Bank</h2>
+        <p>Compact and high capacity power bank with fast charging and dual USB output ports.</p>
+        <a class="buy-now-btn" href="https://www.amazon.com/dp/B08L5PFQ37?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+      </div>
+    </div>
 
-<div class="products" id="productContainer">
-  <!-- Headphones -->
-  <div class="product">
-    <img src="https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SL1500_.jpg" alt="Headphones">
-    <h3>Wireless Headphones</h3>
-    <p>Noise cancelling headphones with deep bass and 30-hour battery life.</p>
-    <a class="button" href="https://www.amazon.com/dp/B098FKXT8L?tag=dealdynamo360-20" target="_blank">Buy Now</a>
-  </div>
+    <div class="deal">
+      <img src="https://m.media-amazon.com/images/I/81KkrQWEHIL._AC_SX679_.jpg" alt="Bluetooth Earbuds">
+      <div class="deal-content">
+        <h2>Wireless Bluetooth Earbuds</h2>
+        <p>Experience true wireless freedom with noise cancellation and long battery life.</p>
+        <a class="buy-now-btn" href="https://www.amazon.com/dp/B0971K8H6R?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+      </div>
+    </div>
+  </section>
 
-  <!-- Smart Watch -->
-  <div class="product">
-    <img src="https://m.media-amazon.com/images/I/71geQkGmGKL._AC_SL1500_.jpg" alt="Smart Watch">
-    <h3>Smart Fitness Watch</h3>
-    <p>Track your health with heart rate monitor and GPS built in.</p>
-    <a class="button" href="https://www.amazon.com/dp/B07Y2H9D57?tag=dealdynamo360-20" target="_blank">Buy Now</a>
-  </div>
+  <footer>
+    <p>&copy; 2025 DealDynamo360 | All Rights Reserved</p>
+  </footer>
 
-  <!-- Power Bank -->
-  <div class="product">
-    <img src="https://m.media-amazon.com/images/I/51bRhyVTVGL._AC_SL1000_.jpg" alt="Power Bank">
-    <h3>Fast Charging Power Bank</h3>
-    <p>20000mAh ultra slim portable charger with dual USB output.</p>
-    <a class="button" href="https://www.amazon.com/dp/B082ZTZLK9?tag=dealdynamo360-20" target="_blank">Buy Now</a>
-  </div>
-</div>
-
-<footer>
-  <div class="socials">
-    <p>Follow us:</p>
-    <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a> |
-    <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a> |
-    <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a> |
-    <a href="https://www.facebook.com/dealdynamo360" target="_blank">Facebook</a>
-  </div>
-
-  <div class="subscribe">
-    <p>Subscribe to our newsletter</p>
-    <input type="email" placeholder="Enter your email">
-    <button>Subscribe</button>
-  </div>
-</footer>
-
-<!-- Skimlinks Code -->
-<script type="text/javascript" src="https://s.skimresources.com/js/288802X1775572.skimlinks.js"></script>
-
-<script>
-  function filterProducts() {
-    const input = document.getElementById("searchInput").value.toLowerCase();
-    const container = document.getElementById("productContainer");
-    const products = container.getElementsByClassName("product");
-
-    for (let product of products) {
-      const title = product.querySelector("h3").textContent.toLowerCase();
-      product.style.display = title.includes(input) ? "block" : "none";
-    }
-  }
-</script>
-
+  <!-- Skimlinks (if enabled in future) -->
+  <script type="text/javascript" src="https://s.skimresources.com/js/288802X1775572.skimlinks.js"></script>
 </body>
+
 </html>
