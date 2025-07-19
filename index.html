@@ -3,67 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DealDynamo360 - Best Daily Deals</title>
+  <title>DealDynamo360 - Daily Deals</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 0;
+      margin: 0; background: #f5f5f5;
     }
     header {
       background: #222;
-      color: white;
+      color: #fff;
+      padding: 20px 0;
       text-align: center;
-      padding: 20px;
     }
     .search-bar {
-      text-align: center;
       padding: 20px;
+      text-align: center;
     }
     .search-bar input {
       padding: 10px;
-      width: 90%;
+      width: 80%;
       max-width: 400px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      font-size: 16px;
     }
     .products {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
       padding: 20px;
+      gap: 20px;
     }
     .product {
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      width: 250px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       padding: 15px;
+      width: 250px;
       text-align: center;
     }
     .product img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 5px;
     }
     .product h3 {
+      font-size: 18px;
       margin: 10px 0;
     }
-    .product .price {
+    .price {
       color: green;
       font-weight: bold;
     }
     .buy-button {
       display: inline-block;
       margin-top: 10px;
-      padding: 10px 15px;
       background: #ff6600;
       color: white;
-      border: none;
-      border-radius: 5px;
+      padding: 10px 15px;
       text-decoration: none;
+      border-radius: 5px;
     }
     .buy-button:hover {
       background: #cc5200;
@@ -75,7 +72,8 @@
     .socials a {
       margin: 0 10px;
       font-size: 24px;
-      color: #555;
+      color: #444;
+      text-decoration: none;
     }
     footer {
       text-align: center;
@@ -88,11 +86,11 @@
 
   <header>
     <h1>DealDynamo360</h1>
-    <p>Your daily source of top product deals</p>
+    <p>Best Daily Deals at Your Fingertips</p>
   </header>
 
   <div class="search-bar">
-    <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search for a product...">
+    <input type="text" id="searchInput" placeholder="Search for a product..." onkeyup="searchProducts()">
   </div>
 
   <div class="products" id="productList">
@@ -117,23 +115,27 @@
   </div>
 
   <div class="socials">
-    <a href="https://www.facebook.com/DealDynamo360" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.facebook.com/DealDynamo360" target="_blank"><i class="fab fa-facebook-square"></i></a>
     <a href="https://www.instagram.com/dealdynamo360" target="_blank"><i class="fab fa-instagram"></i></a>
     <a href="https://www.youtube.com/@DealDynamo360" target="_blank"><i class="fab fa-youtube"></i></a>
     <a href="https://www.tiktok.com/@dealdynamo360" target="_blank"><i class="fab fa-tiktok"></i></a>
   </div>
 
   <footer>
-    &copy; 2025 DealDynamo360. All rights reserved.
+    &copy; 2025 DealDynamo360 — All Rights Reserved
   </footer>
 
+  <!-- Skimlinks Script (Optional) -->
+  <script type="text/javascript" src="https://s.skimresources.com/js/288802X1775572.skimlinks.js"></script>
+
+  <!-- Search Function -->
   <script>
     function searchProducts() {
       const input = document.getElementById('searchInput').value.toLowerCase();
       const products = document.querySelectorAll('.product');
       products.forEach(product => {
-        const title = product.querySelector('h3').innerText.toLowerCase();
-        product.style.display = title.includes(input) ? 'block' : 'none';
+        const name = product.querySelector('h3').innerText.toLowerCase();
+        product.style.display = name.includes(input) ? 'block' : 'none';
       });
     }
   </script>
