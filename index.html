@@ -107,21 +107,21 @@
       <img src="https://m.media-amazon.com/images/I/61a5Z4TQGvL._AC_SL1500_.jpg" alt="Bluetooth Earbuds"/>
       <h3>Bluetooth Earbuds</h3>
       <p>High quality wireless earbuds with deep bass.</p>
-      <button onclick="window.open('https://www.amazon.com/dp/B09ZL67Z5Q?tag=dealdynamo360-20', '_blank')">Buy Now</button>
+      <button onclick="location.href='https://www.amazon.com/dp/B09ZL67Z5Q?tag=dealdynamo360-20'">Buy Now</button>
     </div>
 
     <div class="product">
       <img src="https://m.media-amazon.com/images/I/71F1x+w4kXL._AC_SL1500_.jpg" alt="Smartwatch"/>
       <h3>Smartwatch</h3>
       <p>Stylish smartwatch with fitness tracking and notifications.</p>
-      <button onclick="window.open('https://www.amazon.com/dp/B09G3HRMVP?tag=dealdynamo360-20', '_blank')">Buy Now</button>
+      <button onclick="location.href='https://www.amazon.com/dp/B09G3HRMVP?tag=dealdynamo360-20'">Buy Now</button>
     </div>
 
     <div class="product">
       <img src="https://m.media-amazon.com/images/I/61r2oCHgU8L._AC_SL1500_.jpg" alt="Portable Power Bank"/>
       <h3>Portable Power Bank</h3>
       <p>Reliable 20000mAh power bank for mobile devices.</p>
-      <button onclick="window.open('https://www.amazon.com/dp/B082XZNS2B?tag=dealdynamo360-20', '_blank')">Buy Now</button>
+      <button onclick="location.href='https://www.amazon.com/dp/B082XZNS2B?tag=dealdynamo360-20'">Buy Now</button>
     </div>
 
   </section>
@@ -129,7 +129,7 @@
   <footer>
     <p>Connect with us on social media</p>
     <div class="socials">
-      <a href="https://www.facebook.com/DealDynamo360" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61560128279690" target="_blank"><i class="fab fa-facebook-square"></i></a>
       <a href="https://www.instagram.com/dealdynamo360" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.tiktok.com/@dealdynamo360" target="_blank"><i class="fab fa-tiktok"></i></a>
       <a href="https://www.youtube.com/@DealDynamo360" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -146,7 +146,12 @@
       const products = document.querySelectorAll(".product");
       products.forEach(product => {
         const title = product.querySelector("h3").textContent.toLowerCase();
-        product.style.display = title.includes(input) ? "block" : "none";
+        const description = product.querySelector("p").textContent.toLowerCase();
+        if (title.includes(input) || description.includes(input)) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
       });
     }
   </script>
