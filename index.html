@@ -26,6 +26,8 @@
     .search-bar input {
       width: 300px;
       padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
     .products {
       display: flex;
@@ -92,21 +94,21 @@
       <img src="https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SL1500_.jpg" alt="Bluetooth Earbuds" />
       <h3>Bluetooth Earbuds</h3>
       <p>Crystal clear audio with long battery life.</p>
-      <a href="https://www.amazon.com/dp/B09B1J6F76?tag=dealdynamo360-20" target="_blank" class="buy-now">Buy Now</a>
+      <a href="https://www.amazon.com/dp/B09B1J6F76?tag=dealdynamo360-20" target="_blank" rel="noopener noreferrer" class="buy-now">Buy Now</a>
     </div>
 
     <div class="product" data-name="Smartwatch">
       <img src="https://m.media-amazon.com/images/I/71D9ImsvEtL._AC_SL1500_.jpg" alt="Smartwatch" />
       <h3>Smartwatch</h3>
       <p>Track your fitness and stay connected on the go.</p>
-      <a href="https://www.amazon.com/dp/B0BHZT6Z2J?tag=dealdynamo360-20" target="_blank" class="buy-now">Buy Now</a>
+      <a href="https://www.amazon.com/dp/B0BHZT6Z2J?tag=dealdynamo360-20" target="_blank" rel="noopener noreferrer" class="buy-now">Buy Now</a>
     </div>
 
     <div class="product" data-name="Portable Power Bank">
       <img src="https://m.media-amazon.com/images/I/61q3Z93y4iL._AC_SL1500_.jpg" alt="Power Bank" />
       <h3>Portable Power Bank</h3>
       <p>Keep your devices charged wherever you are.</p>
-      <a href="https://www.amazon.com/dp/B0BCQFX7P6?tag=dealdynamo360-20" target="_blank" class="buy-now">Buy Now</a>
+      <a href="https://www.amazon.com/dp/B0BCQFX7P6?tag=dealdynamo360-20" target="_blank" rel="noopener noreferrer" class="buy-now">Buy Now</a>
     </div>
   </div>
 
@@ -130,8 +132,12 @@
       const input = document.getElementById('searchInput').value.toLowerCase();
       const products = document.querySelectorAll('.product');
       products.forEach(product => {
-        const name = product.getAttribute('data-name').toLowerCase();
-        product.style.display = name.includes(input) ? 'block' : 'none';
+        const productName = product.getAttribute('data-name').toLowerCase();
+        if (productName.includes(input)) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
       });
     }
   </script>
