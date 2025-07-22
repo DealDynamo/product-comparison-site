@@ -3,138 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DealDynamo360 - Best Daily Deals</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>DealDynamo360 - Top Daily Tech Deals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f4f4f4;
-      color: #333;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
     }
+
     header {
-      background: #222;
+      background-color: #1e293b;
       color: white;
       padding: 1rem;
       text-align: center;
     }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x400/?tech,shopping') no-repeat center center/cover;
+      padding: 4rem 1rem;
+      color: white;
+      text-align: center;
+    }
+
     .search-bar {
-      padding: 1rem;
+      margin: 1rem auto;
       text-align: center;
     }
+
     .search-bar input {
-      width: 80%;
-      padding: 10px;
-      font-size: 16px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
+      padding: 0.5rem;
+      width: 60%;
+      font-size: 1rem;
     }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 1.5rem;
-      padding: 1.5rem;
+      padding: 2rem;
     }
-    .product-card {
+
+    .product {
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       padding: 1rem;
+      width: 300px;
       text-align: center;
     }
-    .product-card img {
-      max-width: 100%;
-      border-radius: 8px;
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
     }
-    .product-card h3 {
-      font-size: 18px;
-      margin: 0.5rem 0;
+
+    .product h3 {
+      font-size: 1.2rem;
+      margin: 1rem 0 0.5rem;
     }
-    .buy-btn {
-      background: #ff6f00;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 0.5rem;
+
+    .product p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .product .price {
+      color: #16a34a;
       font-weight: bold;
-      text-decoration: none;
+      margin-top: 0.5rem;
+    }
+
+    .product a.button {
       display: inline-block;
-    }
-    .social-links {
-      text-align: center;
-      padding: 1rem;
-    }
-    .social-links a {
-      margin: 0 10px;
-      font-size: 24px;
+      margin-top: 1rem;
+      padding: 0.7rem 1.2rem;
+      background-color: #2563eb;
+      color: white;
       text-decoration: none;
-      color: #444;
+      border-radius: 5px;
+      font-weight: bold;
     }
+
     footer {
-      background: #222;
+      background-color: #1e293b;
       color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 2rem 1rem;
+    }
+
+    .socials a {
+      margin: 0 0.5rem;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>DealDynamo360</h1>
-    <p>Top Trending Deals Updated Daily!</p>
+    <p>Your Daily Source for the Best Tech Deals</p>
   </header>
 
+  <section class="hero">
+    <h2>🔥 Top Deals This Week</h2>
+    <p>Curated Tech Bargains from Across the Web</p>
+  </section>
+
   <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Search deals...">
+    <input type="text" id="searchInput" placeholder="Search products...">
   </div>
 
-  <main class="product-grid" id="productGrid">
-    <div class="product-card" data-name="Bluetooth Earbuds">
-      <img src="https://m.media-amazon.com/images/I/61ZoXJb2rxL._AC_SL1500_.jpg" alt="Bluetooth Earbuds" />
+  <section class="products" id="productList">
+    <div class="product" data-name="Bluetooth Earbuds">
+      <img src="https://m.media-amazon.com/images/I/61+Q6Rh3OQL._AC_SX679_.jpg" alt="Bluetooth Earbuds"/>
       <h3>Bluetooth Earbuds</h3>
-      <p>Wireless noise-cancelling earbuds with deep bass and long battery life.</p>
-      <a href="https://www.amazon.com/dp/B08N5WRWNW?tag=dealdynamo360-20" target="_blank" class="buy-btn">Buy Now</a>
+      <p>High-quality sound with noise cancellation.</p>
+      <p class="price">$39.99</p>
+      <a class="button" href="https://www.amazon.com/dp/B0BHSZT4MF?tag=dealdynamo360-20" target="_blank">Buy Now</a>
     </div>
-    <div class="product-card" data-name="Smart Watch">
-      <img src="https://m.media-amazon.com/images/I/61l9ppRIiqL._AC_SL1500_.jpg" alt="Smart Watch" />
-      <h3>Smart Watch</h3>
-      <p>Fitness tracker with heart rate monitor, GPS, and waterproof design.</p>
-      <a href="https://www.amazon.com/dp/B09Q5P4M2L?tag=dealdynamo360-20" target="_blank" class="buy-btn">Buy Now</a>
-    </div>
-    <div class="product-card" data-name="Portable Power Bank">
-      <img src="https://m.media-amazon.com/images/I/61Gs5w4hJXL._AC_SL1500_.jpg" alt="Power Bank" />
-      <h3>Portable Power Bank</h3>
-      <p>Fast-charging 20000mAh battery pack compatible with all devices.</p>
-      <a href="https://www.amazon.com/dp/B0BXYKQ2C2?tag=dealdynamo360-20" target="_blank" class="buy-btn">Buy Now</a>
-    </div>
-  </main>
 
-  <div class="social-links">
-    <a href="https://www.instagram.com/dealdynamo360" target="_blank" title="Instagram">📸</a>
-    <a href="https://www.tiktok.com/@dealdynamo360" target="_blank" title="TikTok">🎵</a>
-    <a href="https://www.youtube.com/@DealDynamo360" target="_blank" title="YouTube">▶️</a>
-    <a href="https://www.facebook.com/profile.php?id=61558108819210" target="_blank" title="Facebook">📘</a>
-  </div>
+    <div class="product" data-name="Smart Watch">
+      <img src="https://m.media-amazon.com/images/I/71geby6HfXL._AC_SX679_.jpg" alt="Smart Watch"/>
+      <h3>Smart Watch</h3>
+      <p>Track fitness, sleep, and notifications on the go.</p>
+      <p class="price">$59.99</p>
+      <a class="button" href="https://www.amazon.com/dp/B0BMGGRGZZ?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="product" data-name="Portable Power Bank">
+      <img src="https://m.media-amazon.com/images/I/61y2VVWcGBL._AC_SX679_.jpg" alt="Power Bank"/>
+      <h3>Portable Power Bank</h3>
+      <p>10,000mAh ultra-fast charging USB-C battery.</p>
+      <p class="price">$24.99</p>
+      <a class="button" href="https://www.amazon.com/dp/B09V3HN1XR?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+    </div>
+  </section>
 
   <footer>
+    <p>Connect with us:</p>
+    <div class="socials">
+      <a href="https://facebook.com/DealDynamo360" target="_blank">📘</a>
+      <a href="https://instagram.com/dealdynamo360" target="_blank">📸</a>
+      <a href="https://tiktok.com/@dealdynamo360" target="_blank">🎵</a>
+      <a href="https://youtube.com/@dealdynamo360" target="_blank">▶️</a>
+    </div>
     <p>&copy; 2025 DealDynamo360. All rights reserved.</p>
   </footer>
 
   <script>
+    // Product Search
     const searchInput = document.getElementById("searchInput");
-    const productGrid = document.getElementById("productGrid");
+    const productList = document.getElementById("productList");
+    const products = productList.querySelectorAll(".product");
 
-    searchInput.addEventListener("input", function () {
-      const search = searchInput.value.toLowerCase();
-      const cards = productGrid.getElementsByClassName("product-card");
-
-      for (let card of cards) {
-        const name = card.dataset.name.toLowerCase();
-        card.style.display = name.includes(search) ? "block" : "none";
-      }
+    searchInput.addEventListener("input", () => {
+      const searchValue = searchInput.value.toLowerCase();
+      products.forEach(product => {
+        const name = product.dataset.name.toLowerCase();
+        product.style.display = name.includes(searchValue) ? "block" : "none";
+      });
     });
   </script>
 </body>
