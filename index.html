@@ -2,71 +2,94 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DealDynamo360 - Best Daily Tech Deals</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DealDynamo360</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: #f5f7fa;
       margin: 0;
-      background: #f9f9f9;
-      color: #333;
+      padding: 0;
     }
+
     header {
-      background-color: #000428;
-      background-image: linear-gradient(315deg, #000428 0%, #004e92 74%);
+      background: #1e1e2f;
+      padding: 1rem;
       color: white;
-      padding: 1rem 2rem;
       text-align: center;
     }
-    .search-bar {
-      text-align: center;
-      margin: 1rem;
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
     }
-    .search-bar input {
+
+    .search-box {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .search-box input {
       padding: 0.5rem;
-      width: 80%;
-      max-width: 400px;
+      width: 300px;
+      max-width: 90%;
     }
+
     .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
     }
+
     .product {
       background: white;
-      padding: 1rem;
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      text-align: center;
+      padding: 1rem;
+      width: 250px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
     .product img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      border-radius: 10px;
     }
+
     .product h3 {
-      font-size: 1.2rem;
+      margin: 1rem 0 0.5rem;
     }
-    .buy-now {
-      background: #28a745;
+
+    .product p {
+      color: #555;
+    }
+
+    .btn {
+      background: #ff6600;
       color: white;
       padding: 0.5rem 1rem;
-      text-decoration: none;
+      border: none;
       border-radius: 5px;
-      display: inline-block;
-      margin-top: 1rem;
+      text-decoration: none;
+      margin-top: auto;
     }
-    .footer {
+
+    footer {
+      background: #1e1e2f;
+      color: white;
       text-align: center;
-      padding: 2rem;
-      background: #222;
-      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
     }
+
     .social-icons a {
-      color: white;
       margin: 0 0.5rem;
+      color: white;
       font-size: 1.5rem;
       text-decoration: none;
     }
@@ -76,59 +99,64 @@
 <body>
   <header>
     <h1>DealDynamo360</h1>
-    <p>🔥 Top Tech Deals Updated Daily 🔥</p>
+    <p>Top Tech Deals, Reviewed & Compared</p>
   </header>
 
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Search products...">
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search for products..." onkeyup="filterProducts()" />
+    </div>
+
+    <div class="products" id="productList">
+      <div class="product" data-name="Bluetooth Earbuds">
+        <img src="https://via.placeholder.com/250x150.png?text=Bluetooth+Earbuds" alt="Bluetooth Earbuds">
+        <h3>Bluetooth Earbuds</h3>
+        <p>Wireless, noise-cancelling, 20h playtime</p>
+        <a class="btn" href="https://www.amazon.com/dp/B09KXYZ123?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+      </div>
+
+      <div class="product" data-name="Smart Watch">
+        <img src="https://via.placeholder.com/250x150.png?text=Smart+Watch" alt="Smart Watch">
+        <h3>Smart Watch</h3>
+        <p>Heart rate monitor, GPS, waterproof</p>
+        <a class="btn" href="https://www.amazon.com/dp/B08GABC456?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+      </div>
+
+      <div class="product" data-name="Portable Power Bank">
+        <img src="https://via.placeholder.com/250x150.png?text=Power+Bank" alt="Power Bank">
+        <h3>Portable Power Bank</h3>
+        <p>10000mAh, fast charging, compact size</p>
+        <a class="btn" href="https://www.amazon.com/dp/B07YXJ9QL3?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+      </div>
+    </div>
   </div>
 
-  <section class="products" id="productList">
-    <div class="product" data-name="Bluetooth Earbuds">
-      <img src="https://m.media-amazon.com/images/I/71Nlf6Y+G1L._AC_SL1500_.jpg" alt="Bluetooth Earbuds">
-      <h3>Bluetooth Earbuds</h3>
-      <p>High quality wireless sound.</p>
-      <a class="buy-now" href="https://www.amazon.com/dp/B09ZXYZ123?tag=dealdynamo360-20" target="_blank">Buy Now</a>
-    </div>
-    <div class="product" data-name="Smart Watch">
-      <img src="https://m.media-amazon.com/images/I/61sO-Rf0G5L._AC_SL1500_.jpg" alt="Smart Watch">
-      <h3>Smart Watch</h3>
-      <p>Stay connected on the go.</p>
-      <a class="buy-now" href="https://www.amazon.com/dp/B08XYZ4567?tag=dealdynamo360-20" target="_blank">Buy Now</a>
-    </div>
-    <div class="product" data-name="Portable Power Bank">
-      <img src="https://m.media-amazon.com/images/I/61DJw4fV3oL._AC_SL1500_.jpg" alt="Portable Power Bank">
-      <h3>Portable Power Bank</h3>
-      <p>Charge your devices anytime.</p>
-      <a class="buy-now" href="https://www.amazon.com/dp/B07XYZ8901?tag=dealdynamo360-20" target="_blank">Buy Now</a>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>Follow Us</p>
+  <footer>
+    <p>Connect with DealDynamo360</p>
     <div class="social-icons">
       <a href="https://www.facebook.com/DealDynamo360" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/dealdynamo360" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.youtube.com/@dealdynamo360" target="_blank"><i class="fab fa-youtube"></i></a>
       <a href="https://www.tiktok.com/@dealdynamo360" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.youtube.com/@DealDynamo360" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
-    <p>&copy; 2025 DealDynamo360</p>
+    <p>&copy; 2025 DealDynamo360. All rights reserved.</p>
   </footer>
 
   <script>
-    document.getElementById('searchInput').addEventListener('input', function () {
-      const filter = this.value.toLowerCase();
-      const products = document.querySelectorAll('.product');
+    function filterProducts() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const products = document.getElementById("productList").children;
 
-      products.forEach(product => {
-        const name = product.dataset.name.toLowerCase();
-        if (name.includes(filter)) {
-          product.style.display = 'block';
+      for (let product of products) {
+        const name = product.getAttribute("data-name").toLowerCase();
+        const text = product.textContent.toLowerCase();
+        if (name.includes(input) || text.includes(input)) {
+          product.style.display = "flex";
         } else {
-          product.style.display = 'none';
+          product.style.display = "none";
         }
-      });
-    });
+      }
+    }
   </script>
 </body>
 
