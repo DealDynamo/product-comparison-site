@@ -18,4 +18,127 @@
       text-align: center;
     }
     .search-container {
-      text-align: center
+      text-align: center;
+      padding: 1em;
+    }
+    .search-container input {
+      padding: 0.5em;
+      width: 60%;
+      font-size: 1em;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+      padding: 1em;
+    }
+    .product {
+      background: white;
+      border-radius: 8px;
+      padding: 1em;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+    .product h3 {
+      margin: 0.5em 0;
+    }
+    .buy-btn {
+      margin-top: auto;
+      background: #43a047;
+      color: white;
+      padding: 0.7em;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 1em;
+      background: #1e88e5;
+      color: white;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DealDynamo360</h1>
+    <p>Your Ultimate Product Deal Hub</p>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search for products...">
+  </div>
+
+  <div class="products" id="productList">
+    <!-- Product 1 -->
+    <div class="product" data-name="Bluetooth Earbuds">
+      <img src="https://m.media-amazon.com/images/I/61rL0qU6OJL._AC_SL1500_.jpg" alt="Bluetooth Earbuds">
+      <h3>Bluetooth Earbuds</h3>
+      <p>Wireless earbuds with charging case.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B0C2W7M8D1?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product" data-name="Smart Watch">
+      <img src="https://m.media-amazon.com/images/I/71zHjJtqbaL._AC_SL1500_.jpg" alt="Smart Watch">
+      <h3>Smart Watch</h3>
+      <p>Fitness tracking smart watch with heart rate monitor.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B0BHZ6Y9P8?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product" data-name="Portable Powerbank">
+      <img src="https://m.media-amazon.com/images/I/61R7YvZmBHL._AC_SL1500_.jpg" alt="Portable Powerbank">
+      <h3>Portable Powerbank</h3>
+      <p>High-capacity portable charger for devices.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B0C4K3NC3M?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product" data-name="Wireless Headphones">
+      <img src="https://m.media-amazon.com/images/I/61y2VVWcGBL._AC_SL1500_.jpg" alt="Noise Cancelling Headphones">
+      <h3>Noise-Cancelling Wireless Headphones</h3>
+      <p>Experience crystal-clear sound and 40+ hour battery life.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B0BN95TMBM?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="socials">
+      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a> |
+      <a href="https://www.youtube.com/@dealdynamo360" target="_blank">YouTube</a> |
+      <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a>
+    </div>
+    <p>&copy; 2025 DealDynamo360</p>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const products = document.querySelectorAll(".product");
+
+    searchInput.addEventListener("input", function () {
+      const search = this.value.toLowerCase();
+      products.forEach(product => {
+        const name = product.dataset.name.toLowerCase();
+        if (name.includes(search)) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
