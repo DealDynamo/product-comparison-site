@@ -1,135 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DealDynamo360 - Top Tech Deals</title>
+  <title>DealDynamo360</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Inter', sans-serif;
+      background: #fffaf7;
       color: #333;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #222;
+      background: linear-gradient(90deg, #ff416c, #ff4b2b);
       color: white;
       padding: 1rem;
       text-align: center;
     }
-    .search-container {
-      text-align: center;
-      margin: 20px;
+    .product-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 2rem;
     }
-    .search-container input {
-      padding: 10px;
-      width: 80%;
-      max-width: 400px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .product {
+    .product-card {
       background: white;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      width: 300px;
+      text-align: left;
     }
-    .product img {
-      width: 100%;
-      max-height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
+    .product-card h3 {
+      margin-top: 0;
     }
-    .product h3 {
-      font-size: 1.2rem;
-      margin: 10px 0;
-    }
-    .product button {
-      background-color: #ff4500;
+    .buy-button {
+      background-color: #ff4b2b;
       color: white;
+      padding: 0.75rem 1.25rem;
       border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-    .product button:hover {
-      background-color: #e03e00;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
     }
     footer {
-      background-color: #222;
+      background: #333;
       color: white;
       text-align: center;
       padding: 1rem;
-      margin-top: 30px;
     }
     .social-icons a {
-      color: white;
       margin: 0 10px;
-      font-size: 1.4rem;
+      color: white;
       text-decoration: none;
     }
   </style>
 </head>
+
 <body>
+  <header>
+    <h1>🔥 DealDynamo360 🔥</h1>
+    <p>Your Daily Deals on the Best Online Products</p>
+  </header>
 
-<header>
-  <h1>🔥 DealDynamo360 - Top Tech Deals 🔥</h1>
-</header>
+  <section class="product-grid">
+    <div class="product-card">
+      <h3>🎧 Wireless Headphones</h3>
+      <p>Experience crystal-clear sound and 40+ hour battery life.</p>
+      <a href="https://www.amazon.com/dp/B0C2W7M8D1?tag=dealdynamo360-20" class="buy-button" target="_blank">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <h3>📱 Smart Fitness Watch</h3>
+      <p>Track fitness, heart rate, and notifications with ease.</p>
+      <a href="https://www.amazon.com/dp/B0BHZ6Y9P8?tag=dealdynamo360-20" class="buy-button" target="_blank">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <h3>🚚 Ultra-Compact Power Bank</h3>
+      <p>Fast charge on-the-go in style. Perfect for travel!</p>
+      <a href="https://www.amazon.com/dp/B0C4K3NC3M?tag=dealdynamo360-20" class="buy-button" target="_blank">Buy Now</a>
+    </div>
+  </section>
 
-<div class="search-container">
-  <input type="text" id="searchInput" placeholder="Search for products..." />
-</div>
-
-<section class="products" id="productList">
-  <div class="product" data-name="Bluetooth Earbuds">
-    <img src="https://m.media-amazon.com/images/I/61nPiOOv9BL._AC_SL1500_.jpg" alt="Bluetooth Earbuds" />
-    <h3>Bluetooth Earbuds</h3>
-    <button onclick="window.open('https://www.amazon.com/dp/B0C2W7M8D1?tag=dealdynamo360-20', '_blank')">Buy Now</button>
-  </div>
-  <div class="product" data-name="Smart Watch">
-    <img src="https://m.media-amazon.com/images/I/71r+Bra-6oL._AC_SL1500_.jpg" alt="Smart Watch" />
-    <h3>Smart Watch</h3>
-    <button onclick="window.open('https://www.amazon.com/dp/B0BHZ6Y9P8?tag=dealdynamo360-20', '_blank')">Buy Now</button>
-  </div>
-  <div class="product" data-name="Portable Power Bank">
-    <img src="https://m.media-amazon.com/images/I/61P2z1aYtrL._AC_SL1500_.jpg" alt="Power Bank" />
-    <h3>Portable Power Bank</h3>
-    <button onclick="window.open('https://www.amazon.com/dp/B0C4K3NC3M?tag=dealdynamo360-20', '_blank')">Buy Now</button>
-  </div>
-</section>
-
-<footer>
-  <p>Follow us on:</p>
-  <div class="social-icons">
-    <a href="https://www.facebook.com/DealDynamo360" target="_blank">🌐</a>
-    <a href="https://www.instagram.com/dealdynamo360" target="_blank">📸</a>
-    <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">🎵</a>
-    <a href="https://www.youtube.com/@dealdynamo360" target="_blank">📺</a>
-  </div>
-  <p>&copy; 2025 DealDynamo360. All rights reserved.</p>
-</footer>
-
-<script>
-  const searchInput = document.getElementById("searchInput");
-  const products = document.querySelectorAll(".product");
-
-  searchInput.addEventListener("input", () => {
-    const searchValue = searchInput.value.toLowerCase();
-    products.forEach(product => {
-      const name = product.dataset.name.toLowerCase();
-      product.style.display = name.includes(searchValue) ? "block" : "none";
-    });
-  });
-</script>
-
+  <footer>
+    <p>Follow us:</p>
+    <div class="social-icons">
+      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">🎧 TikTok</a>
+      <a href="https://www.youtube.com/@DealDynamo360" target="_blank">🎥 YouTube</a>
+      <a href="https://instagram.com/dealdynamo360" target="_blank">📸 Instagram</a>
+    </div>
+  </footer>
 </body>
+
 </html>
