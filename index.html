@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DealDynamo - Top Tech Deals</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-100 font-sans">
+  <!-- Hero Section -->
+  <section class="bg-green-700 text-white text-center py-12">
+    <h1 class="text-4xl font-bold mb-4">Top Deals This Week</h1>
+    <p class="text-lg">Your source for the hottest tech deals, updated daily.</p>
+  </section>
 
-<body class="bg-gray-100">
-  <header class="bg-gradient-to-r from-blue-500 to-blue-700 py-6 text-white text-center">
-    <h1 class="text-4xl font-bold">DealDynamo</h1>
-    <p class="text-lg">Top Tech Deals – Updated Daily</p>
-  </header>
-
-  <main class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <!-- Wireless Headphones -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-      <img src="https://m.media-amazon.com/images/I/51zWcG5b3vL._AC_SL1500_.jpg" alt="Wireless Headphones" class="w-full h-40 object-contain mb-4 rounded">
-      <h2 class="text-xl font-semibold mb-2">Noise-Cancelling Wireless Headphones</h2>
-      <p class="text-gray-600 mb-4">Experience crystal-clear sound and 40+ hour battery life.</p>
-      <a href="https://www.amazon.com/dp/B0C2W7M8D1?tag=dealdynamo360-20" target="_blank"
-        class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full">Buy Now</a>
+  <!-- Product Section -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-8 py-12">
+    <!-- Product 1 -->
+    <div class="rounded-2xl bg-white p-6 shadow">
+      <img src="https://m.media-amazon.com/images/I/61u48FEs2QL._AC_SL1500_.jpg" alt="Wireless Headphones" class="mb-4 h-40 mx-auto" />
+      <h2 class="text-xl font-bold mb-2">Noise-Cancelling Wireless Headphones</h2>
+      <p class="mb-4 text-gray-700">Experience crystal-clear sound and 40+ hour battery life.</p>
+      <a href="https://www.amazon.com/dp/B0C2W7M8D1?tag=dealdynamo360-20" target="_blank" rel="noopener noreferrer">
+        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Buy Now</button>
+      </a>
     </div>
 
-    <!-- Smart Fitness Watch -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-      <img src="https://m.media-amazon.com/images/I/61+9W2ZL0mL._AC_SL1500_.jpg" alt="Smartwatch" class="w-full h-40 object-contain mb-4 rounded">
-      <h2 class="text-xl font-semibold mb-2">Smart Fitness Watch</h2>
-      <p class="text-gray-600 mb-4">Track your fitness goals with real-time heart rate and sleep monitoring.</p>
-      <a href="https://www.amazon.com/dp/B0BHZ6Y9P8?tag=dealdynamo360-20" target="_blank"
-        class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full">Buy Now</a>
+    <!-- Product 2 -->
+    <div class="rounded-2xl bg-white p-6 shadow">
+      <img src="https://m.media-amazon.com/images/I/61RzEdKX3lL._AC_SL1500_.jpg" alt="Smartwatch" class="mb-4 h-40 mx-auto" />
+      <h2 class="text-xl font-bold mb-2">Smart Fitness Watch</h2>
+      <p class="mb-4 text-gray-700">Track your fitness goals with real-time heart rate and sleep monitoring.</p>
+      <a href="https://www.amazon.com/dp/B0BHZ6Y9P8?tag=dealdynamo360-20" target="_blank" rel="noopener noreferrer">
+        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Buy Now</button>
+      </a>
     </div>
 
-    <!-- Portable Powerbank -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-      <img src="https://m.media-amazon.com/images/I/61g6O74lRXL._AC_SL1500_.jpg" alt="Powerbank" class="w-full h-40 object-contain mb-4 rounded">
-      <h2 class="text-xl font-semibold mb-2">Portable Powerbank 10000mAh</h2>
-      <p class="text-gray-600 mb-4">Fast-charging powerbank to keep your devices running all day long.</p>
-      <a href="https://www.amazon.com/dp/B0C4K3NC3M?tag=dealdynamo360-20" target="_blank"
-        class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full">Buy Now</a>
+    <!-- Product 3 -->
+    <div class="rounded-2xl bg-white p-6 shadow">
+      <img src="https://m.media-amazon.com/images/I/61hyX8N28FL._AC_SL1500_.jpg" alt="Powerbank" class="mb-4 h-40 mx-auto" />
+      <h2 class="text-xl font-bold mb-2">Portable Powerbank 10000mAh</h2>
+      <p class="mb-4 text-gray-700">Fast-charging powerbank to keep your devices running all day long.</p>
+      <a href="https://www.amazon.com/dp/B0C4K3NC3M?tag=dealdynamo360-20" target="_blank" rel="noopener noreferrer">
+        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Buy Now</button>
+      </a>
     </div>
-  </main>
+  </div>
 
+  <!-- Footer with Social Links -->
   <footer class="bg-gray-800 text-white text-center py-6">
-    <div class="flex justify-center gap-6 mb-2">
-      <a href="https://www.youtube.com/@DealDynamo360" target="_blank" title="YouTube">
-        <img src="https://img.icons8.com/ios-filled/25/ffffff/youtube-play.png" alt="YouTube" />
-      </a>
-      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank" title="TikTok">
-        <img src="https://img.icons8.com/ios-filled/25/ffffff/tiktok--v1.png" alt="TikTok" />
-      </a>
-      <a href="https://www.instagram.com/dealdynamo360" target="_blank" title="Instagram">
-        <img src="https://img.icons8.com/ios-filled/25/ffffff/instagram-new.png" alt="Instagram" />
-      </a>
+    <p>Follow us:</p>
+    <div class="flex justify-center space-x-4 mt-2">
+      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a>
+      <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a>
+      <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a>
     </div>
-    <p class="text-sm">&copy; 2025 DealDynamo. All rights reserv
+    <p class="mt-4">&copy; 2025 DealDynamo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
