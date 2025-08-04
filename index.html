@@ -2,59 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DealDynamo - Top Tech Deals</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DealDynamo360 - Top Tech Deals</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
 </head>
-<body class="bg-gray-100 font-sans">
-  <!-- Hero Section -->
-  <section class="bg-green-700 text-white text-center py-12">
-    <h1 class="text-4xl font-bold mb-4">Top Deals This Week</h1>
-    <p class="text-lg">Your source for the hottest tech deals, updated daily.</p>
-  </section>
-
-  <!-- Product Section -->
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-8 py-12">
-    <!-- Product 1 -->
-    <div class="rounded-2xl bg-white p-6 shadow">
-      <img src="https://m.media-amazon.com/images/I/61u48FEs2QL._AC_SL1500_.jpg" alt="Wireless Headphones" class="mb-4 h-40 mx-auto" />
-      <h2 class="text-xl font-bold mb-2">Noise-Cancelling Wireless Headphones</h2>
-      <p class="mb-4 text-gray-700">Experience crystal-clear sound and 40+ hour battery life.</p>
-      <a href="https://www.amazon.com/dp/B0C2W7M8D1?tag=dealdynamo360-20" target="_blank" rel="noopener noreferrer">
-        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Buy Now</button>
-      </a>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-indigo-700 text-white py-6">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl font-bold">💥 DealDynamo360</h1>
+      <p class="text-sm mt-2">Top Tech Deals This Week</p>
     </div>
+  </header>
 
-    <!-- Product 2 -->
-    <div class="rounded-2xl bg-white p-6 shadow">
-      <img src="https://m.media-amazon.com/images/I/61RzEdKX3lL._AC_SL1500_.jpg" alt="Smartwatch" class="mb-4 h-40 mx-auto" />
-      <h2 class="text-xl font-bold mb-2">Smart Fitness Watch</h2>
-      <p class="mb-4 text-gray-700">Track your fitness goals with real-time heart rate and sleep monitoring.</p>
-      <a href="https://www.amazon.com/dp/B0BHZ6Y9P8?tag=dealdynamo360-20" target="_blank" rel="noopener noreferrer">
-        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Buy Now</button>
-      </a>
-    </div>
+  <main class="container mx-auto px-4 py-10">
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Wireless Headphones -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://m.media-amazon.com/images/I/61PhOeXcBKL._AC_SL1500_.jpg" alt="Wireless Headphones" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2">Wireless Headphones</h2>
+          <p class="text-sm mb-4">Noise-cancelling wireless headphones with 40+ hours of battery life.</p>
+          <a href="https://www.amazon.com/dp/B0C2W7M8D1?tag=dealdynamo360-20" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded">Buy Now</a>
+        </div>
+      </div>
 
-    <!-- Product 3 -->
-    <div class="rounded-2xl bg-white p-6 shadow">
-      <img src="https://m.media-amazon.com/images/I/61hyX8N28FL._AC_SL1500_.jpg" alt="Powerbank" class="mb-4 h-40 mx-auto" />
-      <h2 class="text-xl font-bold mb-2">Portable Powerbank 10000mAh</h2>
-      <p class="mb-4 text-gray-700">Fast-charging powerbank to keep your devices running all day long.</p>
-      <a href="https://www.amazon.com/dp/B0C4K3NC3M?tag=dealdynamo360-20" target="_blank" rel="noopener noreferrer">
-        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Buy Now</button>
-      </a>
-    </div>
-  </div>
+      <!-- Smartwatch -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://m.media-amazon.com/images/I/61ZLnbvK3ZL._AC_SL1500_.jpg" alt="Smartwatch" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2">Smartwatch</h2>
+          <p class="text-sm mb-4">Stay connected on the go with this full-featured fitness smartwatch.</p>
+          <a href="https://www.amazon.com/dp/B0BHZ6Y9P8?tag=dealdynamo360-20" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded">Buy Now</a>
+        </div>
+      </div>
 
-  <!-- Footer with Social Links -->
-  <footer class="bg-gray-800 text-white text-center py-6">
-    <p>Follow us:</p>
-    <div class="flex justify-center space-x-4 mt-2">
-      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a>
-      <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a>
-      <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a>
+      <!-- Portable Powerbank -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://m.media-amazon.com/images/I/61ZcWWKZgKL._AC_SL1500_.jpg" alt="Portable Powerbank" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2">Portable Powerbank</h2>
+          <p class="text-sm mb-4">Ultra-fast charging 20000mAh power bank with USB-C output.</p>
+          <a href="https://www.amazon.com/dp/B0C4K3NC3M?tag=dealdynamo360-20" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded">Buy Now</a>
+        </div>
+      </div>
     </div>
-    <p class="mt-4">&copy; 2025 DealDynamo. All rights reserved.</p>
+  </main>
+
+  <!-- Footer with Socials -->
+  <footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="container mx-auto text-center">
+      <p class="mb-2">Follow Us</p>
+      <div class="flex justify-center space-x-6">
+        <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a>
+        <a href="https://www.youtube.com/@dealdynamo360" target="_blank">YouTube</a>
+      </div>
+      <p class="text-xs mt-4">&copy; 2025 DealDynamo360. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
