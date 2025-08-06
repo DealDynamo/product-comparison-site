@@ -2,160 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DealDynamo360 - Top Weekly Deals</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DealDynamo360</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-    }
-
     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       color: #333;
-      line-height: 1.6;
     }
-
     header {
       background-color: #000;
-      color: #fff;
-      padding: 2rem 1rem;
+      padding: 20px;
       text-align: center;
-      position: relative;
     }
-
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
       color: #ffa500;
+      margin: 0;
     }
-
-    .overlay-graphic {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      width: 100px;
-      opacity: 0.85;
-      border-radius: 8px;
+    header p {
+      color: white;
+      margin: 5px 0 0;
+      font-size: 14px;
     }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
+    .product-section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+      background-color: white;
     }
-
     .product {
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 16px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      background-color: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 220px;
+      margin: 15px;
+      padding: 15px;
       text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
-    .product img {
-      width: 100px;
-      height: auto;
-      margin-bottom: 1rem;
+    .product i {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #444;
     }
-
-    .product h2 {
-      font-size: 1.3rem;
-      color: #222;
-      margin-bottom: 0.5rem;
+    .product h3 {
+      margin: 10px 0 5px;
+      font-size: 16px;
     }
-
     .product p {
-      font-size: 0.95rem;
-      color: #666;
-      margin-bottom: 1rem;
+      font-size: 14px;
+      color: #555;
     }
-
-    .product a {
+    .buy-btn {
       display: inline-block;
-      background: #ff6600;
-      color: #fff;
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #ffa500;
+      color: white;
+      border: none;
+      border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s ease;
     }
-
-    .product a:hover {
-      background: #e65c00;
-    }
-
     footer {
-      text-align: center;
-      padding: 2rem 1rem 1rem;
       background-color: #111;
-      color: #fff;
-    }
-
-    footer a {
+      text-align: center;
       color: #ffa500;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 1.2rem;
+      padding: 10px;
+      font-size: 14px;
     }
-
-    footer a:hover {
-      text-decoration: underline;
+    .socials a {
+      margin: 0 10px;
+      color: #ffa500;
+      text-decoration: none;
+    }
+    .overlay {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 999;
+      background: url('https://vercel-graphic-placeholder.com/overlay.png') no-repeat;
+      background-size: contain;
+      width: 300px;
+      height: 100px;
+      pointer-events: none;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>DealDynamo360</h1>
-    <p>🔥 This Week’s Hottest Deals 🔥</p>
-    <img src="https://dealdynamo360.s3.amazonaws.com/52184dd2-2afe-40f5-9028-2b861f86cc34.png" alt="Graphic Overlay" class="overlay-graphic" />
+    <p>This Week's Hottest Deals 🔥</p>
   </header>
 
-  <section class="products">
+  <div class="product-section">
     <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61gYVt+uNtL._AC_SL1500_.jpg" alt="Wireless Headphones" />
-      <h2>Wireless Headphones</h2>
-      <p>Noise-cancelling with 40+ hour battery life.</p>
-      <a href="https://www.amazon.com/dp/B0C2W7M8D1?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+      <i class="fa-solid fa-headphones"></i>
+      <h3>Wireless Headphones</h3>
+      <p>Noise cancelling with 40hr battery life.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B0C2W7M8D1?tag=dealdynamo360-20" target="_blank">Buy Now</a>
     </div>
 
     <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61D+1ZZk5GL._AC_SL1500_.jpg" alt="Bluetooth Earbuds" />
-      <h2>Bluetooth Earbuds</h2>
-      <p>Crystal-clear audio, sweatproof & ergonomic.</p>
-      <a href="https://www.amazon.com/dp/B0BHZ6Y9P8?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+      <i class="fa-solid fa-ear-listen"></i>
+      <h3>Bluetooth Earbuds</h3>
+      <p>Crystal clear audio, waterproof & ergonomic.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B0BHZ6Y9P8?tag=dealdynamo360-20" target="_blank">Buy Now</a>
     </div>
 
     <div class="product">
-      <img src="https://m.media-amazon.com/images/I/71TqI+sbZxL._AC_SL1500_.jpg" alt="Smartwatch" />
-      <h2>Smartwatch</h2>
-      <p>Track health, sleep, steps & notifications.</p>
-      <a href="https://www.amazon.com/dp/B0C4K3NC3M?tag=dealdynamo360-20" target="_blank">Buy Now</a>
+      <i class="fa-solid fa-watch-smart"></i>
+      <h3>Smartwatch</h3>
+      <p>Track health, steps, sleep & more.</p>
+      <a class="buy-btn" href="https://www.amazon.com/dp/B0C4K3NC3M?tag=dealdynamo360-20" target="_blank">Buy Now</a>
     </div>
 
     <div class="product">
-      <img src="https://m.media-amazon.com/images/I/51y5HkDbVCL._AC_SL1000_.jpg" alt="Portable Powerbank" />
-      <h2>Portable Powerbank</h2>
-      <p>Fast-charging, ultra-compact with LED display.</p>
-      <a href="https://www.amazon.com/s?k=portable+powerbank&tag=dealdynamo360-20" target="_blank">Buy Now</a>
+      <i class="fa-solid fa-battery-full"></i>
+      <h3>Portable Powerbank</h3>
+      <p>Fast charging, slim compact with LED indicator.</p>
+      <a class="buy-btn" href="https://www.amazon.com/s?k=Portable+Powerbank&tag=dealdynamo360-20" target="_blank">Buy Now</a>
     </div>
-  </section>
+  </div>
 
   <footer>
-    <p>© 2025 DealDynamo360. All rights reserved.</p>
-    <div>
+    <p>&copy; 2025 DealDynamo360. All rights reserved.</p>
+    <div class="socials">
       <a href="https://www.facebook.com/profile.php?id=61577988074170" target="_blank">Facebook</a>
       <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a>
       <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a>
@@ -163,5 +138,7 @@
     </div>
   </footer>
 
+  <!-- Optional Overlay to Hide Gmail -->
+  <div class="overlay"></div>
 </body>
 </html>
