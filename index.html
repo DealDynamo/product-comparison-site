@@ -1,139 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DealDynamo360</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #000;
-      color: white;
-      padding: 20px 10px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .product {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .product img {
-      width: 100%;
-      height: 200px;
-      object-fit: contain;
-      background: #f0f0f0;
-    }
-    .product-info {
-      padding: 15px;
-    }
-    .product-info h2 {
-      font-size: 1.1em;
-      margin: 0 0 10px;
-    }
-    .buy-btn {
-      display: block;
-      text-align: center;
-      background: #e63946;
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      font-weight: bold;
-      border-top: 1px solid #ccc;
-    }
-    footer {
-      background: #000;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-    }
-    .socials a {
-      margin: 0 10px;
-      color: white;
-      text-decoration: none;
-    }
-    .overlay {
-      background-image: url('https://dealdynamo360.vercel.app/banner-clean.png');
-      background-size: cover;
-      height: 200px;
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DealDynamo360</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #111, #444);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+        .product {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .product h3 {
+            margin: 0.5rem 0;
+        }
+        .product p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .buy-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.2rem;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+        .buy-btn:hover {
+            background: #218838;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+        .socials a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 <body>
-
-  <header>
-    <h1>🔥 Top Tech Deals This Week 🔥</h1>
-  </header>
-
-  <div class="overlay"></div>
-
-  <main class="products">
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61sZ9UMwYuL._AC_SL1500_.jpg" alt="Wireless Headphones">
-      <div class="product-info">
-        <h2>Wireless Headphones</h2>
-        <p>Noise cancelling with 40hr battery life.</p>
-      </div>
-      <a class="buy-btn" href="https://www.amazon.com/dp/B09V3HN1YZ?tag=dealdynamo360-20" target="_blank">Buy Now</a>
-    </div>
-
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/71k3gOik46L._AC_SL1500_.jpg" alt="Bluetooth Earbuds">
-      <div class="product-info">
-        <h2>Bluetooth Earbuds</h2>
-        <p>Crystal clear audio, waterproof & ergonomic.</p>
-      </div>
-      <a class="buy-btn" href="https://www.amazon.com/dp/B0C5YV8VXX?tag=dealdynamo360-20" target="_blank">Buy Now</a>
-    </div>
-
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61uL04bE2EL._AC_SL1500_.jpg" alt="Smartwatch">
-      <div class="product-info">
-        <h2>Smartwatch</h2>
-        <p>Track health, steps, sleep & more.</p>
-      </div>
-      <a class="buy-btn" href="https://www.amazon.com/dp/B0B1H8PKC3?tag=dealdynamo360-20" target="_blank">Buy Now</a>
-    </div>
-
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/61aNnN8LkGL._AC_SL1500_.jpg" alt="Portable Powerbank">
-      <div class="product-info">
-        <h2>Portable Powerbank</h2>
-        <p>Fast charging, slim compact with LED indicator.</p>
-      </div>
-      <a class="buy-btn" href="https://www.amazon.com/s?k=Portable+Powerbank&tag=dealdynamo360-20" target="_blank">Buy Now</a>
-    </div>
-  </main>
-
-  <footer>
-    <p>Follow us for daily deals:</p>
-    <div class="socials">
-      <a href="https://www.facebook.com/profile.php?id=61577988074170" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a> |
-      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a> |
-      <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a>
-    </div>
-    <p>&copy; 2025 DealDynamo360. All rights reserved.</p>
-  </footer>
-
+    <header>
+        <h1>🔥 DealDynamo360 🔥</h1>
+        <p>Top Trending Tech Deals – Updated Daily</p>
+    </header>
+    <section class="products">
+        <div class="product">
+            <h3>🎧 Wireless Headphones</h3>
+            <p>Noise cancelling with 40hr battery life.</p>
+            <a class="buy-btn" href="https://www.amazon.com/s?k=wireless+headphones&tag=dealdynamo360-20" target="_blank">Buy Now</a>
+        </div>
+        <div class="product">
+            <h3>🎵 Bluetooth Earbuds</h3>
+            <p>Crystal clear audio, waterproof & ergonomic.</p>
+            <a class="buy-btn" href="https://www.amazon.com/s?k=bluetooth+earbuds&tag=dealdynamo360-20" target="_blank">Buy Now</a>
+        </div>
+        <div class="product">
+            <h3>⌚ Smartwatch</h3>
+            <p>Track health, steps, sleep & more.</p>
+            <a class="buy-btn" href="https://www.amazon.com/s?k=smartwatch&tag=dealdynamo360-20" target="_blank">Buy Now</a>
+        </div>
+        <div class="product">
+            <h3>🔋 Portable Powerbank</h3>
+            <p>Fast charging, slim compact with LED indicator.</p>
+            <a class="buy-btn" href="https://www.amazon.com/s?k=portable+powerbank&tag=dealdynamo360-20" target="_blank">Buy Now</a>
+        </div>
+    </section>
+    <footer>
+        <p>Follow us for more hot deals!</p>
+        <div class="socials">
+            <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a>
+            <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a>
+            <a href="https://www.facebook.com/profile.php?id=61577988074170" target="_blank">Facebook</a>
+        </div>
+    </footer>
 </body>
 </html>
