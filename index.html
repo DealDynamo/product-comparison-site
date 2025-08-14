@@ -3,134 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DealDynamo360 - Top Weekly Deals</title>
-  <meta name="description" content="DealDynamo360 — curated trending affiliate deals from Amazon and digital offers like Mitolyn. Updated weekly!" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>DealDynamo360 — Top Weekly Deals</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+
   <style>
-    :root {
-      --accent: #ff6600;
-      --accent-dark: #e65c00;
-      --muted: #555;
-      --card-bg: #fff;
-      --page-bg: #f4f4f4;
+    :root{
+      --bg:#f6f7fb;
+      --fg:#222;
+      --muted:#556;
+      --accent:#ff6f00;
+      --card:#fff;
+      --shadow:0 8px 24px rgba(0,0,0,.08);
+      --radius:18px;
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
-      background: var(--page-bg);
-      color: #222;
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+    a{text-decoration:none}
+    img{display:block;max-width:100%;height:auto}
+
+    /* Header */
+    header{
+      background:#000; color:#fff; text-align:center; padding:28px 16px;
+      position:sticky; top:0; z-index:10;
     }
-    header {
-      background: #000;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+    header h1{margin:0;font-size:2.2rem;letter-spacing:.2px}
+    header p{margin:.5rem 0 0;color:#ffa500;font-weight:600}
+
+    /* Hero */
+    .hero{
+      position:relative; overflow:hidden; border-radius:0 0 28px 28px;
+      background:#0b0b0b;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    .hero::before{
+      content:""; position:absolute; inset:0;
+      background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      opacity:.35; filter:contrast(1.05) saturate(1.1);
     }
-    header p {
-      margin: 8px 0 0;
-      color: var(--accent);
-      font-weight: 600;
+    .hero-inner{
+      position:relative; padding:60px 18px; text-align:center; color:#fff;
+      max-width:1100px; margin:0 auto;
     }
-    .container {
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 0 16px;
+    .hero h2{font-size:1.9rem; margin:0 0 .4rem}
+    .hero p{margin:0; opacity:.9}
+
+    /* Sections */
+    .section{
+      max-width:1200px; margin:28px auto; padding:0 18px;
     }
-    .intro {
-      background: var(--card-bg);
-      padding: 16px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      text-align: center;
-      margin-bottom: 24px;
-      font-size: 1rem;
-      color: var(--muted);
+    .section h3{
+      font-size:1.4rem; margin:6px 4px 14px; color:var(--muted);
+      font-weight:800; letter-spacing:.3px;
     }
-    .featured-aff {
-      background: var(--card-bg);
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 20px;
-      text-align: center;
-      margin-bottom: 24px;
+
+    /* Product grid */
+    .grid{
+      display:grid; gap:22px;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     }
-    .featured-aff img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 12px;
-      background: #fafafa;
+    .card{
+      background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow);
+      padding:16px; display:flex; flex-direction:column; justify-content:space-between;
+      transition:transform .2s ease, box-shadow .2s ease;
     }
-    .featured-aff h2 {
-      font-size: 1.3rem;
-      margin: 0 0 8px;
+    .card:hover{ transform:translateY(-3px); box-shadow:0 10px 28px rgba(0,0,0,.1); }
+    .thumb{
+      border-radius:14px; overflow:hidden; aspect-ratio: 1.4 / 1; background:#eef1f6; margin-bottom:12px;
     }
-    .featured-aff p {
-      font-size: 0.95rem;
-      color: var(--muted);
-      margin-bottom: 12px;
+    .title{font-size:1.05rem; font-weight:800; margin:2px 0 6px}
+    .desc{font-size:.95rem; color:#555; margin:0 0 14px; min-height:42px}
+    .cta{
+      display:inline-block; align-self:center; margin-top:auto;
+      background:var(--accent); color:#fff; padding:12px 18px; border-radius:12px;
+      font-weight:800; letter-spacing:.2px;
     }
-    .buy-btn {
-      background: var(--accent);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-block;
+    .cta:hover{ filter:brightness(0.95); }
+
+    /* Footer */
+    footer{
+      margin-top:40px; background:#111; color:#ddd; text-align:center; padding:30px 16px;
     }
-    .buy-btn:hover {
-      background: var(--accent-dark);
+    .social{
+      margin:10px 0 0; display:flex; gap:14px; justify-content:center; flex-wrap:wrap;
     }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-      gap: 20px;
-      margin-bottom: 24px;
-    }
-    .product {
-      background: var(--card-bg);
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      padding: 16px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .product img {
-      width: 100%;
-      height: 180px;
-      object-fit: contain;
-      border-radius: 8px;
-      background: #f9f9f9;
-      margin-bottom: 12px;
-    }
-    .product h2 {
-      font-size: 1.1rem;
-      margin: 8px 0 6px;
-    }
-    .product p {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-    footer {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    .socials a {
-      margin: 0 8px;
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
+    .social a{ color:#ffa500; font-weight:700; }
+    .disclaimer{
+      font-size:.8rem; color:#aaa; max-width:900px; margin:16px auto 0;
     }
   </style>
 </head>
@@ -138,59 +97,109 @@
 
   <header>
     <h1>DealDynamo360</h1>
-    <p>Your Weekly Dose of Trending Deals</p>
+    <p>🔥 This Week’s Hottest Deals 🔥</p>
   </header>
 
-  <div class="container">
-    <section class="intro">
-      Welcome to DealDynamo360 — your hub for top Amazon and digital affiliate deals. Curated weekly, tracked securely, and updated with live links. Shop smart, save more.
-    </section>
+  <!-- HERO (background Gmail image fully covered by this section) -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h2>Top Tech & Trending Offers</h2>
+      <p>Curated daily. Limited-time savings. Click through to grab yours now.</p>
+    </div>
+  </section>
 
-    <!-- Featured ClickBank Offer -->
-    <section class="featured-aff">
-      <img src="https://images.openai.com/thumbnails/url/ZPnMe3icu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4yzvNxDCr08AhxTPYt9tdNMimv8Pb1tSxzrzIqKnTLKyj3SC8pS3T2r0zLCHUO93ZxTE3M0vU2Si81DFQrBgAadCns" alt="Mitolyn Supplement Bottle">
-      <h2>Mitolyn – Metabolic Power Formula</h2>
-      <p>Boost your metabolism and energy with this mitochondrial support supplement—packed with six exotic nutrient blends and backed by a 90-day money-back guarantee.</p>
-      <a class="buy-btn" href="https://bc80f3m7x38d0a2erp15-iat10.hop.clickbank.net" target="_blank" rel="noopener">Buy Now</a>
-    </section>
+  <!-- AMAZON TOP PICKS (kept to the previously working search-style links) -->
+  <section class="section">
+    <h3>Amazon — Top Picks</h3>
+    <div class="grid">
 
-    <!-- Existing Amazon Product Grid -->
-    <section class="products">
-      <div class="product">
-        <img src="https://m.media-amazon.com/images/I/61sZ9UMwYuL._AC_SL1500_.jpg" alt="Wireless Headphones">
-        <h2>Wireless Headphones</h2>
-        <p>Noise cancelling with 40hr battery life.</p>
-        <a class="buy-btn" href="https://www.amazon.com/s?k=wireless+headphones&tag=dealdynamo360-20" target="_blank" rel="noopener">Buy Now</a>
-      </div>
-      <div class="product">
-        <img src="https://m.media-amazon.com/images/I/71Q0lS9eTRL._AC_SL1500_.jpg" alt="Bluetooth Earbuds">
-        <h2>Bluetooth Earbuds</h2>
-        <p>Crystal clear audio, sweatproof & ergonomic.</p>
-        <a class="buy-btn" href="https://www.amazon.com/s?k=bluetooth+earbuds&tag=dealdynamo360-20" target="_blank" rel="noopener">Buy Now</a>
-      </div>
-      <div class="product">
-        <img src="https://m.media-amazon.com/images/I/61uL04bE2EL._AC_SL1500_.jpg" alt="Smartwatch">
-        <h2>Smartwatch</h2>
-        <p>Track health, steps, sleep & notifications.</p>
-        <a class="buy-btn" href="https://www.amazon.com/s?k=smartwatch&tag=dealdynamo360-20" target="_blank" rel="noopener">Buy Now</a>
-      </div>
-      <div class="product">
-        <img src="https://m.media-amazon.com/images/I/61aNnN8LkGL._AC_SL1500_.jpg" alt="Portable Powerbank">
-        <h2>Portable Powerbank</h2>
-        <p>Fast charging, slim compact with LED indicator.</p>
-        <a class="buy-btn" href="https://www.amazon.com/s?k=portable+powerbank&tag=dealdynamo360-20" target="_blank" rel="noopener">Buy Now</a>
-      </div>
-    </section>
-  </div>
+      <article class="card">
+        <div class="thumb">
+          <img src="https://m.media-amazon.com/images/I/61Zs0RVdKFL._AC_SX679_.jpg" alt="Wireless Headphones">
+        </div>
+        <h4 class="title">Wireless Headphones</h4>
+        <p class="desc">Noise-cancelling with 40+ hour battery life.</p>
+        <a class="cta" target="_blank" rel="nofollow noopener sponsored"
+           href="https://www.amazon.com/s?k=Wireless+Headphones&tag=dealdynamo360-20">Buy Now</a>
+      </article>
 
+      <article class="card">
+        <div class="thumb">
+          <img src="https://m.media-amazon.com/images/I/61TOWr1rgSL._AC_SX679_.jpg" alt="Bluetooth Earbuds">
+        </div>
+        <h4 class="title">Bluetooth Earbuds</h4>
+        <p class="desc">Crystal-clear audio, sweatproof & ergonomic.</p>
+        <a class="cta" target="_blank" rel="nofollow noopener sponsored"
+           href="https://www.amazon.com/s?k=B0C2W7M8D1&tag=dealdynamo360-20">Buy Now</a>
+      </article>
+
+      <article class="card">
+        <div class="thumb">
+          <img src="https://m.media-amazon.com/images/I/61GWrcO-m7L._AC_SX679_.jpg" alt="Smartwatch">
+        </div>
+        <h4 class="title">Smartwatch</h4>
+        <p class="desc">Track health, sleep, steps & notifications.</p>
+        <a class="cta" target="_blank" rel="nofollow noopener sponsored"
+           href="https://www.amazon.com/s?k=B0BHZ6Y9P8&tag=dealdynamo360-20">Buy Now</a>
+      </article>
+
+      <article class="card">
+        <div class="thumb">
+          <img src="https://m.media-amazon.com/images/I/51y5HkDbVCL._AC_SL1000_.jpg" alt="Portable Powerbank">
+        </div>
+        <h4 class="title">Portable Powerbank</h4>
+        <p class="desc">Fast-charging, ultra-compact with LED display.</p>
+        <a class="cta" target="_blank" rel="nofollow noopener sponsored"
+           href="https://www.amazon.com/s?k=B0C4K3NC3M&tag=dealdynamo360-20">Buy Now</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CLICKBANK / OTHER AFFILIATES -->
+  <section class="section">
+    <h3>Featured Partner Offers</h3>
+    <div class="grid">
+
+      <!-- ClickBank (Mitolyn) -->
+      <article class="card">
+        <div class="thumb">
+          <!-- Using a reliable hosted image; replace with merchant-provided later if desired -->
+          <img src="https://images.unsplash.com/photo-1599050751795-5cda3c11b4e5?q=80&w=1200&auto=format&fit=crop" alt="Mitolyn Supplement">
+        </div>
+        <h4 class="title">Mitolyn — Metabolic Support</h4>
+        <p class="desc">Popular supplement in the wellness niche. Explore formula & benefits.</p>
+        <a class="cta" target="_blank" rel="nofollow noopener sponsored"
+           href="https://bc80f3m7x38d0a2erp15-iat10.hop.clickbank.net">Buy Now</a>
+      </article>
+
+      <!-- Digistore (GlucoTrust) -->
+      <article class="card">
+        <div class="thumb">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="GlucoTrust Supplement">
+        </div>
+        <h4 class="title">GlucoTrust — Support Formula</h4>
+        <p class="desc">Top-ranked offer. Learn how it may support healthy routines.</p>
+        <a class="cta" target="_blank" rel="nofollow noopener sponsored"
+           href="https://glucotrustfr.co/decouverte/#aff=DealDynamo360">Buy Now</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 DealDynamo360. All rights reserved.</p>
-    <div>
-      <a class="socials" href="https://www.facebook.com/profile.php?id=61577988074170" target="_blank" rel="noopener">Facebook</a> |
-      <a class="socials" href="https://www.instagram.com/dealdynamo360" target="_blank" rel="noopener">Instagram</a> |
-      <a class="socials" href="https://www.tiktok.com/@dealdynamo360" target="_blank" rel="noopener">TikTok</a> |
-      <a class="socials" href="https://www.youtube.com/@DealDynamo360" target="_blank" rel="noopener">YouTube</a>
+    <div class="social">
+      <a href="https://www.facebook.com/profile.php?id=61577988074170" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/dealdynamo360" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.youtube.com/@DealDynamo360" target="_blank" rel="noopener">YouTube</a>
     </div>
+    <p class="disclaimer">
+      Disclosure: Some links are affiliate links. We may earn a commission at no extra cost to you.
+      Prices and availability are subject to change. Always check the final price on the merchant’s page.
+    </p>
   </footer>
 
 </body>
