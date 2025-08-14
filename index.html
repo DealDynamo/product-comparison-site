@@ -1,206 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DealDynamo360 — Top Weekly Deals</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
-
-  <style>
-    :root{
-      --bg:#f6f7fb;
-      --fg:#222;
-      --muted:#556;
-      --accent:#ff6f00;
-      --card:#fff;
-      --shadow:0 8px 24px rgba(0,0,0,.08);
-      --radius:18px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg)}
-    a{text-decoration:none}
-    img{display:block;max-width:100%;height:auto}
-
-    /* Header */
-    header{
-      background:#000; color:#fff; text-align:center; padding:28px 16px;
-      position:sticky; top:0; z-index:10;
-    }
-    header h1{margin:0;font-size:2.2rem;letter-spacing:.2px}
-    header p{margin:.5rem 0 0;color:#ffa500;font-weight:600}
-
-    /* Hero */
-    .hero{
-      position:relative; overflow:hidden; border-radius:0 0 28px 28px;
-      background:#0b0b0b;
-    }
-    .hero::before{
-      content:""; position:absolute; inset:0;
-      background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
-      opacity:.35; filter:contrast(1.05) saturate(1.1);
-    }
-    .hero-inner{
-      position:relative; padding:60px 18px; text-align:center; color:#fff;
-      max-width:1100px; margin:0 auto;
-    }
-    .hero h2{font-size:1.9rem; margin:0 0 .4rem}
-    .hero p{margin:0; opacity:.9}
-
-    /* Sections */
-    .section{
-      max-width:1200px; margin:28px auto; padding:0 18px;
-    }
-    .section h3{
-      font-size:1.4rem; margin:6px 4px 14px; color:var(--muted);
-      font-weight:800; letter-spacing:.3px;
-    }
-
-    /* Product grid */
-    .grid{
-      display:grid; gap:22px;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    }
-    .card{
-      background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow);
-      padding:16px; display:flex; flex-direction:column; justify-content:space-between;
-      transition:transform .2s ease, box-shadow .2s ease;
-    }
-    .card:hover{ transform:translateY(-3px); box-shadow:0 10px 28px rgba(0,0,0,.1); }
-    .thumb{
-      border-radius:14px; overflow:hidden; aspect-ratio: 1.4 / 1; background:#eef1f6; margin-bottom:12px;
-    }
-    .title{font-size:1.05rem; font-weight:800; margin:2px 0 6px}
-    .desc{font-size:.95rem; color:#555; margin:0 0 14px; min-height:42px}
-    .cta{
-      display:inline-block; align-self:center; margin-top:auto;
-      background:var(--accent); color:#fff; padding:12px 18px; border-radius:12px;
-      font-weight:800; letter-spacing:.2px;
-    }
-    .cta:hover{ filter:brightness(0.95); }
-
-    /* Footer */
-    footer{
-      margin-top:40px; background:#111; color:#ddd; text-align:center; padding:30px 16px;
-    }
-    .social{
-      margin:10px 0 0; display:flex; gap:14px; justify-content:center; flex-wrap:wrap;
-    }
-    .social a{ color:#ffa500; font-weight:700; }
-    .disclaimer{
-      font-size:.8rem; color:#aaa; max-width:900px; margin:16px auto 0;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DealDynamo360 - Best Online Deals</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+    header { background: #111; color: white; padding: 20px; text-align: center; }
+    h1 { margin: 0; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+    .product-card { background: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+    .product-card img { max-width: 100%; height: auto; border-radius: 8px; }
+    .product-card h2 { font-size: 18px; margin: 10px 0; }
+    .product-card p { font-size: 14px; color: #555; }
+    .buy-btn { display: inline-block; background: #ff6600; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    .buy-btn:hover { background: #e55a00; }
+</style>
 </head>
 <body>
 
-  <header>
+<header>
     <h1>DealDynamo360</h1>
-    <p>🔥 This Week’s Hottest Deals 🔥</p>
-  </header>
+    <p>Your Best Source for Top Affiliate Deals</p>
+</header>
 
-  <!-- HERO (background Gmail image fully covered by this section) -->
-  <section class="hero">
-    <div class="hero-inner">
-      <h2>Top Tech & Trending Offers</h2>
-      <p>Curated daily. Limited-time savings. Click through to grab yours now.</p>
+<section class="product-grid">
+
+    <!-- GlucoTrust -->
+    <div class="product-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Glucotrust.jpg" alt="GlucoTrust">
+        <h2>GlucoTrust - Blood Sugar & Health Support</h2>
+        <p>Blend of herbs and vitamins designed to support healthy blood sugar and improve cardiovascular health.</p>
+        <a class="buy-btn" href="https://glucotrustfr.co/decouverte/#aff=DealDynamo360" target="_blank">Buy Now</a>
     </div>
-  </section>
 
-  <!-- AMAZON TOP PICKS (kept to the previously working search-style links) -->
-  <section class="section">
-    <h3>Amazon — Top Picks</h3>
-    <div class="grid">
-
-      <article class="card">
-        <div class="thumb">
-          <img src="https://m.media-amazon.com/images/I/61Zs0RVdKFL._AC_SX679_.jpg" alt="Wireless Headphones">
-        </div>
-        <h4 class="title">Wireless Headphones</h4>
-        <p class="desc">Noise-cancelling with 40+ hour battery life.</p>
-        <a class="cta" target="_blank" rel="nofollow noopener sponsored"
-           href="https://www.amazon.com/s?k=Wireless+Headphones&tag=dealdynamo360-20">Buy Now</a>
-      </article>
-
-      <article class="card">
-        <div class="thumb">
-          <img src="https://m.media-amazon.com/images/I/61TOWr1rgSL._AC_SX679_.jpg" alt="Bluetooth Earbuds">
-        </div>
-        <h4 class="title">Bluetooth Earbuds</h4>
-        <p class="desc">Crystal-clear audio, sweatproof & ergonomic.</p>
-        <a class="cta" target="_blank" rel="nofollow noopener sponsored"
-           href="https://www.amazon.com/s?k=B0C2W7M8D1&tag=dealdynamo360-20">Buy Now</a>
-      </article>
-
-      <article class="card">
-        <div class="thumb">
-          <img src="https://m.media-amazon.com/images/I/61GWrcO-m7L._AC_SX679_.jpg" alt="Smartwatch">
-        </div>
-        <h4 class="title">Smartwatch</h4>
-        <p class="desc">Track health, sleep, steps & notifications.</p>
-        <a class="cta" target="_blank" rel="nofollow noopener sponsored"
-           href="https://www.amazon.com/s?k=B0BHZ6Y9P8&tag=dealdynamo360-20">Buy Now</a>
-      </article>
-
-      <article class="card">
-        <div class="thumb">
-          <img src="https://m.media-amazon.com/images/I/51y5HkDbVCL._AC_SL1000_.jpg" alt="Portable Powerbank">
-        </div>
-        <h4 class="title">Portable Powerbank</h4>
-        <p class="desc">Fast-charging, ultra-compact with LED display.</p>
-        <a class="cta" target="_blank" rel="nofollow noopener sponsored"
-           href="https://www.amazon.com/s?k=B0C4K3NC3M&tag=dealdynamo360-20">Buy Now</a>
-      </article>
-
+    <!-- Mitolyn -->
+    <div class="product-card">
+        <img src="https://mitolyn.com/assets/images/mitolyn-bottle.png" alt="Mitolyn">
+        <h2>Mitolyn - Weight Loss Support</h2>
+        <p>Powerful weight loss supplement that supports metabolism and helps burn stubborn fat.</p>
+        <a class="buy-btn" href="https://bc80f3m7x38d0a2erp15-iat10.hop.clickbank.net" target="_blank">Buy Now</a>
     </div>
-  </section>
 
-  <!-- CLICKBANK / OTHER AFFILIATES -->
-  <section class="section">
-    <h3>Featured Partner Offers</h3>
-    <div class="grid">
-
-      <!-- ClickBank (Mitolyn) -->
-      <article class="card">
-        <div class="thumb">
-          <!-- Using a reliable hosted image; replace with merchant-provided later if desired -->
-          <img src="https://images.unsplash.com/photo-1599050751795-5cda3c11b4e5?q=80&w=1200&auto=format&fit=crop" alt="Mitolyn Supplement">
-        </div>
-        <h4 class="title">Mitolyn — Metabolic Support</h4>
-        <p class="desc">Popular supplement in the wellness niche. Explore formula & benefits.</p>
-        <a class="cta" target="_blank" rel="nofollow noopener sponsored"
-           href="https://bc80f3m7x38d0a2erp15-iat10.hop.clickbank.net">Buy Now</a>
-      </article>
-
-      <!-- Digistore (GlucoTrust) -->
-      <article class="card">
-        <div class="thumb">
-          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="GlucoTrust Supplement">
-        </div>
-        <h4 class="title">GlucoTrust — Support Formula</h4>
-        <p class="desc">Top-ranked offer. Learn how it may support healthy routines.</p>
-        <a class="cta" target="_blank" rel="nofollow noopener sponsored"
-           href="https://glucotrustfr.co/decouverte/#aff=DealDynamo360">Buy Now</a>
-      </article>
-
+    <!-- Example Amazon Product -->
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71f5Eu5lJML._AC_SL1500_.jpg" alt="Noise Cancelling Headphones">
+        <h2>Noise Cancelling Headphones</h2>
+        <p>Experience immersive sound and block out distractions with high-quality noise cancellation.</p>
+        <a class="buy-btn" href="https://www.amazon.com/s?k=Noise+Cancelling+Headphones&tag=dealdynamo360-20" target="_blank">Buy Now</a>
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 DealDynamo360. All rights reserved.</p>
-    <div class="social">
-      <a href="https://www.facebook.com/profile.php?id=61577988074170" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://www.instagram.com/dealdynamo360" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank" rel="noopener">TikTok</a>
-      <a href="https://www.youtube.com/@DealDynamo360" target="_blank" rel="noopener">YouTube</a>
-    </div>
-    <p class="disclaimer">
-      Disclosure: Some links are affiliate links. We may earn a commission at no extra cost to you.
-      Prices and availability are subject to change. Always check the final price on the merchant’s page.
-    </p>
-  </footer>
+</section>
 
 </body>
 </html>
