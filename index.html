@@ -8,7 +8,7 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #121212;
-      color: #fff;
+      color: #ffffff;
       margin: 0;
       padding: 0;
       text-align: center;
@@ -17,130 +17,148 @@
       padding: 20px;
     }
     header h1 {
-      font-size: 2em;
       color: #ff6600;
+      font-size: 2rem;
+      margin: 0;
     }
     header p {
-      font-size: 1.2em;
-      color: #ccc;
+      font-size: 1.2rem;
+      color: #ffcc99;
+      margin: 5px 0 20px;
     }
     .social-icons {
-      margin: 20px 0;
+      margin: 15px 0;
     }
     .social-icons a {
       margin: 0 10px;
-      text-decoration: none;
       color: #ff6600;
-      font-size: 24px;
+      font-size: 1.8rem;
+      transition: color 0.3s;
     }
-    .deals-container {
+    .social-icons a:hover {
+      color: #ffffff;
+    }
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       padding: 20px;
     }
-    .deal-card {
+    .card {
       background: #1e1e1e;
+      border-radius: 10px;
       padding: 15px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
-    .deal-card img {
+    .card img {
       width: 100%;
-      height: 140px;
-      object-fit: cover;
+      height: 120px;
+      object-fit: contain;
       border-radius: 8px;
-      margin-bottom: 10px;
     }
-    .deal-card h3 {
-      margin: 10px 0;
+    .card h3 {
       color: #ff6600;
+      margin: 10px 0 5px;
     }
-    .deal-card p {
-      font-size: 0.9em;
-      color: #ccc;
-      margin-bottom: 15px;
+    .card p {
+      font-size: 0.9rem;
+      color: #cccccc;
     }
-    .deal-card a {
+    .btn {
       display: inline-block;
-      padding: 10px 18px;
+      margin-top: 10px;
+      padding: 10px 20px;
       background: #ff6600;
-      color: #fff;
+      color: #ffffff;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 5px;
       font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #ff3300;
     }
     footer {
-      padding: 20px;
-      font-size: 0.8em;
-      color: #666;
-      margin-top: 30px;
+      margin: 30px 0 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer span {
+      position: fixed;
+      bottom: 10px;
+      right: 20px;
+      transform: rotate(-20deg);
+      color: #ff6600;
+      font-weight: bold;
+      opacity: 0.5;
     }
   </style>
-  <!-- FontAwesome for social icons -->
-  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <!-- ✅ Font Awesome stable CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
     <h1>DealDynamo360 - Great Deals</h1>
     <p>Top affiliate deals, updated daily</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/DealDynamo360" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.youtube.com/@DealDynamo360" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/dealdynamo360" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
   </header>
 
-  <div class="social-icons">
-    <a href="https://www.facebook.com/profile.php?id=61577988074170" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.youtube.com/@DealDynamo360" target="_blank"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.tiktok.com/@dealdynamo360" target="_blank"><i class="fab fa-tiktok"></i></a>
-    <a href="https://www.instagram.com/dealdynamo360" target="_blank"><i class="fab fa-instagram"></i></a>
-  </div>
-
-  <div class="deals-container">
-    <div class="deal-card">
-      <img src="https://via.placeholder.com/300x140" alt="Deal 1">
+  <main class="grid">
+    <!-- ClickBank Deals -->
+    <div class="card">
+      <img src="https://via.placeholder.com/250x120" alt="Deal 1">
       <h3>ClickBank Deal 1</h3>
       <p>Placeholder for product description.</p>
-      <a href="#">Buy Now</a>
+      <a href="#" class="btn">Buy Now</a>
     </div>
-    <div class="deal-card">
-      <img src="https://via.placeholder.com/300x140" alt="Deal 2">
+    <div class="card">
+      <img src="https://via.placeholder.com/250x120" alt="Deal 2">
       <h3>ClickBank Deal 2</h3>
       <p>Placeholder for product description.</p>
-      <a href="#">Buy Now</a>
+      <a href="#" class="btn">Buy Now</a>
     </div>
-    <div class="deal-card">
-      <img src="https://via.placeholder.com/300x140" alt="Deal 3">
+    <div class="card">
+      <img src="https://via.placeholder.com/250x120" alt="Deal 3">
       <h3>ClickBank Deal 3</h3>
       <p>Placeholder for product description.</p>
-      <a href="#">Buy Now</a>
+      <a href="#" class="btn">Buy Now</a>
     </div>
-    <div class="deal-card">
-      <img src="https://via.placeholder.com/300x140" alt="Deal 4">
+    <div class="card">
+      <img src="https://via.placeholder.com/250x120" alt="Deal 4">
       <h3>ClickBank Deal 4</h3>
       <p>Placeholder for product description.</p>
-      <a href="#">Buy Now</a>
+      <a href="#" class="btn">Buy Now</a>
     </div>
-    <div class="deal-card">
-      <img src="https://via.placeholder.com/300x140" alt="Deal 5">
+    <div class="card">
+      <img src="https://via.placeholder.com/250x120" alt="Deal 5">
       <h3>ClickBank Deal 5</h3>
       <p>Placeholder for product description.</p>
-      <a href="#">Buy Now</a>
+      <a href="#" class="btn">Buy Now</a>
     </div>
-    <div class="deal-card">
-      <img src="https://via.placeholder.com/300x140" alt="Deal 6">
+    <div class="card">
+      <img src="https://via.placeholder.com/250x120" alt="Deal 6">
       <h3>ClickBank Deal 6</h3>
       <p>Placeholder for product description.</p>
-      <a href="#">Buy Now</a>
+      <a href="#" class="btn">Buy Now</a>
     </div>
-    <div class="deal-card">
-      <img src="https://via.placeholder.com/300x140" alt="Amazon Deals">
+
+    <!-- Amazon Deals -->
+    <div class="card">
+      <img src="https://via.placeholder.com/250x120" alt="Amazon Deals">
       <h3>Amazon Trending Deals</h3>
       <p>Updated daily with Amazon affiliate offers.</p>
-      <a href="#">Shop Now</a>
+      <a href="https://www.amazon.com/s?k=trending+deals&tag=dealdynamo360-20" target="_blank" class="btn">Shop Now</a>
     </div>
-  </div>
+  </main>
 
   <footer>
-    © 2025 DealDynamo360. All rights reserved.
+    <p>© 2025 DealDynamo360. All rights reserved.</p>
+    <span>DealDynamo360</span>
   </footer>
 </body>
 </html>
