@@ -1,158 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DealDynamo360 - Smarter Shopping, Bigger Savings</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DealDynamo - Trending Deals</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- HEADER -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-indigo-600">DealDynamo360</h1>
-      <nav class="space-x-6 text-gray-700 font-medium">
-        <a href="#trending" class="hover:text-indigo-600">Trending</a>
-        <a href="#featured" class="hover:text-indigo-600">Featured</a>
-        <a href="#categories" class="hover:text-indigo-600">Categories</a>
-        <a href="#newsletter" class="hover:text-indigo-600">Newsletter</a>
-        <a href="how-we-earn.html" class="hover:text-indigo-600">How We Earn</a>
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow">
+    <div class="max-w-7xl mx-auto p-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">DealDynamo</h1>
+      <nav class="space-x-4">
+        <a href="#trending" class="hover:underline">Trending Deals</a>
+        <a href="#featured" class="hover:underline">Featured</a>
+        <a href="#newsletter" class="hover:underline">Newsletter</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="bg-indigo-600 text-white text-center py-16">
-    <h2 class="text-4xl font-bold mb-4">Smarter Shopping, Bigger Savings</h2>
-    <p class="text-lg mb-6">Discover top deals on trending products, curated just for you.</p>
-    <a href="#trending" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">Explore Deals</a>
+  <!-- Hero -->
+  <section class="bg-white py-12 text-center">
+    <h2 class="text-4xl font-extrabold text-indigo-600 mb-4">Top Deals This Week</h2>
+    <p class="text-lg text-gray-600">Discover amazing products & exclusive offers, updated daily.</p>
   </section>
 
-  <!-- TRENDING DEALS -->
-  <section id="trending" class="container mx-auto px-4 py-12">
-    <h3 class="text-2xl font-bold mb-6 text-gray-800">🔥 Trending Deals</h3>
-    <div class="flex space-x-6 overflow-x-auto pb-4">
-
-      <!-- Amazon Product -->
-      <div class="bg-white rounded-xl shadow-md w-64 flex-shrink-0">
-        <img src="https://m.media-amazon.com/images/I/61+Q6Rh3OQL._AC_SL1500_.jpg" alt="Wireless Earbuds" class="rounded-t-xl">
-        <div class="p-4">
-          <h4 class="font-semibold">Wireless Earbuds</h4>
-          <a href="https://www.amazon.com/s?k=wireless+earbuds&tag=dealdynamo360-20" target="_blank" class="block mt-2 bg-indigo-600 text-white text-center py-2 rounded-lg hover:bg-indigo-700">Buy on Amazon</a>
-        </div>
-      </div>
-
-      <!-- Amazon Product -->
-      <div class="bg-white rounded-xl shadow-md w-64 flex-shrink-0">
-        <img src="https://m.media-amazon.com/images/I/71s1LRpaprL._AC_SL1500_.jpg" alt="Smartwatch" class="rounded-t-xl">
-        <div class="p-4">
-          <h4 class="font-semibold">Smartwatch</h4>
-          <a href="https://www.amazon.com/s?k=smartwatch&tag=dealdynamo360-20" target="_blank" class="block mt-2 bg-indigo-600 text-white text-center py-2 rounded-lg hover:bg-indigo-700">Buy on Amazon</a>
-        </div>
-      </div>
-
-      <!-- Amazon Product -->
-      <div class="bg-white rounded-xl shadow-md w-64 flex-shrink-0">
-        <img src="https://m.media-amazon.com/images/I/81r8JazRcoL._AC_SL1500_.jpg" alt="Air Fryer" class="rounded-t-xl">
-        <div class="p-4">
-          <h4 class="font-semibold">Air Fryer</h4>
-          <a href="https://www.amazon.com/s?k=air+fryer&tag=dealdynamo360-20" target="_blank" class="block mt-2 bg-indigo-600 text-white text-center py-2 rounded-lg hover:bg-indigo-700">Buy on Amazon</a>
-        </div>
-      </div>
-
-      <!-- ClickBank Offer -->
-      <div class="bg-white rounded-xl shadow-md w-64 flex-shrink-0">
-        <img src="https://img.freepik.com/free-vector/financial-growth-illustration_23-2148875382.jpg" alt="Wealth & Freedom" class="rounded-t-xl">
-        <div class="p-4">
-          <h4 class="font-semibold">Wealth & Freedom Guide</h4>
-          <a href="https://9d0e3bp6w85lym70okuvdp9vdx.hop.clickbank.net" target="_blank" class="block mt-2 bg-green-600 text-white text-center py-2 rounded-lg hover:bg-green-700">Order Now</a>
-        </div>
-      </div>
+  <!-- Trending Deals -->
+  <section id="trending" class="max-w-7xl mx-auto py-12 px-6 grid md:grid-cols-3 gap-6">
+    <!-- Amazon Deal 1 -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <img src="https://m.media-amazon.com/images/I/71WsNcmkscL._AC_SX679_.jpg" alt="Noise Cancelling Headphones" class="rounded-xl mb-4">
+      <h3 class="font-bold text-lg">Noise Cancelling Headphones</h3>
+      <p class="text-sm text-gray-600 mb-3">Immersive sound, wireless, and perfect for focus.</p>
+      <a href="https://www.amazon.com/s?k=noise+cancelling+headphones&tag=dealdynamo360-20" target="_blank" class="block text-center bg-indigo-500 hover:bg-indigo-600 text-white py-2 rounded-xl">Buy Now</a>
+    </div>
+    <!-- Amazon Deal 2 -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <img src="https://m.media-amazon.com/images/I/61k7-j9G4VL._AC_SX679_.jpg" alt="Portable Power Bank" class="rounded-xl mb-4">
+      <h3 class="font-bold text-lg">Portable Power Bank</h3>
+      <p class="text-sm text-gray-600 mb-3">Compact high-capacity charger for your devices.</p>
+      <a href="https://www.amazon.com/s?k=portable+power+bank&tag=dealdynamo360-20" target="_blank" class="block text-center bg-indigo-500 hover:bg-indigo-600 text-white py-2 rounded-xl">Buy Now</a>
+    </div>
+    <!-- ClickBank Deal -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Financial Freedom" class="rounded-xl mb-4">
+      <h3 class="font-bold text-lg">Financial Freedom Guide</h3>
+      <p class="text-sm text-gray-600 mb-3">Discover strategies for wealth, mindset, and success.</p>
+      <a href="https://9d0e3bp6w85lym70okuvdp9vdx.hop.clickbank.net" target="_blank" class="block text-center bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-xl">Order Now</a>
     </div>
   </section>
 
-  <!-- FEATURED PRODUCTS -->
-  <section id="featured" class="bg-gray-100 py-12">
-    <div class="container mx-auto px-4">
-      <h3 class="text-2xl font-bold mb-6 text-gray-800">⭐ Featured Comparisons</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-        <div class="bg-white rounded-xl shadow-md p-4">
-          <img src="https://m.media-amazon.com/images/I/81HSzsIkJdL._AC_SL1500_.jpg" alt="Noise Cancelling Headphones" class="rounded-md mb-3">
-          <h4 class="font-semibold">Noise Cancelling Headphones</h4>
-          <p class="text-sm text-gray-600">Compare top models for sound quality and comfort.</p>
-          <a href="https://www.amazon.com/s?k=noise+cancelling+headphones&tag=dealdynamo360-20" target="_blank" class="mt-3 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Compare Prices</a>
-        </div>
-
-        <div class="bg-white rounded-xl shadow-md p-4">
-          <img src="https://m.media-amazon.com/images/I/71nHscV0nAL._AC_SL1500_.jpg" alt="4K Smart TVs" class="rounded-md mb-3">
-          <h4 class="font-semibold">4K Smart TVs</h4>
-          <p class="text-sm text-gray-600">Find the best deals on stunning 4K UHD Smart TVs.</p>
-          <a href="https://www.amazon.com/s?k=4k+smart+tv&tag=dealdynamo360-20" target="_blank" class="mt-3 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Compare Prices</a>
-        </div>
-
-        <div class="bg-white rounded-xl shadow-md p-4">
-          <img src="https://m.media-amazon.com/images/I/61q6x-ll5FL._AC_SL1500_.jpg" alt="Portable Power Banks" class="rounded-md mb-3">
-          <h4 class="font-semibold">Portable Power Banks</h4>
-          <p class="text-sm text-gray-600">Never run out of battery with these top-rated power banks.</p>
-          <a href="https://www.amazon.com/s?k=portable+power+bank&tag=dealdynamo360-20" target="_blank" class="mt-3 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Compare Prices</a>
-        </div>
-      </div>
+  <!-- Coming Soon -->
+  <section class="max-w-7xl mx-auto py-8 px-6 grid md:grid-cols-3 gap-6">
+    <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl shadow p-4 flex items-center justify-center text-gray-500">
+      Amazing product launching soon!
+    </div>
+    <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl shadow p-4 flex items-center justify-center text-gray-500">
+      Amazing product launching soon!
+    </div>
+    <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl shadow p-4 flex items-center justify-center text-gray-500">
+      Amazing product launching soon!
     </div>
   </section>
 
-  <!-- CATEGORIES -->
-  <section id="categories" class="container mx-auto px-4 py-12">
-    <h3 class="text-2xl font-bold mb-6 text-gray-800">📂 Categories</h3>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-      <div class="bg-white rounded-xl shadow-md p-6 text-center">
-        <img src="https://img.icons8.com/color/96/000000/headphones.png" alt="Audio">
-        <h4 class="font-semibold mt-2">Audio</h4>
-        <p class="text-sm text-gray-500">Amazing products launching soon!</p>
-      </div>
-      <div class="bg-white rounded-xl shadow-md p-6 text-center">
-        <img src="https://img.icons8.com/color/96/000000/tv.png" alt="TVs">
-        <h4 class="font-semibold mt-2">Televisions</h4>
-        <p class="text-sm text-gray-500">Amazing products launching soon!</p>
-      </div>
-      <div class="bg-white rounded-xl shadow-md p-6 text-center">
-        <img src="https://img.icons8.com/color/96/000000/battery.png" alt="Power">
-        <h4 class="font-semibold mt-2">Power</h4>
-        <p class="text-sm text-gray-500">Amazing products launching soon!</p>
-      </div>
-      <div class="bg-white rounded-xl shadow-md p-6 text-center">
-        <img src="https://img.icons8.com/color/96/000000/more.png" alt="More">
-        <h4 class="font-semibold mt-2">More</h4>
-        <p class="text-sm text-gray-500">Amazing products launching soon!</p>
-      </div>
-    </div>
+  <!-- Newsletter -->
+  <section id="newsletter" class="bg-gradient-to-r from-green-400 to-blue-500 py-12 text-white text-center">
+    <h3 class="text-2xl font-bold mb-4">Stay Updated on New Deals</h3>
+    <form class="max-w-md mx-auto flex">
+      <input type="email" placeholder="Enter your email" class="w-full p-3 rounded-l-xl text-gray-800" required>
+      <button class="bg-gray-900 px-6 rounded-r-xl">Subscribe</button>
+    </form>
   </section>
 
-  <!-- NEWSLETTER -->
-  <section id="newsletter" class="bg-indigo-600 text-white py-12">
-    <div class="container mx-auto px-4 text-center">
-      <h3 class="text-2xl font-bold mb-4">📩 Join Our Deal Alerts</h3>
-      <p class="mb-6">Get the hottest deals delivered straight to your inbox.</p>
-      <form class="flex flex-col md:flex-row justify-center gap-3 max-w-xl mx-auto">
-        <input type="email" placeholder="Enter your email" class="px-4 py-3 rounded-lg text-gray-800 flex-1" required>
-        <button class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">Subscribe</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer class="bg-gray-900 text-gray-300 py-8">
-    <div class="container mx-auto px-4 text-center space-y-4">
-      <p>© 2025 DealDynamo360. All rights reserved.</p>
-      <p class="text-sm">As an Amazon Associate and ClickBank Affiliate, we earn from qualifying purchases. This does not affect your price.</p>
-      <div class="flex justify-center space-x-6">
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a>
-        <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a>
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm">© 2025 DealDynamo. All rights reserved.</p>
+      <div class="flex space-x-4 my-4 md:my-0">
+        <a href="https://facebook.com/dealdynamo360" target="_blank">Facebook</a>
+        <a href="https://instagram.com/dealdynamo360" target="_blank">Instagram</a>
+        <a href="https://youtube.com/@dealdynamo360" target="_blank">YouTube</a>
         <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a>
       </div>
+      <a href="how-we-earn.html" class="text-sm hover:underline">How We Earn</a>
     </div>
+    <p class="text-xs text-center mt-4 text-gray-500">
+      As an Amazon Associate I earn from qualifying purchases. We may also earn commissions from ClickBank offers. This does not affect the price you pay.
+    </p>
   </footer>
 
 </body>
