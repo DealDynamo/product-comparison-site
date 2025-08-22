@@ -1,94 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DealDynamo - Trending Deals</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DealDynamo360 - Trending Deals</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-900">
 
   <!-- Header -->
-  <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow">
-    <div class="max-w-7xl mx-auto p-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">DealDynamo</h1>
-      <nav class="space-x-4">
-        <a href="#trending" class="hover:underline">Trending Deals</a>
-        <a href="#featured" class="hover:underline">Featured</a>
-        <a href="#newsletter" class="hover:underline">Newsletter</a>
+  <header class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold">DealDynamo360</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#deals" class="hover:underline">Deals</a></li>
+          <li><button onclick="toggleModal()" class="hover:underline">How We Earn</button></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="bg-white py-12 text-center">
-    <h2 class="text-4xl font-extrabold text-indigo-600 mb-4">Top Deals This Week</h2>
-    <p class="text-lg text-gray-600">Discover amazing products & exclusive offers, updated daily.</p>
+  <section class="text-center py-12 bg-white shadow-sm">
+    <h2 class="text-4xl font-bold mb-4">🔥 Top Trending Deals This Week</h2>
+    <p class="text-lg text-gray-600">Handpicked offers from Amazon & ClickBank – updated frequently!</p>
   </section>
 
-  <!-- Trending Deals -->
-  <section id="trending" class="max-w-7xl mx-auto py-12 px-6 grid md:grid-cols-3 gap-6">
-    <!-- Amazon Deal 1 -->
-    <div class="bg-white rounded-2xl shadow p-4">
-      <img src="https://m.media-amazon.com/images/I/71WsNcmkscL._AC_SX679_.jpg" alt="Noise Cancelling Headphones" class="rounded-xl mb-4">
-      <h3 class="font-bold text-lg">Noise Cancelling Headphones</h3>
-      <p class="text-sm text-gray-600 mb-3">Immersive sound, wireless, and perfect for focus.</p>
-      <a href="https://www.amazon.com/s?k=noise+cancelling+headphones&tag=dealdynamo360-20" target="_blank" class="block text-center bg-indigo-500 hover:bg-indigo-600 text-white py-2 rounded-xl">Buy Now</a>
+  <!-- Deals Section -->
+  <section id="deals" class="max-w-6xl mx-auto py-12 grid md:grid-cols-3 gap-8">
+
+    <!-- Amazon Deal -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-blue-600">
+      <img src="https://m.media-amazon.com/images/I/71nLTDgD3rL._AC_SX679_.jpg" alt="Amazon Product" class="w-full h-56 object-contain mb-4">
+      <h3 class="text-xl font-semibold mb-2">Echo Dot (5th Gen)</h3>
+      <p class="text-gray-600 mb-4">Smart speaker with Alexa – control music, smart home, and more.</p>
+      <a href="https://amzn.to/4lJgbPc" target="_blank" class="block bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded-lg font-semibold">Buy Now</a>
     </div>
-    <!-- Amazon Deal 2 -->
-    <div class="bg-white rounded-2xl shadow p-4">
-      <img src="https://m.media-amazon.com/images/I/61k7-j9G4VL._AC_SX679_.jpg" alt="Portable Power Bank" class="rounded-xl mb-4">
-      <h3 class="font-bold text-lg">Portable Power Bank</h3>
-      <p class="text-sm text-gray-600 mb-3">Compact high-capacity charger for your devices.</p>
-      <a href="https://www.amazon.com/s?k=portable+power+bank&tag=dealdynamo360-20" target="_blank" class="block text-center bg-indigo-500 hover:bg-indigo-600 text-white py-2 rounded-xl">Buy Now</a>
+
+    <!-- HepatoBurn ClickBank Deal -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-red-500">
+      <img src="hepatoburn.png" alt="HepatoBurn" class="w-full h-56 object-contain mb-4">
+      <h3 class="text-xl font-semibold mb-2">HepatoBurn</h3>
+      <p class="text-gray-600 mb-4">Detox & boost metabolism – put your body into full fat-burning mode!</p>
+      <a href="https://2d0d39j1z367zgacqidp278qq0.hop.clickbank.net" target="_blank" class="block bg-red-500 hover:bg-red-600 text-white text-center py-2 rounded-lg font-semibold">Buy Now</a>
     </div>
-    <!-- ClickBank Deal -->
-    <div class="bg-white rounded-2xl shadow p-4">
-      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Financial Freedom" class="rounded-xl mb-4">
-      <h3 class="font-bold text-lg">Financial Freedom Guide</h3>
-      <p class="text-sm text-gray-600 mb-3">Discover strategies for wealth, mindset, and success.</p>
-      <a href="https://9d0e3bp6w85lym70okuvdp9vdx.hop.clickbank.net" target="_blank" class="block text-center bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-xl">Order Now</a>
+
+    <!-- Vert Shock Pro ClickBank Deal -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-yellow-500">
+      <img src="vertshock.png" alt="Vert Shock Pro" class="w-full h-56 object-contain mb-4">
+      <h3 class="text-xl font-semibold mb-2">Vert Shock Pro</h3>
+      <p class="text-gray-600 mb-4">Proven vertical jump training program – finally dunk like a pro!</p>
+      <a href="https://74f1f2m5s5d7x937ows0x7y-sf.hop.clickbank.net" target="_blank" class="block bg-yellow-500 hover:bg-yellow-600 text-black text-center py-2 rounded-lg font-semibold">Buy Now</a>
     </div>
+
+    <!-- Coming Soon Placeholder -->
+    <div class="bg-gray-100 rounded-2xl shadow-inner p-6 flex items-center justify-center">
+      <h3 class="text-lg font-semibold text-gray-500">🚀 New Deals Coming Soon!</h3>
+    </div>
+
   </section>
 
-  <!-- Coming Soon -->
-  <section class="max-w-7xl mx-auto py-8 px-6 grid md:grid-cols-3 gap-6">
-    <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl shadow p-4 flex items-center justify-center text-gray-500">
-      Amazing product launching soon!
+  <!-- How We Earn Modal -->
+  <div id="earnModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
+    <div class="bg-white rounded-xl shadow-lg p-8 max-w-md text-center relative">
+      <button onclick="toggleModal()" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">✕</button>
+      <h3 class="text-2xl font-bold mb-4">How We Earn</h3>
+      <p class="text-gray-600">DealDynamo360 earns a small commission when you buy through our affiliate links.  
+      You pay the same price – we just get a little support to keep finding great deals for you.  
+      No hidden fees. No markups. 100% transparency.</p>
     </div>
-    <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl shadow p-4 flex items-center justify-center text-gray-500">
-      Amazing product launching soon!
-    </div>
-    <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl shadow p-4 flex items-center justify-center text-gray-500">
-      Amazing product launching soon!
-    </div>
-  </section>
-
-  <!-- Newsletter -->
-  <section id="newsletter" class="bg-gradient-to-r from-green-400 to-blue-500 py-12 text-white text-center">
-    <h3 class="text-2xl font-bold mb-4">Stay Updated on New Deals</h3>
-    <form class="max-w-md mx-auto flex">
-      <input type="email" placeholder="Enter your email" class="w-full p-3 rounded-l-xl text-gray-800" required>
-      <button class="bg-gray-900 px-6 rounded-r-xl">Subscribe</button>
-    </form>
-  </section>
+  </div>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 py-8">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-      <p class="text-sm">© 2025 DealDynamo. All rights reserved.</p>
-      <div class="flex space-x-4 my-4 md:my-0">
-        <a href="https://facebook.com/dealdynamo360" target="_blank">Facebook</a>
-        <a href="https://instagram.com/dealdynamo360" target="_blank">Instagram</a>
-        <a href="https://youtube.com/@dealdynamo360" target="_blank">YouTube</a>
-        <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a>
+  <footer id="contact" class="bg-gray-800 text-white py-6 mt-12">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <p>&copy; 2025 DealDynamo360. All Rights Reserved.</p>
+      <div class="flex space-x-4">
+        <a href="https://www.youtube.com/@DealDynamo360" target="_blank" class="hover:text-red-500">YouTube</a>
+        <a href="https://www.tiktok.com/@dealdynamo360" target="_blank" class="hover:text-pink-400">TikTok</a>
+        <a href="https://instagram.com/dealdynamo360" target="_blank" class="hover:text-yellow-400">Instagram</a>
       </div>
-      <a href="how-we-earn.html" class="text-sm hover:underline">How We Earn</a>
     </div>
-    <p class="text-xs text-center mt-4 text-gray-500">
-      As an Amazon Associate I earn from qualifying purchases. We may also earn commissions from ClickBank offers. This does not affect the price you pay.
-    </p>
   </footer>
 
+  <script>
+    function toggleModal() {
+      document.getElementById('earnModal').classList.toggle('hidden');
+    }
+  </script>
 </body>
 </html>
