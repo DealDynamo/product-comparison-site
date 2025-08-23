@@ -2,120 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DealDynamo360</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 1rem;
-    }
-    .card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-      height: 200px;
-      object-fit: cover;
-    }
-    .card h3 {
-      margin: 0.5rem 0;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: auto;
-      background: #000;
-      color: #fff;
-      text-align: center;
-      padding: 0.6rem;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    .btn:hover {
-      opacity: 0.9;
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 1rem;
-    }
-    footer a {
-      color: #fff;
-      margin: 0 0.5rem;
-      text-decoration: none;
-    }
-    .placeholder {
-      background: #e3e3e3;
-      color: #555;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 200px;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: bold;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DealDynamo - Top Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>DealDynamo360 - Top Deals</h1>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white py-6 shadow-lg">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl font-bold">DealDynamo</h1>
+      <p class="text-lg">Discover the Best Online Deals & Digital Products</p>
+    </div>
   </header>
 
-  <main>
-    <section class="products">
-      <!-- Hepatoburn (ClickBank) -->
-      <div class="card" style="background:#ffe5e5;">
-        <img src="https://via.placeholder.com/400x200.png?text=Hepatoburn+Official" alt="Hepatoburn">
-        <h3>Hepatoburn</h3>
-        <p>Boost metabolism and ignite fat-burning with this powerful liver support formula.</p>
-        <a class="btn" href="https://b0cb38q80b5mpfdchgimzz5eta.hop.clickbank.net" target="_blank">Buy Now</a>
-      </div>
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-600 to-blue-400 text-white text-center py-12">
+    <h2 class="text-4xl font-bold mb-4">🔥 Featured Products 🔥</h2>
+    <p class="text-lg">Hand-picked offers to help you save, stay healthy, and build smarter</p>
+  </section>
 
-      <!-- Fast Wealth (ClickBank) -->
-      <div class="card" style="background:#ffe5e5;">
-        <img src="https://via.placeholder.com/400x200.png?text=Fast+Wealth" alt="Fast Wealth">
-        <h3>Fast Wealth</h3>
-        <p>Discover strategies to grow your wealth faster and smarter.</p>
-        <a class="btn" href="https://5407e9h0s0c8sd18kkkx6u6vfq.hop.clickbank.net" target="_blank">Buy Now</a>
-      </div>
+  <!-- Product Grid -->
+  <section class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 py-12 px-6">
 
-      <!-- Amazon Example -->
-      <div class="card" style="background:#e5f0ff;">
-        <img src="https://m.media-amazon.com/images/I/61Iz2yy2CKL._AC_SL1500_.jpg" alt="Amazon Product">
-        <h3>Noise Cancelling Headphones</h3>
-        <p>Experience immersive sound with premium noise cancelling technology.</p>
-        <a class="btn" href="https://amzn.to/4lJgbPc" target="_blank">Buy Now</a>
-      </div>
+    <!-- Sleep Lean -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
+      <img src="images/SleepLean.png" alt="Sleep Lean Supplement" class="mx-auto mb-4 rounded-lg h-48 object-contain">
+      <h3 class="text-xl font-bold mb-2">Sleep Lean</h3>
+      <p class="text-gray-600 mb-4">An all-natural formula that assists in eliminating excess body fat while maintaining long-term results.</p>
+      <a href="https://268fb7i1s0b8ymaep5m9r-gg5v.hop.clickbank.net" 
+         target="_blank" 
+         class="bg-blue-600 text-white px-5 py-2 rounded-xl shadow hover:bg-blue-700 transition">
+         Buy Now
+      </a>
+    </div>
 
-      <!-- Placeholder for future -->
-      <div class="card" style="background:#e5f0ff;">
-        <div class=
+    <!-- GlucoTonic -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
+      <img src="images/Glucotonic.jpg" alt="GlucoTonic Supplement" class="mx-auto mb-4 rounded-lg h-48 object-contain">
+      <h3 class="text-xl font-bold mb-2">GlucoTonic</h3>
+      <p class="text-gray-600 mb-4">A powerful blood sugar support and all-day energy helper, trusted by thousands worldwide.</p>
+      <a href="https://9910d9q7pyd7tiffvteg5mp5mf.hop.clickbank.net" 
+         target="_blank" 
+         class="bg-green-600 text-white px-5 py-2 rounded-xl shadow hover:bg-green-700 transition">
+         Buy Now
+      </a>
+    </div>
+
+    <!-- Ted’s Woodworking -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
+      <img src="images/TedsPlan.jpg" alt="Ted’s Woodworking Plans" class="mx-auto mb-4 rounded-lg h-48 object-contain">
+      <h3 class="text-xl font-bold mb-2">Ted’s Woodworking Plans</h3>
+      <p class="text-gray-600 mb-4">Get instant access to 16,000 woodworking plans with detailed instructions, diagrams, and materials lists.</p>
+      <a href="https://c7cd13q7z5981c9elzwgw-1jf4.hop.clickbank.net" 
+         target="_blank" 
+         class="bg-yellow-600 text-white px-5 py-2 rounded-xl shadow hover:bg-yellow-700 transition">
+         Buy Now
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 mt-12">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 DealDynamo. All Rights Reserved.</p>
+      <div class="flex justify-center space-x-4 mt-2">
+        <a href="https://youtube.com/@dealdynamo360" target="_blank" class="hover:text-blue-400">YouTube</a>
+        <a href="https://www.tiktok.com/@dealdynamo360" target="_blank" class="hover:text-pink-400">TikTok</a>
+        <a href="https://instagram.com/dealdynamo360" target="_blank" class="hover:text-purple-400">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
