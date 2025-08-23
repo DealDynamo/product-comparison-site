@@ -3,247 +3,163 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DealDynamo - Top Deals This Week</title>
+  <title>DealDynamo360 - Top Deals</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
       background: #f9fafb;
-      color: #333;
+      color: #222;
     }
-
-    /* Header */
     header {
-      position: sticky;
-      top: 0;
-      background: #111827;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background: #111;
+      color: #fff;
       padding: 1rem 2rem;
-      z-index: 1000;
+      display: flex; justify-content: space-between; align-items: center;
     }
-    header h1 {
-      font-size: 1.4rem;
-      margin: 0;
-      display: flex;
-      align-items: center;
-    }
-    header h1 span {
-      color: #facc15;
-      margin-left: 0.4rem;
-    }
+    header h1 { font-size: 1.4rem; margin: 0; }
     nav a {
-      color: white;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-size: 0.95rem;
+      color: #fff; margin-left: 1rem; text-decoration: none; font-weight: 500;
     }
-    nav a:hover {
-      color: #facc15;
-    }
-
-    /* Hero */
+    nav a:hover { text-decoration: underline; }
     .hero {
       text-align: center;
       padding: 3rem 1rem;
-      background: linear-gradient(to right, #facc15, #f59e0b);
-      color: #111827;
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: #fff;
     }
-    .hero h2 {
-      font-size: 2rem;
-      margin: 0 0 1rem;
-    }
-
-    /* Products grid */
-    .products {
+    .hero h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
       padding: 2rem;
     }
     .card {
-      background: white;
+      background: #fff;
       border-radius: 12px;
+      overflow: hidden;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center;
+      display: flex; flex-direction: column;
     }
     .card img {
-      max-width: 100%;
-      height: 180px;
-      object-fit: contain;
-      border-radius: 8px;
-      margin-bottom: 1rem;
+      width: 100%; height: 200px; object-fit: cover;
     }
     .card h3 {
-      font-size: 1.1rem;
-      margin: 0.5rem 0;
+      margin: 1rem; font-size: 1.2rem; color: #333;
     }
-    .card p {
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-      color: #555;
-    }
+    .card p { margin: 0 1rem 1rem; font-size: 0.95rem; color: #555; }
     .card a {
-      background: #111827;
-      color: white;
-      padding: 0.6rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 0.9rem;
+      margin: 1rem;
+      background: #ff6600; color: #fff; text-align: center;
+      padding: 0.7rem; border-radius: 8px; text-decoration: none;
       font-weight: bold;
     }
-    .card a:hover {
-      background: #f59e0b;
-    }
-
-    /* Placeholder cards */
-    .placeholder {
-      color: white;
-    }
-    .ph-yellow { background: #fbbf24; }
-    .ph-blue { background: #3b82f6; }
-    .ph-green { background: #10b981; }
-    .placeholder h3 { margin-top: 3rem; }
-
-    /* How We Earn */
-    .earn {
-      padding: 2rem;
-      text-align: center;
-      background: #f3f4f6;
-    }
-    .earn h2 {
-      margin-bottom: 1rem;
-    }
-    .earn p {
-      max-width: 600px;
-      margin: 0 auto;
-      font-size: 1rem;
-      color: #444;
-    }
-
-    /* Social bar */
-    .social {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem;
-      background: #111827;
-    }
-    .social a {
-      color: white;
-      text-decoration: none;
-      font-size: 0.95rem;
-      padding: 0.4rem 0.8rem;
-      border-radius: 6px;
-      background: #374151;
-    }
-    .social a:hover {
-      background: #facc15;
-      color: #111827;
-    }
-
-    /* Footer */
+    .card a:hover { background: #e85c00; }
     footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.85rem;
-      color: #555;
-      background: #e5e7eb;
+      background: #111; color: #eee; text-align: center;
+      padding: 1.5rem 1rem; margin-top: 2rem;
     }
+    .socials a {
+      margin: 0 0.5rem; color: #fff; text-decoration: none; font-size: 1.2rem;
+    }
+    .placeholder {
+      height: 200px; display:flex; align-items:center; justify-content:center;
+      color:#fff; font-size:1.1rem; font-weight:bold;
+    }
+    /* Modal */
+    .modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+      background:rgba(0,0,0,0.6); align-items:center; justify-content:center; }
+    .modal-content {
+      background:#fff; padding:2rem; max-width:500px; border-radius:12px; text-align:left;
+    }
+    .close { float:right; cursor:pointer; font-size:1.2rem; }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <h1>⚡ DealDynamo <span>360</span></h1>
+    <h1>DealDynamo360</h1>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#products">Products</a>
-      <a href="#earn">How We Earn</a>
-      <a href="#contact">Contact</a>
+      <a href="#">Home</a>
+      <!-- Removed Contact + How We Earn tab -->
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <h2>Top Deals This Week</h2>
-    <p>Exclusive offers, trending products, and amazing opportunities.</p>
+  <section class="hero">
+    <h2>🔥 Top Deals of the Week</h2>
+    <p>Hand-picked offers with real value — updated regularly.</p>
   </section>
 
-  <!-- Products -->
-  <section class="products" id="products">
-    <!-- Amazon -->
+  <section class="grid">
+    <!-- Amazon Example -->
     <div class="card">
-      <img src="https://m.media-amazon.com/images/I/61+Q6Rh3OQL._AC_SL1500_.jpg" alt="Amazon Product">
-      <h3>Wireless Headphones</h3>
-      <p>High-quality noise cancelling headphones at an amazing price.</p>
-      <a href="https://amzn.to/4lJgbPc" target="_blank">Buy on Amazon</a>
+      <img src="https://m.media-amazon.com/images/I/61sP7U1z3rL._AC_SL1500_.jpg" alt="Amazon Product">
+      <h3>Noise Cancelling Headphones</h3>
+      <p>Premium wireless headphones with active noise cancellation.</p>
+      <a href="https://amzn.to/4lJgbPc" target="_blank">Buy Now</a>
     </div>
 
     <!-- HepatoBurn -->
     <div class="card">
-      <img src="https://via.placeholder.com/300x180?text=HepatoBurn" alt="HepatoBurn">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQE..." alt="HepatoBurn">
       <h3>HepatoBurn</h3>
-      <p>Boost metabolism, detoxify, and activate fat-burning mode.</p>
+      <p>Boost metabolism & activate full fat-burning mode.</p>
       <a href="https://2d0d39j1z367zgacqidp278qq0.hop.clickbank.net" target="_blank">Order Now</a>
     </div>
 
     <!-- VertShock -->
     <div class="card">
-      <img src="https://via.placeholder.com/300x180?text=VertShock" alt="VertShock">
-      <h3>VertShock</h3>
-      <p>Proven training system to boost your hops and dunk like a pro.</p>
-      <a href="https://74f1f2m5s5d7x937ows0x7y-sf.hop.clickbank.net" target="_blank">Get Started</a>
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQE..." alt="VertShock">
+      <h3>VertShock Training</h3>
+      <p>Explosive program proven to increase vertical jump.</p>
+      <a href="https://74f1f2m5s5d7x937ows0x7y-sf.hop.clickbank.net" target="_blank">Get Access</a>
     </div>
 
     <!-- Fast Wealth -->
     <div class="card">
-      <img src="https://via.placeholder.com/300x180?text=Fast+Wealth" alt="Fast Wealth">
-      <h3>Fast Wealth</h3>
-      <p>Opportunities to grow your financial freedom, starting today.</p>
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQE..." alt="Fast Wealth">
+      <h3>Fast Wealth Secrets</h3>
+      <p>Discover financial strategies that create freedom.</p>
       <a href="https://9d0e3bp6w85lym70okuvdp9vdx.hop.clickbank.net" target="_blank">Learn More</a>
     </div>
 
-    <!-- Placeholder Coming Soon -->
-    <div class="card placeholder ph-yellow">
+    <!-- Placeholder -->
+    <div class="card">
+      <div class="placeholder" style="background:#ff8c00;">Amazing Product Launching Soon</div>
       <h3>Coming Soon</h3>
-      <p>Amazing product launching soon!</p>
-    </div>
-    <div class="card placeholder ph-blue">
-      <h3>Coming Soon</h3>
-      <p>Exclusive deal around the corner!</p>
-    </div>
-    <div class="card placeholder ph-green">
-      <h3>Coming Soon</h3>
-      <p>New opportunity on its way!</p>
+      <p>Stay tuned for more exclusive offers.</p>
+      <a href="#">Coming Soon</a>
     </div>
   </section>
 
-  <!-- How We Earn -->
-  <section class="earn" id="earn">
-    <h2>How We Earn</h2>
-    <p>DealDynamo earns through affiliate partnerships. When you click our links and make a purchase, we may receive a small commission — at no extra cost to you. This helps keep the site running while ensuring you get the best deals.</p>
-  </section>
-
-  <!-- Social -->
-  <div class="social" id="contact">
-    <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a>
-    <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a>
-    <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com" target="_blank">Facebook</a>
-  </div>
-
-  <!-- Footer -->
   <footer>
-    © 2025 DealDynamo360. All rights reserved.
+    <p>&copy; 2025 DealDynamo360</p>
+    <div class="socials">
+      <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a>
+      <a href="https://instagram.com/dealdynamo360" target="_blank">Instagram</a>
+      <a href="https://facebook.com/dealdynamo360" target="_blank">Facebook</a>
+    </div>
+    <p><a href="#" id="howEarnLink">How We Earn</a></p>
   </footer>
 
+  <!-- Modal -->
+  <div class="modal" id="howModal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h3>How We Earn</h3>
+      <p>DealDynamo360 earns a small commission from purchases made through affiliate links.
+         This comes at no extra cost to you and ensures product prices remain the same as the retailer.</p>
+    </div>
+  </div>
+
+  <script>
+    const link = document.getElementById('howEarnLink');
+    const modal = document.getElementById('howModal');
+    const close = document.getElementById('closeModal');
+    link.onclick = () => modal.style.display = 'flex';
+    close.onclick = () => modal.style.display = 'none';
+    window.onclick = e => { if(e.target == modal) modal.style.display='none'; }
+  </script>
 </body>
 </html>
