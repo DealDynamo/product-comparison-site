@@ -2,165 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DealDynamo360</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DealDynamo360 - Top Deals</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f5f7fa;
+      background: #f8f9fa;
       color: #333;
     }
     header {
       background: #111;
-      color: #fff;
-      text-align: center;
+      color: white;
       padding: 1rem;
+      text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    header h1 { margin: 0; }
+    nav {
+      margin-top: .5rem;
     }
-    .grid {
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #ddd;
+    }
+    nav a:hover { color: white; }
+    .container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-      animation: fadeIn 1s ease-in;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.2s;
-    }
-    .card:hover { transform: translateY(-5px); }
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .card-content {
+      gap: 1rem;
       padding: 1rem;
     }
-    .card h3 {
-      margin: 0 0 0.5rem;
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.1);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .placeholder {
+      background: #e0e0e0;
+      height: 160px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #555;
     }
     .btn {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.6rem 1rem;
-      background: #fff;
-      color: #111;
-      border: 2px solid #111;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s, color 0.3s;
-    }
-    .btn:hover {
-      background: #111;
-      color: #fff;
-    }
-    footer {
-      background: #111;
-      color: #fff;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    footer .social a {
-      margin: 0 10px;
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
-    footer .earn {
-      margin-top: 1rem;
-      font-size: 0.9rem;
-    }
-    footer .earn span {
-      color: #fff;
-      font-weight: bold;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    /* Placeholder colors */
-    .amazon { background: #e8f5e9; }
-    .clickbank { background: #e3f2fd; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>DealDynamo360</h1>
-    <p>Top Deals. Trusted Sources. Affiliate Powered.</p>
-  </header>
-
-  <main class="grid">
-    <!-- Amazon Example -->
-    <div class="card amazon">
-      <img src="https://m.media-amazon.com/images/I/71sQanN1fVL._AC_SX679_.jpg" alt="Noise Cancelling Headphones">
-      <div class="card-content">
-        <h3>Noise Cancelling Headphones</h3>
-        <p>Experience superior sound with active noise cancellation.</p>
-        <a class="btn" href="https://amzn.to/4lJgbPc" target="_blank">Buy Now</a>
-      </div>
-    </div>
-
-    <!-- ClickBank Heptaburn -->
-    <div class="card clickbank">
-      <img src="https://via.placeholder.com/600x400/90caf9/000000?text=Hepatburn+Detox" alt="Heptaburn">
-      <div class="card-content">
-        <h3>Heptaburn Detox</h3>
-        <p>Boost metabolism, burn fat & detox naturally.</p>
-        <a class="btn" href="https://2d0d39j1z367zgacqidp278qq0.hop.clickbank.net" target="_blank">Buy Now</a>
-      </div>
-    </div>
-
-    <!-- ClickBank Vert Shock -->
-    <div class="card clickbank">
-      <img src="https://via.placeholder.com/600x400/64b5f6/000000?text=Vert+Shock+Training" alt="Vert Shock">
-      <div class="card-content">
-        <h3>Vert Shock Program</h3>
-        <p>Proven training to boost your vertical jump & athleticism.</p>
-        <a class="btn" href="https://74f1f2m5s5d7x937ows0x7y-sf.hop.clickbank.net" target="_blank">Buy Now</a>
-      </div>
-    </div>
-
-    <!-- New ClickBank Coming Soon -->
-    <div class="card clickbank">
-      <img src="https://via.placeholder.com/600x400/42a5f5/ffffff?text=Exciting+Deal+Coming+Soon" alt="Coming Soon">
-      <div class="card-content">
-        <h3>New Affiliate Deal</h3>
-        <p>Stay tuned! A powerful ClickBank offer is launching here soon.</p>
-        <a class="btn" href="#" target="_blank">Coming Soon</a>
-      </div>
-    </div>
-
-    <!-- Amazon Coming Soon -->
-    <div class="card amazon">
-      <img src="https://via.placeholder.com/600x400/a5d6a7/000000?text=Amazon+Deal+Coming+Soon" alt="Amazon Coming Soon">
-      <div class="card-content">
-        <h3>Amazon Product</h3>
-        <p>Amazing Amazon product launching soon. Stay tuned!</p>
-        <a class="btn" href="#">Coming Soon</a>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="social">
-      <a href="https://www.facebook.com/dealdynamo360" target="_blank">Facebook</a> |
-      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a> |
-      <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a> |
-      <a href="https://instagram.com/dealdynamo360" target="_blank">Instagram</a>
-    </div>
-    <div class="earn">
-      <span>How We Earn:</span> We only earn commission via trusted affiliate programs. You pay nothing extra.
-    </div>
-  </footer>
-</body>
-</html>
