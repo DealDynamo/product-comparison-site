@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DealDynamo - Top Products</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DealDynamo - Product Comparison</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
   <!-- Header -->
-  <header class="bg-blue-700 text-white py-6 shadow-lg">
-    <div class="container mx-auto text-center">
-      <h1 class="text-3xl font-bold">DealDynamo</h1>
-      <p class="text-lg">Discover the Best Online Deals & Digital Products</p>
+  <header class="bg-blue-700 text-white shadow">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold">DealDynamo</h1>
+      <nav class="space-x-4">
+        <a href="https://youtube.com/@dealdynamo360" target="_blank" class="hover:text-yellow-300">YouTube</a>
+        <a href="https://www.tiktok.com/@dealdynamo360" target="_blank" class="hover:text-yellow-300">TikTok</a>
+        <a href="https://instagram.com/dealdynamo360" target="_blank" class="hover:text-yellow-300">Instagram</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="bg-gradient-to-r from-blue-600 to-blue-400 text-white text-center py-12">
-    <h2 class="text-4xl font-bold mb-4">🔥 Featured Products 🔥</h2>
-    <p class="text-lg">Hand-picked offers to help you save, stay healthy, and build smarter</p>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-500 text-white py-16 text-center">
+    <h2 class="text-4xl font-bold mb-4">🔥 Top Deals This Week 🔥</h2>
+    <p class="text-lg">Exclusive offers on trending health supplements & digital products</p>
   </section>
 
-  <!-- Product Grid -->
+  <!-- Products Grid -->
   <section class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 py-12 px-6">
 
     <!-- Sleep Lean -->
     <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
-      <img src="images/SleepLean.png" alt="Sleep Lean Supplement" class="mx-auto mb-4 rounded-lg h-48 object-contain">
+      <img src="images/SleepLean.png" alt="Sleep Lean Supplement" class="mx-auto mb-4 h-48 object-contain">
       <h3 class="text-xl font-bold mb-2">Sleep Lean</h3>
-      <p class="text-gray-600 mb-4">An all-natural formula that assists in eliminating excess body fat while maintaining long-term results.</p>
+      <p class="text-gray-600 mb-4">An all-natural formula that helps eliminate excess body fat while supporting restful sleep and energy.</p>
       <a href="https://268fb7i1s0b8ymaep5m9r-gg5v.hop.clickbank.net" 
          target="_blank" 
          class="bg-blue-600 text-white px-5 py-2 rounded-xl shadow hover:bg-blue-700 transition">
@@ -39,7 +43,7 @@
 
     <!-- GlucoTonic -->
     <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
-      <img src="images/Glucotonic.jpg" alt="GlucoTonic Supplement" class="mx-auto mb-4 rounded-lg h-48 object-contain">
+      <img src="images/Glucotonic.jpg" alt="GlucoTonic Supplement" class="mx-auto mb-4 h-48 object-contain">
       <h3 class="text-xl font-bold mb-2">GlucoTonic</h3>
       <p class="text-gray-600 mb-4">A powerful blood sugar support and all-day energy helper, trusted by thousands worldwide.</p>
       <a href="https://9910d9q7pyd7tiffvteg5mp5mf.hop.clickbank.net" 
@@ -51,7 +55,7 @@
 
     <!-- Ted’s Woodworking -->
     <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
-      <img src="images/TedsPlan.jpg" alt="Ted’s Woodworking Plans" class="mx-auto mb-4 rounded-lg h-48 object-contain">
+      <img src="images/TedsPlan.jpg" alt="Ted’s Woodworking Plans" class="mx-auto mb-4 h-48 object-contain">
       <h3 class="text-xl font-bold mb-2">Ted’s Woodworking Plans</h3>
       <p class="text-gray-600 mb-4">Get instant access to 16,000 woodworking plans with detailed instructions, diagrams, and materials lists.</p>
       <a href="https://c7cd13q7z5981c9elzwgw-1jf4.hop.clickbank.net" 
@@ -61,6 +65,24 @@
       </a>
     </div>
 
+  </section>
+
+  <!-- Daily Deals Section -->
+  <section class="bg-gray-200 py-12 text-center">
+    <h3 class="text-2xl font-bold mb-4">💥 Daily Deals Auto-Refresh Coming Soon 💥</h3>
+    <p class="text-gray-700">Stay tuned! We’re adding automated fresh deals updated daily.</p>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="bg-blue-600 py-12 text-center text-white relative">
+    <h3 class="text-2xl font-bold mb-4">Join Our DealDynamo Community</h3>
+    <p class="mb-6">Subscribe to get the hottest deals straight to your inbox!</p>
+    <form class="max-w-md mx-auto flex bg-white rounded-xl overflow-hidden">
+      <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 text-gray-800 outline-none">
+      <button type="submit" class="bg-yellow-500 px-6 py-2 font-bold text-gray-900 hover:bg-yellow-400 transition">Subscribe</button>
+    </form>
+    <!-- Gmail overlay image -->
+    <img src="images/gmail-overlay.png" alt="Gmail Overlay" class="absolute bottom-0 right-0 w-32 opacity-80">
   </section>
 
   <!-- Footer -->
