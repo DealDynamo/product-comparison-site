@@ -1,76 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DealDynamo360 | Best Online Deals & Hot Picks</title>
-
-  <!-- ✅ SEO Meta Tags -->
-  <meta name="title" content="DealDynamo360 | Best Online Deals & Hot Picks">
-  <meta name="description" content="Find the hottest online deals — supplements, DIY plans, and more. Save big with DealDynamo360.">
-  <meta name="keywords" content="deals, discounts, supplements, weight loss, blood sugar support, woodworking plans, online offers">
-  <meta name="robots" content="index, follow">
-
-  <!-- ✅ Open Graph (Facebook) -->
-  <meta property="og:title" content="DealDynamo360 | Best Online Deals & Hot Picks">
-  <meta property="og:description" content="Find the hottest online deals — supplements, DIY plans, and more.">
-  <meta property="og:url" content="https://product-comparison-site-vmfp.vercel.app/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://product-comparison-site-vmfp.vercel.app/logo.png">
-
-  <!-- ✅ Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="DealDynamo360 | Best Online Deals & Hot Picks">
-  <meta name="twitter:description" content="Find the hottest online deals — supplements, DIY plans, and more.">
-  <meta name="twitter:image" content="https://product-comparison-site-vmfp.vercel.app/logo.png">
-
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DealDynamo - Top Deals</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>DealDynamo360</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="https://www.amazon.com" target="_blank">Amazon</a>
-      <a href="how-i-earn.html">How I Earn</a>
-      <a href="https://www.facebook.com/dealdynamo360" target="_blank">Facebook</a>
-      <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a>
-      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a>
-      <a href="https://instagram.com/dealdynamo360" target="_blank">Instagram</a>
-    </nav>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white shadow">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">DealDynamo</h1>
+      <nav class="flex items-center gap-4 text-sm">
+        <a href="https://www.amazon.com/s?k=best+deals&tag=dealdynamo360-20"
+           target="_blank" rel="nofollow sponsored noopener"
+           class="hover:text-yellow-300">Amazon</a>
+        <a href="https://facebook.com/dealdynamo360" target="_blank" class="hover:text-yellow-300">Facebook</a>
+        <a href="https://youtube.com/@dealdynamo360" target="_blank" class="hover:text-yellow-300">YouTube</a>
+        <a href="https://www.tiktok.com/@dealdynamo360" target="_blank" class="hover:text-yellow-300">TikTok</a>
+        <a href="https://instagram.com/dealdynamo360" target="_blank" class="hover:text-yellow-300">Instagram</a>
+        <button id="open-earn"
+                class="bg-yellow-500 text-gray-900 px-3 py-1 rounded-lg font-semibold hover:bg-yellow-400">
+          How I Earn
+        </button>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Top Deals This Week</h2>
-    </section>
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-500 text-white text-center py-14">
+    <h2 class="text-4xl font-bold mb-2">🔥 Top Deals This Week 🔥</h2>
+    <p class="text-lg">Hand-picked health & lifestyle products</p>
+  </section>
 
-    <section class="products">
-      <div class="product-card" style="background:#f8e1e1;">
-        <img src="SleepLean.png" alt="Sleep Lean">
-        <h3>Sleep Lean</h3>
-        <p>All natural formula that helps eliminate excess body fat while maintaining long-term results.</p>
-        <a href="https://268fb7i1s0b8ymaep5m9r-gg5v.hop.clickbank.net" target="_blank" class="buy-btn">Buy Now</a>
+  <!-- Products Grid with colored placeholders -->
+  <section class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 py-12 px-6">
+
+    <!-- Sleep Lean -->
+    <div class="rounded-2xl shadow-lg p-6 text-center bg-blue-100 hover:shadow-2xl transition">
+      <img src="images/SleepLean.png" alt="Sleep Lean Supplement" class="mx-auto mb-4 h-48 object-contain">
+      <h3 class="text-xl font-bold mb-2">Sleep Lean</h3>
+      <p class="text-gray-700 mb-4">All-natural formula that helps eliminate excess body fat while supporting restful sleep.</p>
+      <a href="https://268fb7i1s0b8ymaep5m9r-gg5v.hop.clickbank.net"
+         target="_blank" rel="nofollow sponsored noopener"
+         class="inline-block bg-blue-600 text-white px-5 py-2 rounded-xl shadow hover:bg-blue-700 transition">
+         Buy Now
+      </a>
+    </div>
+
+    <!-- GlucoTonic -->
+    <div class="rounded-2xl shadow-lg p-6 text-center bg-green-100 hover:shadow-2xl transition">
+      <img src="images/Glucotonic.jpg" alt="GlucoTonic bottle" class="mx-auto mb-4 h-48 object-contain">
+      <h3 class="text-xl font-bold mb-2">GlucoTonic</h3>
+      <p class="text-gray-700 mb-4">Powerful blood sugar support and all-day energy helper trusted by thousands worldwide.</p>
+      <a href="https://9910d9q7pyd7tiffvteg5mp5mf.hop.clickbank.net"
+         target="_blank" rel="nofollow sponsored noopener"
+         class="inline-block bg-green-600 text-white px-5 py-2 rounded-xl shadow hover:bg-green-700 transition">
+         Buy Now
+      </a>
+    </div>
+
+    <!-- Ted’s Woodworking Plans -->
+    <div class="rounded-2xl shadow-lg p-6 text-center bg-yellow-100 hover:shadow-2xl transition">
+      <img src="images/TedsPlan.jpg" alt="Ted’s Woodworking Plans" class="mx-auto mb-4 h-48 object-contain">
+      <h3 class="text-xl font-bold mb-2">Ted’s Woodworking Plans</h3>
+      <p class="text-gray-700 mb-4">Instant access to 16,000 woodworking plans with diagrams and materials lists.</p>
+      <a href="https://c7cd13q7z5981c9elzwgw-1jf4.hop.clickbank.net"
+         target="_blank" rel="nofollow sponsored noopener"
+         class="inline-block bg-yellow-600 text-white px-5 py-2 rounded-xl shadow hover:bg-yellow-700 transition">
+         Buy Now
+      </a>
+    </div>
+
+    <!-- Amazon Deals -->
+    <div class="rounded-2xl shadow-lg p-6 text-center bg-orange-100 hover:shadow-2xl transition">
+      <img src="images/AmazonPlaceholder.png" alt="Amazon deals" class="mx-auto mb-4 h-48 object-contain">
+      <h3 class="text-xl font-bold mb-2">Amazon Deals</h3>
+      <p class="text-gray-700 mb-4">Browse trending products and daily discounts directly on Amazon.</p>
+      <a href="https://www.amazon.com/s?k=best+deals&tag=dealdynamo360-20"
+         target="_blank" rel="nofollow sponsored noopener"
+         class="inline-block bg-orange-600 text-white px-5 py-2 rounded-xl shadow hover:bg-orange-700 transition">
+         Shop Amazon
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Daily Deals -->
+  <section class="bg-gray-200 py-12 text-center">
+    <h3 class="text-2xl font-bold mb-2">💥 Daily Deals Auto-Refresh (Coming Soon)</h3>
+    <p class="text-gray-700">Stay tuned for automated fresh offers every day.</p>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-blue-600 py-12 text-center text-white relative">
+    <h3 class="text-2xl font-bold mb-3">Join Our DealDynamo Community</h3>
+    <p class="mb-6">Get the hottest deals straight to your inbox.</p>
+    <form class="max-w-md mx-auto flex bg-white rounded-xl overflow-hidden">
+      <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 text-gray-800 outline-none" required>
+      <button type="submit" class="bg-yellow-500 px-6 py-2 font-bold text-gray-900 hover:bg-yellow-400 transition">Subscribe</button>
+    </form>
+    <img src="images/gmail-overlay.png" alt="Gmail envelope"
+         class="absolute bottom-0 right-0 w-32 opacity-80 pointer-events-none select-none">
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto px-6 text-center space-y-2">
+      <p>&copy; 2025 DealDynamo. All Rights Reserved.</p>
+      <p class="text-xs opacity-80">
+        As an Amazon Associate and ClickBank affiliate, we may earn from qualifying purchases.
+      </p>
+      <div class="flex justify-center gap-4">
+        <a href="https://www.amazon.com/s?k=best+deals&tag=dealdynamo360-20"
+           target="_blank" rel="nofollow sponsored noopener" class="hover:text-yellow-300">Shop Amazon</a>
+        <a href="https://facebook.com/dealdynamo360" target="_blank" class="hover:text-yellow-300">Facebook</a>
+        <a href="#" id="open-earn-footer" class="hover:text-yellow-300">How I Earn</a>
       </div>
-
-      <div class="product-card" style="background:#e1f8e4;">
-        <img src="Glucotonic.jpg" alt="Glucotonic">
-        <h3>Glucotonic</h3>
-        <p>Powerful and effective blood sugar support and all-day energy helper with great results.</p>
-        <a href="https://9910d9q7pyd7tiffvteg5mp5mf.hop.clickbank.net" target="_blank" class="buy-btn">Buy Now</a>
-      </div>
-
-      <div class="product-card" style="background:#e1e8f8;">
-        <img src="TedsPlan.jpg" alt="TedsPlan">
-        <h3>TedsPlan</h3>
-        <p>16,000 Woodworking Plans for your DIY projects at home.</p>
-        <a href="https://c7cd13q7z5981c9elzwgw-1jf4.hop.clickbank.net" target="_blank" class="buy-btn">Buy Now</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 DealDynamo360 | All Rights Reserved</p>
+    </div>
   </footer>
+
+  <!-- How I Earn Modal -->
+  <div id="earn-modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center p-4 z-50">
+    <div class="bg-white rounded-2xl shadow-xl max-w-lg w-full p-6 relative">
+      <button id="close-earn" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">&times;</button>
+      <h4 class="text-xl font-bold mb-3">How I Earn</h4>
+      <p class="text-gray-700 mb-3">
+        DealDynamo is supported through affiliate partnerships. When you click links on this site and make a purchase, we may earn a commission at no extra cost to you.
+      </p>
+      <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-4">
+        <li><strong>Amazon Associates:</strong> As an Amazon Associate we earn from qualifying purchases.</li>
+        <li><strong>ClickBank:</strong> Some offers are provided via ClickBank as <code>rel="sponsored"</code> links.</li>
+      </ul>
+      <div class="mt-5 text-right">
+        <button id="close-earn-cta" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal JS -->
+  <script>
+    const modal = document.getElementById('earn-modal');
+    const openEarn = document.getElementById('open-earn');
+    const openEarnFooter = document.getElementById('open-earn-footer');
+    const closeBtns = [document.getElementById('close-earn'), document.getElementById('close-earn-cta')];
+
+    [openEarn, openEarnFooter].forEach(btn => {
+      if (btn) btn.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      });
+    });
+
+    closeBtns.forEach(btn => btn && btn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }));
+
+    modal.addEventListener('click', e => {
+      if (e.target === modal) modal.classList.add('hidden');
+    });
+  </script>
 </body>
 </html>
+
+
