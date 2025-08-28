@@ -1,113 +1,68 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DealDynamo360 - Hot Deals & Top Offers</title>
-  
-  <!-- ✅ SEO Meta Tags -->
-  <meta name="description" content="DealDynamo360 brings you the hottest online deals - health, fitness, lifestyle, woodworking, and top Amazon offers.">
-  <meta name="keywords" content="deals, discounts, hot offers, health supplements, woodworking plans, fitness programs, Amazon deals">
-  <meta name="author" content="DealDynamo360">
-
-  <!-- ✅ Open Graph -->
-  <meta property="og:title" content="DealDynamo360 - Hot Deals & Top Offers">
-  <meta property="og:description" content="Discover trending deals in health, lifestyle, fitness, and Amazon products. Updated regularly.">
-  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
-  <meta property="og:url" content="https://yourdomain.vercel.app">
-  <meta property="og:type" content="website">
-
-  <!-- ✅ Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="DealDynamo360 - Hot Deals & Top Offers">
-  <meta name="twitter:description" content="Discover trending deals in health, lifestyle, fitness, and Amazon products. Updated regularly.">
-  <meta name="twitter:image" content="https://yourdomain.com/preview.jpg">
-
-  <!-- ✅ Robots + Sitemap -->
-  <meta name="robots" content="index, follow">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-
-  <!-- ✅ Google Search Console Verification -->
-  <meta name="google-site-verification" content="PASTE_YOUR_GSC_CODE_HERE">
-
-  <!-- ✅ Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DealDynamo360 - Hot Deals</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; color: #333; }
+    header { background: #111; color: #fff; padding: 1rem; text-align: center; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; padding: 2rem; }
+    .card { background: #fff; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 1rem; text-align: center; transition: transform 0.2s ease; }
+    .card:hover { transform: translateY(-5px); }
+    .card img { max-width: 100%; border-radius: 8px; }
+    .btn { display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; color: #fff; font-weight: bold; }
+    .amazon { background: #ff9900; }
+    .smoothie { background: #e91e63; }
+    .generator { background: #ff5722; }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body>
 
-  <!-- Header -->
-  <header class="bg-blue-600 text-white p-6 text-center shadow-md">
-    <h1 class="text-3xl font-bold">DealDynamo360</h1>
-    <p class="text-lg">Hot Deals • Top Offers • Smart Savings</p>
+  <header>
+    <h1>🔥 DealDynamo360: Today’s Hottest Deals 🔥</h1>
+    <p>Discover trending products & exclusive offers that save you money and boost your lifestyle.</p>
   </header>
 
-  <!-- Deals Grid -->
-  <main class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+  <section class="grid">
 
-    <!-- Sleep Lean -->
-    <div class="bg-red-200 p-6 rounded-2xl shadow">
-      <img src="SleepLean.png" alt="Sleep Lean - Fat Loss Supplement" class="rounded-lg mb-4">
-      <h2 class="text-xl font-bold mb-2">Sleep Lean</h2>
-      <p class="mb-4">All-natural formula to eliminate excess body fat while maintaining long-term results.</p>
-      <a href="https://268fb7i1s0b8ymaep5m9r-gg5v.hop.clickbank.net" target="_blank" class="bg-red-600 text-white px-4 py-2 rounded-lg">Buy Now</a>
+    <!-- Example Amazon Product -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71xJ9r9r6oL._AC_SL1500_.jpg" alt="Noise Cancelling Headphones">
+      <h3>Noise Cancelling Headphones</h3>
+      <p>Experience superior sound and focus anywhere you go.</p>
+      <a href="https://www.amazon.com/s?k=noise+cancelling+headphones&tag=dealdynamo360-20" 
+         class="btn amazon" target="_blank" rel="nofollow sponsored noopener">Buy Now</a>
     </div>
 
-    <!-- Glucotonic -->
-    <div class="bg-green-200 p-6 rounded-2xl shadow">
-      <img src="Glucotonic.jpg" alt="Glucotonic - Blood Sugar Support" class="rounded-lg mb-4">
-      <h2 class="text-xl font-bold mb-2">GlucoTonic</h2>
-      <p class="mb-4">Powerful blood sugar support & all-day energy booster with great results worldwide.</p>
-      <a href="https://9910d9q7pyd7tiffvteg5mp5mf.hop.clickbank.net" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg">Buy Now</a>
+    <!-- Another Amazon Product -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/81aJybY7n6L._AC_SL1500_.jpg" alt="Portable Power Bank">
+      <h3>Portable Power Bank</h3>
+      <p>Stay charged on the go with this compact, powerful powerbank.</p>
+      <a href="https://www.amazon.com/s?k=portable+power+bank&tag=dealdynamo360-20" 
+         class="btn amazon" target="_blank" rel="nofollow sponsored noopener">Buy Now</a>
     </div>
 
-    <!-- Ted's Woodworking -->
-    <div class="bg-yellow-200 p-6 rounded-2xl shadow">
-      <img src="TedsPlan.jpg" alt="Ted's 16,000 Woodworking Plans" class="rounded-lg mb-4">
-      <h2 class="text-xl font-bold mb-2">Ted's Woodworking</h2>
-      <p class="mb-4">Get instant access to 16,000 woodworking plans with step-by-step instructions.</p>
-      <a href="https://c7cd13q7z5981c9elzwgw-1jf4.hop.clickbank.net" target="_blank" class="bg-yellow-600 text-white px-4 py-2 rounded-lg">Buy Now</a>
+    <!-- The Smoothie Diet -->
+    <div class="card">
+      <img src="The Smoothie Diet – 21-Day Rapid Weight Loss.jpg" alt="The Smoothie Diet">
+      <h3>21-Day Smoothie Diet</h3>
+      <p>Delicious, easy-to-make smoothies for rapid weight loss & energy.</p>
+      <a href="https://6ffdf5i0r8d8qg1dtm-qq7k5xj.hop.clickbank.net" 
+         class="btn smoothie" target="_blank" rel="nofollow sponsored noopener">Get Instant Access</a>
     </div>
 
-    <!-- Vert Shock -->
-    <div class="bg-purple-200 p-6 rounded-2xl shadow">
-      <img src="VertShock.jpg" alt="Vert Shock - Jump Training Program" class="rounded-lg mb-4">
-      <h2 class="text-xl font-bold mb-2">Vert Shock</h2>
-      <p class="mb-4">The #1 jump training program scientifically designed to add 9–15 inches to your vertical jump.</p>
-      <a href="https://74f1f2m5s5d7x937ows0x7y-sf.hop.clickbank.net" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg">Buy Now</a>
+    <!-- The Lost Generator -->
+    <div class="card">
+      <img src="The Lost Generator.jpg" alt="The Lost Generator">
+      <h3>The Lost Generator</h3>
+      <p>Slash your electric bills by 90% using $12 hardware store parts.</p>
+      <a href="https://3888c9s-ua1e0icoi-wf3pv31p.hop.clickbank.net" 
+         class="btn generator" target="_blank" rel="nofollow sponsored noopener">Discover Now</a>
     </div>
 
-    <!-- Amazon Deals -->
-    <div class="bg-blue-200 p-6 rounded-2xl shadow">
-      <img src="amazon.jpg" alt="Amazon Hot Deals" class="rounded-lg mb-4">
-      <h2 class="text-xl font-bold mb-2">Amazon Hot Deals</h2>
-      <p class="mb-4">Browse the latest trending products and discounts available now on Amazon.</p>
-      <a href="https://www.amazon.com/s?k=deals&tag=dealdynamo360-20" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Shop Now</a>
-    </div>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white p-6 text-center mt-10">
-    <p>© 2025 DealDynamo360. All rights reserved.</p>
-    <div class="mt-4 flex justify-center gap-6">
-      <a href="https://www.facebook.com/profile.php?id=61577988074170" target="_blank">Facebook</a>
-      <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a>
-      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a>
-      <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a>
-    </div>
-    <p class="mt-4 text-xs text-gray-400 max-w-2xl mx-auto">
-      Affiliate Disclosure: DealDynamo360 participates in affiliate programs (including Amazon Associates and ClickBank). 
-      This means we may earn a commission when you purchase through our links — at no extra cost to you.
-    </p>
-  </footer>
+  </section>
 
 </body>
 </html>
