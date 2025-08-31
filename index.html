@@ -1,81 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DealDynamo360 - Best Product Comparisons & Hot Deals</title>
-  <meta name="description" content="Discover trending products, hot deals, and honest comparisons on DealDynamo360. Save big with the best offers updated daily." />
-  <meta name="keywords" content="product comparison, hot deals, Amazon deals, discounts, trending products, buy now" />
-  <meta property="og:title" content="DealDynamo360 - Hot Deals & Comparisons" />
-  <meta property="og:description" content="Compare products, grab daily deals, and shop smarter with DealDynamo360." />
-  <meta property="og:image" content="https://dummyimage.com/1200x630/ff6f61/ffffff&text=DealDynamo+Hot+Deals" />
-  <meta property="og:url" content="https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DealDynamo - Top Deals This Week</title>
+  <meta name="description" content="Find the best deals on trending products this week at DealDynamo. Compare prices and save big.">
+  <meta property="og:title" content="DealDynamo - Top Deals This Week">
+  <meta property="og:description" content="Find the best deals on trending products this week at DealDynamo. Compare prices and save big.">
+  <meta property="og:image" content="/images/preview.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DealDynamo - Top Deals This Week">
+  <meta name="twitter:description" content="Find the best deals on trending products this week at DealDynamo. Compare prices and save big.">
+  <meta name="twitter:image" content="/images/preview.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-gray-50 text-gray-900">
 
-  <!-- Hero -->
-  <header class="bg-gradient-to-r from-red-500 to-yellow-500 text-white text-center py-10 shadow-lg">
-    <h1 class="text-4xl font-extrabold">🔥 DealDynamo360 🔥</h1>
-    <p class="text-lg mt-2">Your hub for trending products & daily hot deals</p>
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-indigo-600">DealDynamo</h1>
+      <nav class="space-x-4">
+        <a href="#deals" class="text-gray-600 hover:text-indigo-600">Deals</a>
+        <a href="#categories" class="text-gray-600 hover:text-indigo-600">Categories</a>
+        <a href="#contact" class="text-gray-600 hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Product Grid -->
-  <main class="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- Hero -->
+  <section class="bg-indigo-600 text-white py-20 text-center">
+    <h2 class="text-4xl font-extrabold">Top Deals This Week</h2>
+    <p class="mt-4 text-lg">Handpicked savings on trending products</p>
+  </section>
 
-    <!-- Example Product -->
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden p-4">
-      <img src="https://dummyimage.com/400x300/ff6f61/ffffff&text=DealDynamo" alt="Sleep Lean product" class="w-full h-48 object-cover rounded-lg">
-      <h2 class="text-xl font-bold mt-3">Sleep Lean</h2>
-      <p class="mt-1">All-natural formula to eliminate excess body fat while maintaining long-term results.</p>
-      <a href="https://www.amazon.com/s?k=Sleep+Lean&tag=dealdynamo360-20" target="_blank" class="mt-3 inline-block bg-red-500 text-white px-4 py-2 rounded-lg">Buy Now</a>
+  <!-- Deals Section -->
+  <section id="deals" class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    
+    <!-- Product 1 -->
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <img src="/images/sleep-lean.jpg" alt="Sleep Lean Supplement" class="w-full h-48 object-cover rounded-lg">
+      <h3 class="mt-4 text-lg font-semibold">Sleep Lean</h3>
+      <p class="mt-2 text-gray-600">Boost metabolism and improve sleep quality.</p>
+      <a href="https://www.amazon.com/s?k=sleep+lean&tag=dealdynamo360-20" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Buy Now</a>
     </div>
 
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden p-4">
-      <img src="https://dummyimage.com/400x300/4ade80/ffffff&text=DealDynamo" alt="GlucoTonic supplement" class="w-full h-48 object-cover rounded-lg">
-      <h2 class="text-xl font-bold mt-3">GlucoTonic</h2>
-      <p class="mt-1">Powerful blood sugar support & all-day energy booster with great results worldwide.</p>
-      <a href="https://www.amazon.com/s?k=GlucoTonic&tag=dealdynamo360-20" target="_blank" class="mt-3 inline-block bg-green-500 text-white px-4 py-2 rounded-lg">Buy Now</a>
+    <!-- Product 2 -->
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <img src="/images/noise-cancelling-headphones.jpg" alt="Noise Cancelling Headphones" class="w-full h-48 object-cover rounded-lg">
+      <h3 class="mt-4 text-lg font-semibold">Noise Cancelling Headphones</h3>
+      <p class="mt-2 text-gray-600">Experience pure sound without distractions.</p>
+      <a href="https://www.amazon.com/s?k=noise+cancelling+headphones&tag=dealdynamo360-20" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Buy Now</a>
     </div>
 
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden p-4">
-      <img src="https://dummyimage.com/400x300/facc15/000000&text=DealDynamo" alt="Ted's Woodworking Plans" class="w-full h-48 object-cover rounded-lg">
-      <h2 class="text-xl font-bold mt-3">Ted's Woodworking</h2>
-      <p class="mt-1">Get instant access to 16,000 woodworking plans with step-by-step instructions.</p>
-      <a href="https://www.amazon.com/s?k=Woodworking+Plans&tag=dealdynamo360-20" target="_blank" class="mt-3 inline-block bg-yellow-500 text-white px-4 py-2 rounded-lg">Buy Now</a>
+    <!-- Product 3 -->
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <img src="/images/powerbank.jpg" alt="Portable Powerbank" class="w-full h-48 object-cover rounded-lg">
+      <h3 class="mt-4 text-lg font-semibold">Portable Powerbank</h3>
+      <p class="mt-2 text-gray-600">Stay charged anywhere, anytime.</p>
+      <a href="https://www.amazon.com/s?k=portable+powerbank&tag=dealdynamo360-20" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Buy Now</a>
     </div>
 
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden p-4">
-      <img src="https://dummyimage.com/400x300/a78bfa/ffffff&text=DealDynamo" alt="Vert Shock jump program" class="w-full h-48 object-cover rounded-lg">
-      <h2 class="text-xl font-bold mt-3">Vert Shock</h2>
-      <p class="mt-1">The #1 jump training program scientifically designed to add 9–15 inches to your vertical jump.</p>
-      <a href="https://www.amazon.com/s?k=Vert+Shock&tag=dealdynamo360-20" target="_blank" class="mt-3 inline-block bg-purple-600 text-white px-4 py-2 rounded-lg">Buy Now</a>
+    <!-- Product 4 -->
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <img src="/images/smartwatch.jpg" alt="Smartwatch" class="w-full h-48 object-cover rounded-lg">
+      <h3 class="mt-4 text-lg font-semibold">Smartwatch</h3>
+      <p class="mt-2 text-gray-600">Track fitness, notifications, and more.</p>
+      <a href="https://www.amazon.com/s?k=smartwatch&tag=dealdynamo360-20" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Buy Now</a>
     </div>
 
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden p-4">
-      <img src="https://dummyimage.com/400x300/3b82f6/ffffff&text=DealDynamo" alt="Amazon hot deals" class="w-full h-48 object-cover rounded-lg">
-      <h2 class="text-xl font-bold mt-3">Amazon Hot Deals</h2>
-      <p class="mt-1">Browse the latest trending products and discounts available now on Amazon.</p>
-      <a href="https://www.amazon.com/deals?tag=dealdynamo360-20" target="_blank" class="mt-3 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg">Shop Now</a>
+    <!-- Product 5 -->
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <img src="/images/wireless-earbuds.jpg" alt="Wireless Earbuds" class="w-full h-48 object-cover rounded-lg">
+      <h3 class="mt-4 text-lg font-semibold">Wireless Earbuds</h3>
+      <p class="mt-2 text-gray-600">Crystal clear sound with true freedom.</p>
+      <a href="https://www.amazon.com/s?k=wireless+earbuds&tag=dealdynamo360-20" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Buy Now</a>
     </div>
 
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden p-4">
-      <img src="https://dummyimage.com/400x300/f472b6/ffffff&text=DealDynamo" alt="21-Day Smoothie Diet" class="w-full h-48 object-cover rounded-lg">
-      <h2 class="text-xl font-bold mt-3">21-Day Smoothie Diet</h2>
-      <p class="mt-1">Delicious, easy-to-make smoothies for rapid weight loss & increased energy.</p>
-      <a href="https://www.amazon.com/s?k=Smoothie+Diet&tag=dealdynamo360-20" target="_blank" class="mt-3 inline-block bg-pink-500 text-white px-4 py-2 rounded-lg">Get Instant Access</a>
+    <!-- Product 6 -->
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <img src="/images/fitness-tracker.jpg" alt="Fitness Tracker" class="w-full h-48 object-cover rounded-lg">
+      <h3 class="mt-4 text-lg font-semibold">Fitness Tracker</h3>
+      <p class="mt-2 text-gray-600">Monitor health stats and daily activities.</p>
+      <a href="https://www.amazon.com/s?k=fitness+tracker&tag=dealdynamo360-20" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Buy Now</a>
     </div>
 
-  </main>
+    <!-- Product 7 -->
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <img src="/images/gaming-mouse.jpg" alt="Gaming Mouse" class="w-full h-48 object-cover rounded-lg">
+      <h3 class="mt-4 text-lg font-semibold">Gaming Mouse</h3>
+      <p class="mt-2 text-gray-600">Precision and speed for serious gamers.</p>
+      <a href="https://www.amazon.com/s?k=gaming+mouse&tag=dealdynamo360-20" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Buy Now</a>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <img src="/images/portable-speaker.jpg" alt="Portable Bluetooth Speaker" class="w-full h-48 object-cover rounded-lg">
+      <h3 class="mt-4 text-lg font-semibold">Portable Speaker</h3>
+      <p class="mt-2 text-gray-600">Take the music anywhere you go.</p>
+      <a href="https://www.amazon.com/s?k=portable+bluetooth+speaker&tag=dealdynamo360-20" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Buy Now</a>
+    </div>
+
+  </section>
 
   <!-- Footer -->
-  <footer class="text-center text-gray-600 text-sm py-6">
-    © 2025 DealDynamo360 | All rights reserved <br>
-    <a href="https://youtube.com/@DealDynamo360" class="text-blue-600">YouTube</a> ·
-    <a href="https://www.instagram.com/dealdynamo360" class="text-pink-500">Instagram</a> ·
-    <a href="https://www.tiktok.com/@dealdynamo360" class="text-black">TikTok</a>
-    <p class="mt-2 text-xs">As an Amazon Associate we earn from qualifying purchases.</p>
+  <footer class="bg-white mt-12 py-6 shadow-inner">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-500">&copy; 2025 DealDynamo. All rights reserved.</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="https://www.tiktok.com/@dealdynamo360" target="_blank"><img src="/images/tiktok-icon.svg" alt="TikTok" class="h-6"></a>
+        <a href="https://www.youtube.com/@DealDynamo360" target="_blank"><img src="/images/youtube-icon.svg" alt="YouTube" class="h-6"></a>
+        <a href="https://www.instagram.com/dealdynamo360" target="_blank"><img src="/images/instagram-icon.svg" alt="Instagram" class="h-6"></a>
+        <a href="https://www.facebook.com/profile.php?id=61577988074170" target="_blank"><img src="/images/facebook-icon.svg" alt="Facebook" class="h-6"></a>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 text-center mt-4">As an Amazon Associate, DealDynamo earns from qualifying purchases.</p>
   </footer>
 
 </body>
