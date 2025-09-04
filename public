@@ -7,7 +7,7 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Products (anchors won't be treated as separate pages but helps signal sections) -->
+  <!-- Product sections -->
   <url>
     <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#sleep-lean</loc>
     <priority>0.8</priority>
@@ -38,3 +38,7 @@
   </url>
 
 </urlset>
+User-agent: *
+Allow: /
+
+Sitemap: https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/sitemap.xml
