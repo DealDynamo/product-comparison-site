@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/sitemap.xml
-
