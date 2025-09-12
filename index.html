@@ -1,128 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DealDynamo360 – Top Deals, Health & Lifestyle Products</title>
-  <meta name="description" content="Discover the best product deals – health, fitness, lifestyle & Amazon specials. Updated regularly with exclusive offers and affiliate discounts." />
-  <link rel="canonical" href="https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="DealDynamo360 – Best Deals & Top Products" />
-  <meta property="og:description" content="Stay updated with trending products, fitness programs, supplements, and Amazon deals. Hand-picked for value and results." />
-  <meta property="og:image" content="https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/banner.jpg" />
-  <meta property="og:url" content="https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="DealDynamo360 – Best Deals & Top Products" />
-  <meta name="twitter:description" content="Discover trending deals and lifestyle products – Amazon specials, health & fitness solutions." />
-  <meta name="twitter:image" content="https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/banner.jpg" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DealDynamo360 - Your hub for exclusive product deals, Amazon specials, and trending offers.">
+  <title>DealDynamo360</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product h2 {
+      margin: 0.5rem 0;
+      font-size: 1.4rem;
+      color: #111;
+    }
+    .product p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .product a {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: #ff6a00;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .product a:hover {
+      background: #e55d00;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    .social-links a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .social-links img {
+      width: 28px;
+      height: 28px;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>DealDynamo360</h1>
-    <p>Your hub for exclusive product deals and Amazon specials.</p>
+    <p>Your hub for exclusive product deals and Amazon specials</p>
   </header>
 
-  <main>
-    <!-- Existing Products (unchanged) -->
-    <section id="sleep-lean">
+  <section class="products">
+    <div class="product" id="sleep-lean">
       <h2>Sleep Lean</h2>
       <p>Discover Sleep Lean – the supplement designed to improve sleep while supporting fat loss.</p>
-      <a href="YOUR_AFFILIATE_LINK" target="_blank">Buy Now</a>
-    </section>
+      <a href="https://your-affiliate-link.com" target="_blank">Buy Now</a>
+    </div>
 
-    <section id="glucotonic">
+    <div class="product" id="glucotonic">
       <h2>Glucotonic</h2>
       <p>Support healthy blood sugar levels with Glucotonic.</p>
-      <a href="YOUR_AFFILIATE_LINK" target="_blank">Buy Now</a>
-    </section>
+      <a href="https://your-affiliate-link.com" target="_blank">Buy Now</a>
+    </div>
 
-    <section id="teds-woodworking">
+    <div class="product" id="teds-woodworking">
       <h2>Ted's Woodworking</h2>
       <p>Over 16,000 woodworking plans for beginners and pros alike.</p>
-      <a href="YOUR_AFFILIATE_LINK" target="_blank">Buy Now</a>
-    </section>
+      <a href="https://your-affiliate-link.com" target="_blank">Buy Now</a>
+    </div>
 
-    <section id="vert-shock">
+    <div class="product" id="vert-shock">
       <h2>Vert Shock</h2>
       <p>Jump higher and improve performance with Vert Shock training.</p>
-      <a href="YOUR_AFFILIATE_LINK" target="_blank">Buy Now</a>
-    </section>
+      <a href="https://your-affiliate-link.com" target="_blank">Buy Now</a>
+    </div>
 
-    <section id="amazon-deals">
+    <div class="product" id="amazon-deals">
       <h2>Amazon Deals</h2>
       <p>Explore trending Amazon deals updated daily.</p>
-      <a href="YOUR_AFFILIATE_LINK" target="_blank">Shop Now</a>
-    </section>
+      <a href="https://amazon.com" target="_blank">Shop Now</a>
+    </div>
 
-    <section id="smoothie-diet">
+    <div class="product" id="smoothie-diet">
       <h2>Smoothie Diet</h2>
       <p>Transform your health with the 21-day Smoothie Diet program.</p>
-      <a href="YOUR_AFFILIATE_LINK" target="_blank">Buy Now</a>
-    </section>
+      <a href="https://your-affiliate-link.com" target="_blank">Buy Now</a>
+    </div>
 
-    <section id="lost-generator">
+    <div class="product" id="lost-generator">
       <h2>Lost Generator</h2>
-      <p>Portable power solution for camping, emergencies, and outdoor adventures.</p>
-      <a href="YOUR_AFFILIATE_LINK" target="_blank">Buy Now</a>
-    </section>
+      <p>Never lose power again – reliable portable generator for emergencies.</p>
+      <a href="https://your-affiliate-link.com" target="_blank">Buy Now</a>
+    </div>
 
-    <!-- 🔹 New Products -->
-    <section id="smart-water-box">
+    <!-- New Products -->
+    <div class="product" id="smart-water-box">
       <h2>Smart Water Box</h2>
-      <p>Stay hydrated, stay smart with the Smart Water Box – premium vapor-distilled water with electrolytes, delivered effortlessly to keep you refreshed and energized!</p>
+      <p>Stay hydrated, stay smart with premium vapor-distilled water with electrolytes delivered effortlessly!</p>
       <a href="https://2b3147hw-5bbph7obeqc62dpdm.hop.clickbank.net" target="_blank">Buy Now</a>
-    </section>
+    </div>
 
-    <section id="mitolyn">
+    <div class="product" id="mitolyn">
       <h2>Mitolyn</h2>
-      <p>Unleash your metabolic potential with Mitolyn – the ultimate weight loss supplement that fuels energy, torches fat, and transforms your body.</p>
+      <p>Unleash your metabolic potential – fuel energy, torch fat, and transform your body with Mitolyn.</p>
       <a href="https://1060d9nz058jnddimp-abj6zdb.hop.clickbank.net" target="_blank">Buy Now</a>
-    </section>
+    </div>
 
-    <section id="prodentim">
+    <div class="product" id="prodentim">
       <h2>ProDentim</h2>
-      <p>Transform your smile with ProDentim – the revolutionary oral probiotic that strengthens teeth, freshens breath, and boosts gum health naturally!</p>
+      <p>Transform your smile with ProDentim – the revolutionary oral probiotic for teeth and gum health!</p>
       <a href="https://73e18-j0oz69s899tbs32lwc3b.hop.clickbank.net" target="_blank">Buy Now</a>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 DealDynamo360 | All rights reserved.</p>
+    <p>© 2025 DealDynamo360. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.youtube.com/@DealDynamo360" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046125.png" alt="TikTok"></a>
+      <a href="https://instagram.com/dealdynamo360" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"></a>
+      <a href="mailto:dealdynamo360@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail"></a>
+    </div>
   </footer>
 
-  <!-- 🔹 Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "Product",
-        "name": "Smart Water Box",
-        "description": "Premium vapor-distilled water with electrolytes.",
-        "url": "https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#smart-water-box"
-      },
-      {
-        "@type": "Product",
-        "name": "Mitolyn",
-        "description": "Weight loss supplement that fuels energy and burns fat.",
-        "url": "https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#mitolyn"
-      },
-      {
-        "@type": "Product",
-        "name": "ProDentim",
-        "description": "Oral probiotic for stronger teeth and healthier gums.",
-        "url": "https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#prodentim"
-      }
-    ]
-  }
-  </script>
 </body>
 </html>
