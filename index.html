@@ -1,169 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DealDynamo360</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f9fa;
-    }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DealDynamo360 - Shockingly Cool Products. Always.</title>
 
-    /* Logo + Slogan section */
-    .logo-section {
-      text-align: center;
-      padding: 20px 10px 10px 10px;
-      background-color: #fff;
-    }
+  <!-- Basic SEO -->
+  <meta name="description" content="DealDynamo360 brings you shockingly cool products across health, fitness, lifestyle, woodworking, and top Amazon finds.">
+  <meta name="author" content="DealDynamo360">
 
-    .logo-section img {
-      max-width: 220px;
-      height: auto;
-    }
+  <!-- Open Graph -->
+  <meta property="og:title" content="DealDynamo360 - Shockingly Cool Products. Always.">
+  <meta property="og:description" content="Discover shockingly cool products in health, lifestyle, fitness, and Amazon finds.">
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+  <meta property="og:type" content="website">
 
-    .logo-section p {
-      font-size: 1.2rem;
-      font-weight: 500;
-      margin: 10px 0 0 0;
-      color: #333;
-    }
-
-    /* Navigation bar */
-    .navbar {
-      background-color: #000; /* Changed from blue to black */
-      color: white;
-      padding: 12px;
-      text-align: center;
-      font-size: 1.3rem;
-      font-weight: bold;
-    }
-
-    /* Product grid */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .card img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    .card h3 {
-      margin: 10px 0;
-      font-size: 1.2rem;
-    }
-
-    .card p {
-      font-size: 0.95rem;
-      margin-bottom: 15px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 18px;
-      font-size: 0.95rem;
-      font-weight: bold;
-      border-radius: 6px;
-      text-decoration: none;
-      color: white;
-    }
-
-    .btn-red {
-      background-color: #e74c3c;
-    }
-
-    .btn-green {
-      background-color: #27ae60;
-    }
-
-    .btn-yellow {
-      background-color: #f39c12;
-    }
-
-    .btn-blue {
-      background-color: #2980b9;
-    }
-
-    .btn-purple {
-      background-color: #8e44ad;
-    }
-
-    .btn-pink {
-      background-color: #d63384;
-    }
-  </style>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100 font-sans leading-relaxed">
 
-  <!-- Logo + Slogan -->
-  <div class="logo-section">
-    <img src="your-logo-file.png" alt="DealDynamo Logo" />
-    <p>Shockingly Cool Products. Always.</p>
+  <!-- ===== Logo on TOP (centered) ===== -->
+  <div class="bg-white py-6 flex flex-col items-center justify-center">
+    <!-- Put your exported logo at images/DealDynamoLogo.png -->
+    <img src="images/DealDynamoLogo.png" alt="DealDynamo Logo" class="h-20 object-contain mb-3" />
+    <p class="text-gray-700 text-lg italic">Shockingly Cool Products. Always.</p>
   </div>
 
-  <!-- Navigation Bar -->
-  <div class="navbar">
-    DealDynamo360
-  </div>
-
-  <!-- Product Grid -->
-  <div class="grid">
-    <div class="card" style="background-color:#ffe5e5;">
-      <img src="sleep-lean.jpg" alt="Sleep Lean - Fat Loss Supplement">
-      <h3>Sleep Lean</h3>
-      <p>All-natural formula to eliminate excess body fat while maintaining long-term results.</p>
-      <a href="#" class="btn btn-red">Buy Now</a>
+  <!-- ===== Black nav bar (under logo) ===== -->
+  <nav class="bg-black text-white py-3 shadow-md">
+    <div class="container mx-auto px-6 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <span class="font-bold text-xl">DealDynamo360</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-6 text-sm">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Categories</a>
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Contact</a>
+      </div>
     </div>
+  </nav>
 
-    <div class="card" style="background-color:#d4fdd6;">
-      <img src="glucotonic.jpg" alt="GlucoTonic - Blood Sugar Support">
-      <h3>GlucoTonic</h3>
-      <p>Powerful blood sugar support & all-day energy booster with great results worldwide.</p>
-      <a href="#" class="btn btn-green">Buy Now</a>
-    </div>
+  <!-- ===== Main product grid ===== -->
+  <main class="p-6 container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-    <div class="card" style="background-color:#fff0b3;">
-      <img src="teds-woodworking.jpg" alt="Ted's 16,000 Woodworking Plans">
-      <h3>Ted's Woodworking</h3>
-      <p>Get instant access to 16,000 woodworking plans with step-by-step instructions.</p>
-      <a href="#" class="btn btn-yellow">Buy Now</a>
-    </div>
+      <!-- Sleep Lean -->
+      <div class="bg-red-100 p-6 rounded-2xl shadow">
+        <img src="images/SleepLean.png" alt="Sleep Lean - Fat Loss Supplement" class="rounded-lg mb-4 w-full object-cover">
+        <h2 class="text-xl font-bold mb-2">Sleep Lean</h2>
+        <p class="mb-4">All-natural formula to eliminate excess body fat while maintaining long-term results.</p>
+        <a href="https://268fb7i1s0b8ymaep5m9r-gg5v.hop.clickbank.net" target="_blank" class="bg-red-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+      </div>
 
-    <div class="card" style="background-color:#e6ccff;">
-      <img src="vert-shock.jpg" alt="Vert Shock - Jump Training Program">
-      <h3>Vert Shock</h3>
-      <p>The #1 jump training program scientifically designed to add 9–15 inches to your vertical jump.</p>
-      <a href="#" class="btn btn-purple">Buy Now</a>
-    </div>
+      <!-- GlucoTonic -->
+      <div class="bg-green-100 p-6 rounded-2xl shadow">
+        <img src="images/Glucotonic.jpg" alt="Glucotonic - Blood Sugar Support" class="rounded-lg mb-4 w-full object-cover">
+        <h2 class="text-xl font-bold mb-2">GlucoTonic</h2>
+        <p class="mb-4">Powerful blood sugar support & all-day energy booster with great results worldwide.</p>
+        <a href="https://9910d9q7pyd7tiffvteg5mp5mf.hop.clickbank.net" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+      </div>
 
-    <div class="card" style="background-color:#cce6ff;">
-      <img src="amazon-hot.jpg" alt="Amazon Hot Deals">
-      <h3>Amazon Hot Deals</h3>
-      <p>Browse the latest trending products and discounts available now on Amazon.</p>
-      <a href="#" class="btn btn-blue">Shop Now</a>
-    </div>
+      <!-- Ted's Woodworking -->
+      <div class="bg-yellow-100 p-6 rounded-2xl shadow">
+        <img src="images/TedsPlan.jpg" alt="Ted's 16,000 Woodworking Plans" class="rounded-lg mb-4 w-full object-cover">
+        <h2 class="text-xl font-bold mb-2">Ted's Woodworking</h2>
+        <p class="mb-4">Get instant access to 16,000 woodworking plans with step-by-step instructions.</p>
+        <a href="https://c7cd13q7z5981c9elzwgw-1jf4.hop.clickbank.net" target="_blank" class="bg-yellow-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+      </div>
 
-    <div class="card" style="background-color:#ffe6f2;">
-      <img src="smoothie-diet.jpg" alt="The Smoothie Diet - 21 Day">
-      <h3>21-Day Smoothie Diet</h3>
-      <p>Delicious, easy-to-make smoothies for rapid weight loss & increased energy.</p>
-      <a href="#" class="btn btn-pink">Get Instant Access</a>
+      <!-- Vert Shock -->
+      <div class="bg-purple-100 p-6 rounded-2xl shadow">
+        <img src="images/VertShock.jpg" alt="Vert Shock - Jump Training Program" class="rounded-lg mb-4 w-full object-cover">
+        <h2 class="text-xl font-bold mb-2">Vert Shock</h2>
+        <p class="mb-4">The #1 jump training program scientifically designed to add 9–15 inches to your vertical jump.</p>
+        <a href="https://74f1f2m5s5d7x937ows0x7y-sf.hop.clickbank.net" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+      </div>
+
+      <!-- Amazon Hot Deals -->
+      <div class="bg-blue-100 p-6 rounded-2xl shadow">
+        <img src="images/amazon.jpg" alt="Amazon Hot Deals" class="rounded-lg mb-4 w-full object-cover">
+        <h2 class="text-xl font-bold mb-2">Amazon Hot Deals</h2>
+        <p class="mb-4">Browse the latest trending products and discounts available now on Amazon.</p>
+        <a href="https://www.amazon.com/s?k=deals&tag=dealdynamo360-20" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg inline-block">Shop Now</a>
+      </div>
+
+      <!-- Smoothie Diet -->
+      <div class="bg-pink-100 p-6 rounded-2xl shadow">
+        <img src="images/SmoothieDiet.jpg" alt="The Smoothie Diet - 21 Day" class="rounded-lg mb-4 w-full object-contain h-48">
+        <h3 class="text-xl font-bold mb-2">21-Day Smoothie Diet</h3>
+        <p class="text-gray-700 mb-4">Delicious, easy-to-make smoothies for rapid weight loss & increased energy.</p>
+        <a href="https://6ffdf5i0r8d8qg1dtm-qq7k5xj.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener" class="inline-block bg-pink-600 text-white px-5 py-2 rounded-xl shadow">Get Instant Access</a>
+      </div>
+
+      <!-- The Lost Generator -->
+      <div class="bg-violet-50 p-6 rounded-2xl shadow">
+        <img src="images/LostGenerator.jpg" alt="The Lost Generator" class="rounded-lg mb-4 w-full object-contain h-48">
+        <h3 class="text-xl font-bold mb-2">The Lost Generator</h3>
+        <p class="text-gray-700 mb-4">Slash your electric bills by ~90% using $12 hardware-store parts.</p>
+        <a href="https://3888c9s-ua1e0icoi-wf3pv31p.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener" class="inline-block bg-purple-600 text-white px-5 py-2 rounded-xl shadow">Discover Now</a>
+      </div>
+
+      <!-- Smart Water Box -->
+      <div class="bg-cyan-100 p-6 rounded-2xl shadow">
+        <img src="images/SmartWaterBox.jpg" alt="Smart Water Box" class="rounded-lg mb-4 w-full object-contain h-48">
+        <h3 class="text-xl font-bold mb-2">Smart Water Box</h3>
+        <p class="text-gray-700 mb-4">Stay hydrated with premium vapor-distilled water + electrolytes delivered to your door.</p>
+        <a href="https://2b3147hw-5bbph7obeqc62dpdm.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener" class="inline-block bg-cyan-600 text-white px-5 py-2 rounded-xl shadow">Grab Yours Now</a>
+      </div>
+
+      <!-- Mitolyn -->
+      <div class="bg-orange-100 p-6 rounded-2xl shadow">
+        <img src="images/Mitolyn.jpg" alt="Mitolyn Supplement" class="rounded-lg mb-4 w-full object-contain h-48">
+        <h3 class="text-xl font-bold mb-2">Mitolyn</h3>
+        <p class="text-gray-700 mb-4">Boost metabolism, burn fat, and fuel your body with powerful energy support.</p>
+        <a href="https://1060d9nz058jnddimp-abj6zdb.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener" class="inline-block bg-orange-600 text-white px-5 py-2 rounded-xl shadow">Buy Now</a>
+      </div>
+
+      <!-- ProDentim -->
+      <div class="bg-teal-100 p-6 rounded-2xl shadow">
+        <img src="images/ProDentim.jpg" alt="ProDentim Oral Probiotic" class="rounded-lg mb-4 w-full object-contain h-48">
+        <h3 class="text-xl font-bold mb-2">ProDentim</h3>
+        <p class="text-gray-700 mb-4">Revolutionary oral probiotic for strong teeth, fresh breath, and healthy gums.</p>
+        <a href="https://73e18-j0oz69s899tbs32lwc3b.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener" class="inline-block bg-teal-600 text-white px-5 py-2 rounded-xl shadow">Join the Dental Revolution</a>
+      </div>
+
     </div>
-  </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-6 text-center mt-10">
+    <p>© 2025 DealDynamo360. All rights reserved.</p>
+    <div class="mt-4 flex justify-center gap-6">
+      <a href="https://www.facebook.com/profile.php?id=61577988074170" target="_blank">Facebook</a>
+      <a href="https://www.youtube.com/@DealDynamo360" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/dealdynamo360" target="_blank">Instagram</a>
+    </div>
+    <p class="mt-4 text-xs text-gray-400 max-w-2xl mx-auto">
+      Affiliate Disclosure: DealDynamo360 participates in affiliate programs (including Amazon Associates and ClickBank).
+      We may earn a commission when you purchase through our links — at no extra cost to you.
+    </p>
+  </footer>
 
 </body>
 </html>
