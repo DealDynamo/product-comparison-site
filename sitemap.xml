@@ -1,60 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+  <!-- Main Page -->
   <url>
     <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/</loc>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
+  <!-- Sleep Lean -->
   <url>
     <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#sleep-lean</loc>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <!-- Glucotonic -->
   <url>
     <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#glucotonic</loc>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <url>
-    <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#teds-woodworking</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#vert-shock</loc>
-    <priority>0.8</priority>
-  </url>
-
+  <!-- Amazon Deals -->
   <url>
     <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#amazon-deals</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
-
+  <!-- Smoothie Diet -->
   <url>
     <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#smoothie-diet</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
-
-  <url>
-    <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#lost-generator</loc>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ✅ New Products -->
+  <!-- Smart Water Box -->
   <url>
     <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#smart-water-box</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
-
-  <url>
-    <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#mitolyn</loc>
-    <priority>0.7</priority>
-  </url>
-
+  <!-- ProDentim -->
   <url>
     <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#prodentim</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
-
+  <!-- Mitolyn -->
+  <url>
+    <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#mitolyn</loc>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Hepatoburn (New Product) -->
+  <url>
+    <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#hepatoburn</loc>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Prostavive (New Product) -->
+  <url>
+    <loc>https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/#prostavive</loc>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
