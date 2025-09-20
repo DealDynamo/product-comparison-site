@@ -1,12 +1,10 @@
-# robots.txt for DealDynamo360
-
+# Robots.txt for DealDynamo360
 User-agent: *
 Allow: /
 
-# Block sensitive paths (none needed for now, but ready for later)
-Disallow: /private/
-Disallow: /tmp/
-Disallow: /admin/
-
-# Sitemap location
+# Sitemap
 Sitemap: https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/sitemap.xml
+
+# Prevent duplicate pages
+Disallow: /index.html
+Disallow: /index.php
