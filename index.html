@@ -1,98 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DealDynamo360 - Hot Amazon Health & Fitness Deals</title>
-  <meta name="description" content="Discover Hot Amazon Deals & Top Offers for Health, Fitness & Lifestyle. Save big with DealDynamo360.">
-  <meta property="og:title" content="DealDynamo360 - Hot Amazon Health & Fitness Deals">
-  <meta property="og:description" content="Discover Hot Amazon Deals & Top Offers for Health, Fitness & Lifestyle.">
-  <meta property="og:image" content="https://yourdomain.com/images/preview.jpg">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-Robots-Tag" content="all">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DealDynamo360 - Hot Deals in Health, Fitness & Amazon Products</title>
+
+  <!-- ✅ SEO Meta -->
+  <meta name="description" content="Discover trending health supplements, fitness programs, and Amazon hot deals at DealDynamo360. Save big on trusted products today.">
+  <meta name="keywords" content="deals, discounts, health supplements, fitness programs, Amazon offers, metabolism booster, smoothie diet, probiotics, hydration, weight loss">
+  <meta name="author" content="DealDynamo360">
+
+  <!-- ✅ Canonical -->
+  <link rel="canonical" href="https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/">
+
+  <!-- ✅ Open Graph -->
+  <meta property="og:title" content="DealDynamo360 - Hot Deals in Health, Fitness & Lifestyle">
+  <meta property="og:description" content="Handpicked health, fitness, and lifestyle deals plus Amazon trending offers.">
+  <meta property="og:image" content="https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/images/preview.jpg">
+  <meta property="og:url" content="https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DealDynamo360 - Hot Deals in Health, Fitness & Lifestyle">
+  <meta name="twitter:description" content="Save big on top health, fitness, and Amazon products. Discover trending offers today.">
+  <meta name="twitter:image" content="https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/images/preview.jpg">
+
+  <!-- ✅ Icons -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+  <!-- ✅ Google Verification -->
+  <meta name="google-site-verification" content="qgaiKR-_dclkLu4nPgEmBySpvbQfcwD6B146QA2Bk8U" />
+
+  <!-- ✅ Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- ✅ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "DealDynamo360",
+    "url": "https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 font-sans leading-relaxed tracking-wide">
+<body class="bg-gray-100 font-sans">
 
   <!-- Header -->
-  <header class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-12 shadow-lg">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl font-extrabold mb-2">DealDynamo360</h1>
-      <p class="text-lg">Discover Hot Amazon Deals & Top Offers for Health, Fitness & Lifestyle</p>
+  <header class="bg-blue-600 text-white p-6 text-center shadow-md">
+    <div class="max-w-5xl mx-auto">
+      <h1 class="text-3xl md:text-4xl font-bold">DealDynamo360 – Discover Hot Amazon Deals & Top Offers for Health, Fitness & Lifestyle</h1>
+      <p class="text-lg md:text-xl mt-2">
+        Welcome to <strong>DealDynamo360</strong>, your destination for trending deals in 
+        <a href="#sleep-lean" class="underline">health supplements</a>, 
+        <a href="#smoothie-diet" class="underline">fitness programs</a>, 
+        <a href="#amazon-deals" class="underline">Amazon hot offers</a>, 
+        and lifestyle essentials.
+      </p>
     </div>
   </header>
 
-  <!-- Products Grid -->
-  <main class="p-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-
-    <!-- Sleep Lean -->
-    <div id="sleep-lean" class="bg-red-200 p-6 rounded-2xl shadow">
-      <img src="/images/SleepLean.png" alt="Sleep Lean - Fat Loss Supplement" class="rounded-lg mb-4 w-full object-cover h-48">
-      <h2 class="text-xl font-bold mb-2">Sleep Lean</h2>
-      <p class="mb-4">Natural formula for fat loss with long-term results.</p>
-      <a href="https://268fb7i1s0b8ymaep5m9r-gg5v.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-red-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
-    </div>
-
-    <!-- Glucotonic -->
-    <div id="glucotonic" class="bg-green-200 p-6 rounded-2xl shadow">
-      <img src="/images/GlucoTonic.png" alt="GlucoTonic - Blood Sugar Support" class="rounded-lg mb-4 w-full object-cover h-48">
-      <h2 class="text-xl font-bold mb-2">GlucoTonic</h2>
-      <p class="mb-4">Supports healthy blood sugar and boosts daily energy.</p>
-      <a href="https://9910d9q7pyd7tiffvteg5mp5mf.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-green-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
-    </div>
-
-    <!-- Amazon Deals -->
-    <div id="amazon-deals" class="bg-blue-200 p-6 rounded-2xl shadow">
-      <img src="/images/AmazonHotDeals.png" alt="Amazon Hot Deals" class="rounded-lg mb-4 w-full object-cover h-48">
-      <h2 class="text-xl font-bold mb-2">Amazon Hot Deals</h2>
-      <p class="mb-4">Discover trending products and discounts today.</p>
-      <a href="https://amzn.to/46BTKpB" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg inline-block">Shop Now</a>
-    </div>
-
-    <!-- Smoothie Diet -->
-    <div id="smoothie-diet" class="rounded-2xl shadow-lg p-6 text-center bg-pink-100 hover:shadow-2xl transition">
-      <img src="/images/SmoothieDiet.png" alt="21-Day Smoothie Diet" class="mx-auto mb-4 h-48 object-contain w-full">
-      <h2 class="text-xl font-bold mb-2">21-Day Smoothie Diet</h2>
-      <p class="text-gray-700 mb-4">Easy-to-make smoothies for rapid weight loss.</p>
-      <a href="https://6ffdf5i0r8d8qg1dtm-qq7k5xj.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="inline-block bg-pink-600 text-white px-5 py-2 rounded-xl shadow hover:bg-pink-700 transition">Get Instant Access</a>
-    </div>
-
-    <!-- Smart Water Box -->
-    <div id="smart-water-box" class="rounded-2xl shadow-lg p-6 text-center bg-cyan-100 hover:shadow-2xl transition">
-      <img src="/images/SmartWaterBox.png" alt="Smart Water Box - Hydration System" class="mx-auto mb-4 h-48 object-contain w-full">
-      <h2 class="text-xl font-bold mb-2">Smart Water Box</h2>
-      <p class="text-gray-700 mb-4">Premium vapor-distilled water + electrolytes delivery.</p>
-      <a href="https://2b3147hw-5bbph7obeqc62dpdm.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="inline-block bg-cyan-600 text-white px-5 py-2 rounded-xl shadow hover:bg-cyan-700 transition">Grab Yours Now</a>
-    </div>
-
-    <!-- ProDentim -->
-    <div id="prodentim" class="rounded-2xl shadow-lg p-6 text-center bg-teal-100 hover:shadow-2xl transition">
-      <img src="/images/ProDentim.png" alt="ProDentim - Oral Probiotic" class="mx-auto mb-4 h-48 object-contain w-full">
-      <h2 class="text-xl font-bold mb-2">ProDentim</h2>
-      <p class="text-gray-700 mb-4">Oral probiotic for strong teeth and fresh breath.</p>
-      <a href="https://73e18-j0oz69s899tbs32lwc3b.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="inline-block bg-teal-600 text-white px-5 py-2 rounded-xl shadow hover:bg-teal-700 transition">Join the Dental Revolution</a>
-    </div>
-
-    <!-- Mitolyn -->
-    <div id="mitolyn" class="rounded-2xl shadow-lg p-6 text-center bg-orange-100 hover:shadow-2xl transition">
-      <img src="/images/Mitolyn.png" alt="Mitolyn - Metabolism Booster" class="mx-auto mb-4 h-48 object-contain w-full">
-      <h2 class="text-xl font-bold mb-2">Mitolyn</h2>
-      <p class="text-gray-700 mb-4">Boost metabolism, burn fat, and improve vitality.</p>
-      <a href="https://06293yn-0z0fud3oy9z4y35tcy.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="inline-block bg-orange-600 text-white px-5 py-2 rounded-xl shadow hover:bg-orange-700 transition">Transform Your Energy</a>
-    </div>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 py-6 mt-12">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 DealDynamo360. All rights reserved.</p>
-      <div class="flex justify-center space-x-6 mt-4">
-        <a href="https://www.youtube.com/@DealDynamo360" target="_blank" class="hover:text-white">YouTube</a>
-        <a href="https://www.tiktok.com/@dealdynamo360" target="_blank" class="hover:text-white">TikTok</a>
-        <a href="https://instagram.com/dealdynamo360" target="_blank" class="hover:text-white">Instagram</a>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>
+  <!-- ✅ Amazon Affiliate Stripe -->
+  <div class="text-center bg-white shadow py-4">
+    <a href="https://amzn.to/46BTKpB" ta
