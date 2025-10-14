@@ -22,7 +22,7 @@
     .product-card:hover { transform: translateY(-4px); box-shadow: 0 6px 16px rgba(0,0,0,0.1); }
   </style>
 
-  <!-- ✅ Website Schema -->
+  <!-- ✅ JSON-LD Structured Data for Website -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -47,127 +47,10 @@
   }
   </script>
 
-  <!-- ✅ Product Schemas -->
-  <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "Sleep Lean",
-      "image": "https://product-comparison-site-vmfp.vercel.app/image/SleepLean.png",
-      "description": "Natural fat-loss and sleep-support formula with 90-day moneyback guarantee.",
-      "brand": "Sleep Lean",
-      "offers": {
-        "@type": "Offer",
-        "url": "https://268fb7i1s0b8ymaep5m9r-gg5v.hop.clickbank.net",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "GlucoTonic",
-      "image": "https://product-comparison-site-vmfp.vercel.app/image/Glucotonic.png",
-      "description": "Blood sugar support supplement promoting energy and vitality.",
-      "brand": "GlucoTonic",
-      "offers": {
-        "@type": "Offer",
-        "url": "https://9910d9q7pyd7tiffvteg5mp5mf.hop.clickbank.net",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "Trending Amazon Products",
-      "image": "https://product-comparison-site-vmfp.vercel.app/image/Amazon.png",
-      "description": "Top-rated viral and trending Amazon products.",
-      "brand": "Amazon",
-      "offers": {
-        "@type": "Offer",
-        "url": "https://amzn.to/4nQNy4u",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "21-Day Smoothie Diet",
-      "image": "https://product-comparison-site-vmfp.vercel.app/image/SmoothieDiet.png",
-      "description": "Delicious smoothie-based 21-day weight loss program.",
-      "brand": "Smoothie Diet",
-      "offers": {
-        "@type": "Offer",
-        "url": "https://6ffdf5i0r8d8qg1dtm-qq7k5xj.hop.clickbank.net",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "Smart Water Box",
-      "image": "https://product-comparison-site-vmfp.vercel.app/image/SmartWaterBox.png",
-      "description": "Vapor-distilled electrolyte water system for hydration.",
-      "brand": "Smart Water Box",
-      "offers": {
-        "@type": "Offer",
-        "url": "https://2b3147hw-5bbph7obeqc62dpdm.hop.clickbank.net",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "ProDentim",
-      "image": "https://product-comparison-site-vmfp.vercel.app/image/ProDentim.png",
-      "description": "Probiotic blend for strong teeth and fresh breath.",
-      "brand": "ProDentim",
-      "offers": {
-        "@type": "Offer",
-        "url": "https://73e18-j0oz69s899tbs32lwc3b.hop.clickbank.net",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "Mitolyn",
-      "image": "https://product-comparison-site-vmfp.vercel.app/image/Mitolyn.png",
-      "description": "Metabolism and energy-boosting supplement for men and women.",
-      "brand": "Mitolyn",
-      "offers": {
-        "@type": "Offer",
-        "url": "https://1060d9nz058jnddimp-abj6zdb.hop.clickbank.net",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "ProstaVive",
-      "image": "https://product-comparison-site-vmfp.vercel.app/image/Prostavive.png",
-      "description": "Natural prostate health and vitality powder for men over 40.",
-      "brand": "ProstaVive",
-      "offers": {
-        "@type": "Offer",
-        "url": "https://06293yn-0z0fud3oy9z4y35tcy.hop.clickbank.net",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-  ]
-  </script>
 </head>
-
 <body class="min-h-screen flex flex-col">
 
+<!-- Header -->
 <header class="bg-blue-700 text-white py-8 text-center shadow-md">
   <img src="image/DealDynamo360-logo.png" alt="DealDynamo360 Logo" class="logo-img mx-auto">
   <p class="mt-3 text-base md:text-lg max-w-3xl mx-auto px-4 leading-relaxed">
@@ -179,15 +62,81 @@
   </p>
 </header>
 
+<!-- Search -->
 <section class="search-bar p-6 text-center bg-white shadow-sm">
   <input id="searchInput" type="text" placeholder="Search for products..." class="w-11/12 md:w-1/2 p-3 rounded-xl" oninput="filterProducts()">
 </section>
 
+<!-- Products -->
 <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-  <!-- Product Cards -->
-  <!-- (All product cards same as before) -->
+
+  <!-- Sleep Lean -->
+  <div class="product-card bg-red-200 p-6 rounded-2xl shadow">
+    <img src="image/SleepLean.png" alt="Sleep Lean supplement for weight loss" class="rounded-lg mb-4 w-full object-cover h-48">
+    <h2 class="text-xl font-bold mb-2">Sleep Lean</h2>
+    <p class="mb-4">Natural formula for fat loss and better sleep. 100% 90-day moneyback guarantee.</p>
+    <a href="https://268fb7i1s0b8ymaep5m9r-gg5v.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-red-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+  </div>
+
+  <!-- Glucotonic -->
+  <div class="product-card bg-green-200 p-6 rounded-2xl shadow">
+    <img src="image/Glucotonic.png" alt="GlucoTonic blood sugar support" class="rounded-lg mb-4 w-full object-cover h-48">
+    <h2 class="text-xl font-bold mb-2">GlucoTonic</h2>
+    <p class="mb-4">Supports healthy blood sugar and boosts energy. 100% 90-day moneyback guarantee.</p>
+    <a href="https://9910d9q7pyd7tiffvteg5mp5mf.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-green-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+  </div>
+
+  <!-- Amazon Deals -->
+  <div class="product-card bg-blue-200 p-6 rounded-2xl shadow">
+    <img src="image/Amazon.png" alt="Amazon USA trending products" class="rounded-lg mb-4 w-full object-cover h-48">
+    <h2 class="text-xl font-bold mb-2">Trending Products</h2>
+    <p class="mb-4">Discover viral products and top-rated Amazon deals.</p>
+    <a href="https://amzn.to/4nQNy4u" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg inline-block">Shop Now</a>
+  </div>
+
+  <!-- Smoothie Diet -->
+  <div class="product-card bg-pink-100 p-6 rounded-2xl shadow">
+    <img src="image/SmoothieDiet.png" alt="21-Day Smoothie Diet program" class="rounded-lg mb-4 w-full object-cover h-48">
+    <h2 class="text-xl font-bold mb-2">21-Day Smoothie Diet</h2>
+    <p class="mb-4">Easy-to-make smoothies for rapid weight loss.</p>
+    <a href="https://6ffdf5i0r8d8qg1dtm-qq7k5xj.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-pink-600 text-white px-4 py-2 rounded-lg inline-block">Get Access</a>
+  </div>
+
+  <!-- Smart Water Box -->
+  <div class="product-card bg-cyan-100 p-6 rounded-2xl shadow">
+    <img src="image/SmartWaterBox.png" alt="Smart Water Box premium hydration system" class="rounded-lg mb-4 w-full object-cover h-48">
+    <h2 class="text-xl font-bold mb-2">Smart Water Box</h2>
+    <p class="mb-4">Premium vapor-distilled water + electrolytes.</p>
+    <a href="https://2b3147hw-5bbph7obeqc62dpdm.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-cyan-600 text-white px-4 py-2 rounded-lg inline-block">Grab Yours</a>
+  </div>
+
+  <!-- ProDentim -->
+  <div class="product-card bg-teal-100 p-6 rounded-2xl shadow">
+    <img src="image/ProDentim.png" alt="ProDentim probiotic for dental health" class="rounded-lg mb-4 w-full object-cover h-48">
+    <h2 class="text-xl font-bold mb-2">ProDentim</h2>
+    <p class="mb-4">Probiotic blend for strong teeth & fresh breath. 100% 60-day moneyback guarantee.</p>
+    <a href="https://73e18-j0oz69s899tbs32lwc3b.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-teal-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+  </div>
+
+  <!-- Mitolyn -->
+  <div class="product-card bg-orange-100 p-6 rounded-2xl shadow">
+    <img src="image/Mitolyn.png" alt="Mitolyn metabolism booster" class="rounded-lg mb-4 w-full object-cover h-48">
+    <h2 class="text-xl font-bold mb-2">Mitolyn</h2>
+    <p class="mb-4">Boost metabolism and natural energy levels. 100% 90-day moneyback guarantee.</p>
+    <a href="https://1060d9nz058jnddimp-abj6zdb.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-orange-600 text-white px-4 py-2 rounded-lg inline-block">Shop Now</a>
+  </div>
+
+  <!-- ProstaVive -->
+  <div class="product-card bg-indigo-100 p-6 rounded-2xl shadow">
+    <img src="image/Prostavive.png" alt="ProstaVive prostate health support supplement" class="rounded-lg mb-4 w-full object-cover h-48">
+    <h2 class="text-xl font-bold mb-2">ProstaVive</h2>
+    <p class="mb-4">Revitalize your vitality with ProstaVive – the all-natural, easy-mix powder that supercharges prostate health, boosts energy, and enhances urinary function for men over 40! 100% 180-day moneyback guarantee.</p>
+    <a href="https://06293yn-0z0fud3oy9z4y35tcy.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-indigo-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+  </div>
+
 </main>
 
+<!-- How We Earn -->
 <section class="bg-gray-100 text-gray-700 p-6 text-center max-w-4xl mx-auto mt-12 rounded-xl shadow">
   <h2 class="text-lg font-semibold mb-2">How We Earn</h2>
   <p class="text-sm">
@@ -196,6 +145,7 @@
   </p>
 </section>
 
+<!-- Footer -->
 <footer class="bg-gray-800 text-white p-6 text-center mt-10">
   <p>© 2025 DealDynamo360. All rights reserved.</p>
   <div class="mt-4 flex justify-center gap-6">
@@ -210,6 +160,7 @@
   </p>
 </footer>
 
+<!-- Search Script -->
 <script>
 function filterProducts() {
   const input = document.getElementById('searchInput').value.toLowerCase();
@@ -224,3 +175,5 @@ function filterProducts() {
 
 </body>
 </html>
+
+
