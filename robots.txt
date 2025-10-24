@@ -2,8 +2,8 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://product-comparison-site-git-main-dealdynamo360-projects.vercel.app/sitemap.xml
+# Sitemap (correct live URL)
+Sitemap: https://product-comparison-site-vmfp.vercel.app/sitemap.xml
 
 # Prevent duplicate pages
 Disallow: /index.html
