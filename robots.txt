@@ -1,10 +1,7 @@
 # Robots.txt for DealDynamo360
 User-agent: *
-Allow: /
-
-# Sitemap (correct live URL)
-Sitemap: https://product-comparison-site-vmfp.vercel.app/sitemap.xml
-
-# Prevent duplicate pages
 Disallow: /index.html
 Disallow: /index.php
+
+# Sitemap (live URL)
+Sitemap: https://product-comparison-site-vmfp.vercel.app/sitemap.xml
