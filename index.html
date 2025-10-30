@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <meta name="description" content="DealDynamo360 – Explore trending health products, top ClickBank offers, and daily Amazon deals. Compare, choose, and save smarter with verified global brands." />
   <meta name="keywords" content="DealDynamo, health supplements, weight loss, metabolism booster, ClickBank offers, Amazon deals, fitness programs, wellness, smoothie diet, smart lifestyle gadgets, trending products" />
 
-  <!-- ✅ SEO-Improved Title -->
+  <!-- SEO Title & Canonical -->
   <title>DealDynamo360 | Compare Top Health Products & Daily Deals</title>
-
-  <!-- ✅ Canonical Tag -->
   <link rel="canonical" href="https://product-comparison-site-vmfp.vercel.app/" />
 
+  <!-- Social previews -->
   <meta property="og:title" content="DealDynamo360 | Compare, Discover & Save Smarter" />
   <meta property="og:description" content="Shop trending health products, ClickBank offers, and Amazon deals. Discover proven supplements and lifestyle essentials that deliver results." />
   <meta property="og:image" content="https://product-comparison-site-vmfp.vercel.app/images/DealDynamo.png" />
@@ -20,17 +19,21 @@
 
   <link rel="icon" href="images/DealDynamo.png" type="image/png" />
   <link rel="apple-touch-icon" href="images/DealDynamo.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
 
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { font-family: 'Inter', sans-serif; background: #f9fafb; }
+    body { font-family: 'Inter', sans-serif; background: #f9fafb; margin:0; }
     .search-bar input { border: 2px solid #ccc; transition: border-color 0.2s; }
     .search-bar input:focus { border-color: #2563eb; outline: none; }
     .product-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
     .product-card:hover { transform: translateY(-4px); box-shadow: 0 6px 16px rgba(0,0,0,0.1); }
+    @media (max-width:640px) {
+      header img { width: 80%; }
+      .product-card img { height:auto; }
+    }
   </style>
 
-  <!-- ✅ Structured Data (Preserved) -->
+  <!-- Structured Data: Website (keeps lightweight, product schema can be added later if desired) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,7 +44,6 @@
     "publisher": {
       "@type": "Organization",
       "name": "DealDynamo360",
-      "url": "https://product-comparison-site-vmfp.vercel.app/",
       "logo": {
         "@type": "ImageObject",
         "url": "https://product-comparison-site-vmfp.vercel.app/images/DealDynamo.png"
@@ -55,177 +57,181 @@
   }
   </script>
 </head>
-
 <body class="min-h-screen flex flex-col">
 
-<!-- Header -->
-<header class="bg-blue-700 text-white py-8 text-center shadow-md">
-  <img src="image/DealDynamo360-logo.png" alt="DealDynamo360 Logo" class="logo-img mx-auto">
-  <p class="mt-3 text-base md:text-lg max-w-3xl mx-auto px-4 leading-relaxed">
-    Welcome to <span class="font-semibold">DealDynamo360</span> – your trusted hub for
-    <span class="font-semibold">Health Supplements</span>,
-    <span class="font-semibold">Weight Loss Solutions</span>,
-    <span class="font-semibold">Amazon Weekly Deals</span>,
-    <span class="font-semibold">Smart Lifestyle Products</span>, and
-    <span class="font-semibold">Travel Offers</span> designed to help you save and live better.
-  </p>
-
-  <div class="mt-4 flex justify-center">
-    <img src="image/DealDynamo360-QR.png" alt="Scan to visit DealDynamo360" class="w-40 h-40 rounded-xl shadow-lg border-4 border-white">
-  </div>
-</header>
-
-<!-- ✅ H1 Added for SEO -->
-<h1 class="text-3xl md:text-4xl font-extrabold text-center mt-6 mb-6 text-gray-800 px-4">
-Compare Trusted Health Supplements, ClickBank Discounts & Amazon Daily Deals
-</h1>
-
-<!-- Search -->
-<section class="search-bar p-6 text-center bg-white shadow-sm">
-  <input id="searchInput" type="text" placeholder="Search for products..." class="w-11/12 md:w-1/2 p-3 rounded-xl" oninput="filterProducts()">
-</section>
-
-<!-- Products -->
-<main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-
-  <!-- ✅ Your Entire Product Grid Is Preserved EXACTLY -->
-  <!-- Glucotonic -->
-  <div class="product-card bg-green-200 p-6 rounded-2xl shadow">
-    <img src="image/Glucotonic.png" alt="GlucoTonic blood sugar support" class="rounded-lg mb-4 w-full object-cover h-48">
-    <h2 class="text-xl font-bold mb-2">GlucoTonic</h2>
-    <p class="mb-4">Support balanced blood sugar levels and daily energy naturally. Backed by a 90-day money-back guarantee and available with worldwide shipping.</p>
-    <a href="https://9910d9q7pyd7tiffvteg5mp5mf.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-green-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
-  </div>
-
-  <!-- (ALL OTHER PRODUCT CARDS REMAIN UNCHANGED) -->
-  <!-- Sleep Lean -->
-  <div class="product-card bg-red-200 p-6 rounded-2xl shadow">
-    <img src="image/SleepLean.png" alt="Sleep Lean supplement for weight loss" class="rounded-lg mb-4 w-full object-cover h-48">
-    <h2 class="text-xl font-bold mb-2">Sleep Lean</h2>
-    <p class="mb-4">A natural night-time formula that supports healthy fat loss and deep, restful sleep. Comes with a 90-day money-back guarantee and global shipping.</p>
-    <a href="https://268fb7i1s0b8ymaep5m9r-gg5v.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-red-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
-  </div>
-
-  <!-- Mitolyn -->
-  <div class="product-card bg-orange-100 p-6 rounded-2xl shadow">
-    <img src="image/Mitolyn.png" alt="Mitolyn metabolism booster" class="rounded-lg mb-4 w-full object-cover h-48">
-    <h2 class="text-xl font-bold mb-2">Mitolyn</h2>
-    <p class="mb-4">Enhance your metabolism and elevate natural energy production. Supported by a 90-day money-back guarantee with global shipping included.</p>
-    <a href="https://1060d9nz058jnddimp-abj6zdb.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-orange-600 text-white px-4 py-2 rounded-lg inline-block">Shop Now</a>
-  </div>
-
-  <!-- ProDentim -->
-  <div class="product-card bg-teal-100 p-6 rounded-2xl shadow">
-    <img src="image/ProDentim.png" alt="ProDentim probiotic for dental health" class="rounded-lg mb-4 w-full object-cover h-48">
-    <h2 class="text-xl font-bold mb-2">ProDentim</h2>
-    <p class="mb-4">Clinically designed probiotic blend for stronger teeth and fresher breath. Includes a 60-day money-back guarantee and worldwide delivery.</p>
-    <a href="https://73e18-j0oz69s899tbs32lwc3b.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-teal-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
-  </div>
-
-  <!-- ProstaVive -->
-  <div class="product-card bg-indigo-100 p-6 rounded-2xl shadow">
-    <img src="image/Prostavive.png" alt="ProstaVive prostate health support supplement" class="rounded-lg mb-4 w-full object-cover h-48">
-    <h2 class="text-xl font-bold mb-2">ProstaVive</h2>
-    <p class="mb-4">Reignite vitality and confidence with ProstaVive — the advanced, all-natural powder that promotes prostate health and energy for men over 40. Backed by a 180-day money-back guarantee and global shipping.</p>
-    <a href="https://06293yn-0z0fud3oy9z4y35tcy.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-indigo-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
-  </div>
-
-  <!-- Smoothie Diet -->
-  <div class="product-card bg-pink-100 p-6 rounded-2xl shadow">
-    <img src="image/SmoothieDiet.png" alt="21-Day Smoothie Diet program" class="rounded-lg mb-4 w-full object-cover h-48">
-    <h2 class="text-xl font-bold mb-2">21-Day Smoothie Diet</h2>
-    <p class="mb-4">Transform your health with easy, delicious smoothies that promote rapid weight loss. Digital download, instant access.</p>
-    <a href="https://6ffdf5i0r8d8qg1dtm-qq7k5xj.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-pink-600 text-white px-4 py-2 rounded-lg inline-block">Get Access</a>
-  </div>
-
-  <!-- Amazon Deals -->
-  <div class="product-card bg-blue-200 p-6 rounded-2xl shadow">
-    <img src="image/Amazon.png" alt="Amazon USA trending products" class="rounded-lg mb-4 w-full object-cover h-48">
-    <h2 class="text-xl font-bold mb-2">Amazon Weekly Deals (20%–60% Off)</h2>
-    <p class="mb-4">Save big on trending U.S. products — limited-time Amazon discounts updated weekly.</p>
-    <a href="https://amzn.to/4heNmcJ" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg inline-block">Shop Now</a>
-  </div>
-
-  <!-- Joint Genesis -->
-  <div class="product-card bg-orange-200 p-6 rounded-2xl shadow">
-    <img src="image/jointgenesis.png" alt="Joint Genesis" class="rounded-lg mb-4 w-full object-cover h-48">
-    <h2 class="text-xl font-bold mb-2">Joint Genesis</h2>
-    <p class="mb-4">Trusted by thousands of U.S. seniors — enjoy flexible, comfortable joints naturally. Backed by a 180-day money-back guarantee and global delivery.</p>
-    <a href="https://2f230znyo188nac3w3pgj4wsff.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg inline-block">Shop Now</a>
-  </div>
-
-  <!-- Thyrafemme Balance -->
-  <div class="product-card bg-rose-100 p-6 rounded-2xl shadow">
-    <img src="image/thyrafemme.png" alt="Thyrafemme Balance" class="rounded-lg mb-4 w-full object-cover h-48">
-    <h2 class="text-xl font-bold mb-2">Thyrafemme Balance</h2>
-    <p class="mb-4">Inspired by the ancient “Moon Elixir” ritual — this 14-in-1 botanical blend supports thyroid harmony, steady energy, and mood balance. Includes a 60-day money-back guarantee and global shipping.</p>
-    <a href="https://c05293f-n72bxebmlqxxs5ygpx.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-rose-600 text-white px-4 py-2 rounded-lg inline-block">Shop Now</a>
-  </div>
-
-  <!-- Nitric Boost Ultra -->
-  <div class="product-card bg-indigo-50 p-6 rounded-2xl shadow" id="nitric-boost">
-    <img src="image/NitricBoost.png" alt="Nitric Boost Ultra male enhancement supplement" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
-    <h2 class="text-xl font-bold mb-2">Nitric Boost Ultra</h2>
-    <p class="mb-4">
-      Experience enhanced stamina, confidence, and performance with this 100% natural male enhancement formula. Safe, effective, and backed by a 180-day money-back guarantee with global delivery.
+  <!-- Header -->
+  <header class="bg-blue-700 text-white py-8 text-center shadow-md">
+    <img src="image/DealDynamo360-logo.png" alt="DealDynamo360 Logo" class="logo-img mx-auto">
+    <p class="mt-3 text-base md:text-lg max-w-3xl mx-auto px-4 leading-relaxed">
+      Welcome to <span class="font-semibold">DealDynamo360</span> – your trusted hub for
+      <span class="font-semibold">Health Supplements</span>,
+      <span class="font-semibold">Weight Loss Solutions</span>,
+      <span class="font-semibold">Amazon Weekly Deals</span>,
+      <span class="font-semibold">Smart Lifestyle Products</span>, and
+      <span class="font-semibold">Travel Offers</span>.
     </p>
-    <a href="https://f122a4mzqb0iyia8-6ul5ofl2y.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-indigo-700 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
-  </div>
 
-  <!-- Okinawa Flat Belly Tonic -->
-  <div class="product-card bg-red-50 p-6 rounded-2xl shadow" id="okinawa-flat-belly-tonic">
-    <img src="image/OkinawaFlatBellyTonic.png" alt="Okinawa Flat Belly Tonic weight loss formula" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
-    <h2 class="text-xl font-bold mb-2">Okinawa Flat Belly Tonic</h2>
-    <p class="mb-4">
-      The Okinawa Flat Belly Tonic is a unique metabolism-boosting formula that promotes rapid fat loss, improved digestion, and daily energy. Ideal for adults over 30 looking to flatten stubborn belly fat. Backed by a 90-day money-back guarantee and worldwide shipping.
+    <div class="mt-4 flex justify-center">
+      <img src="image/DealDynamo360-QR.png" alt="Scan to visit DealDynamo360" class="w-40 h-40 rounded-xl shadow-lg border-4 border-white">
+    </div>
+  </header>
+
+  <!-- Main H1 -->
+  <h1 class="text-3xl md:text-4xl font-extrabold text-center mt-6 mb-6 text-gray-800 px-4">
+    Compare Trusted Health Supplements, ClickBank Discounts & Amazon Daily Deals
+  </h1>
+
+  <!-- Search -->
+  <section class="search-bar p-6 text-center bg-white shadow-sm">
+    <input id="searchInput" type="text" placeholder="Search for products..." class="w-11/12 md:w-1/2 p-3 rounded-xl" oninput="filterProducts()">
+  </section>
+
+  <!-- Products Grid -->
+  <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+
+    <!-- Glucotonic -->
+    <section id="Glucotonic" class="product-card bg-green-200 p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-2">GlucoTonic — Blood Sugar Support</h2>
+      <img src="image/Glucotonic.png" alt="GlucoTonic blood sugar support" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
+      <p class="mb-4">Support balanced blood sugar levels and daily energy naturally. Backed by a 90-day money-back guarantee and worldwide shipping.</p>
+      <a href="https://9910d9q7pyd7tiffvteg5mp5mf.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-green-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+    </section>
+
+    <!-- Sleep Lean -->
+    <section id="SleepLean" class="product-card bg-red-200 p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-2">Sleep Lean — Nighttime Fat Burner</h2>
+      <img src="image/SleepLean.png" alt="Sleep Lean supplement for weight loss" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
+      <p class="mb-4">A natural night-time formula that supports healthy fat loss and deep, restful sleep. Comes with a 90-day money-back guarantee and global shipping.</p>
+      <a href="https://268fb7i1s0b8ymaep5m9r-gg5v.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-red-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+    </section>
+
+    <!-- Mitolyn -->
+    <section id="Mitolyn" class="product-card bg-orange-100 p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-2">Mitolyn — Metabolism Booster</h2>
+      <img src="image/Mitolyn.png" alt="Mitolyn metabolism booster" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
+      <p class="mb-4">Enhance your metabolism and elevate natural energy production. Supported by a 90-day money-back guarantee with global shipping included.</p>
+      <a href="https://1060d9nz058jnddimp-abj6zdb.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-orange-600 text-white px-4 py-2 rounded-lg inline-block">Shop Now</a>
+    </section>
+
+    <!-- ProDentim -->
+    <section id="ProDentim" class="product-card bg-teal-100 p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-2">ProDentim — Oral Probiotic</h2>
+      <img src="image/ProDentim.png" alt="ProDentim probiotic for dental health" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
+      <p class="mb-4">Clinically designed probiotic blend for stronger teeth and fresher breath. Includes a 60-day money-back guarantee and worldwide delivery.</p>
+      <a href="https://73e18-j0oz69s899tbs32lwc3b.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-teal-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+    </section>
+
+    <!-- ProstaVive -->
+    <section id="ProstaVive" class="product-card bg-indigo-100 p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-2">ProstaVive — Prostate Health</h2>
+      <img src="image/Prostavive.png" alt="ProstaVive prostate health support supplement" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
+      <p class="mb-4">Reignite vitality and confidence with ProstaVive — advanced natural powder for prostate health and energy. 180-day money-back guarantee and global shipping.</p>
+      <a href="https://06293yn-0z0fud3oy9z4y35tcy.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-indigo-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+    </section>
+
+    <!-- Smoothie Diet -->
+    <section id="SmoothieDiet" class="product-card bg-pink-100 p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-2">21-Day Smoothie Diet</h2>
+      <img src="image/SmoothieDiet.png" alt="21-Day Smoothie Diet program" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
+      <p class="mb-4">Transform your health with easy, delicious smoothies that promote weight loss. Digital download, instant access.</p>
+      <a href="https://6ffdf5i0r8d8qg1dtm-qq7k5xj.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-pink-600 text-white px-4 py-2 rounded-lg inline-block">Get Access</a>
+    </section>
+
+    <!-- Amazon Weekly Deals -->
+    <section id="Amazon" class="product-card bg-blue-200 p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-2">Amazon Weekly Deals (20%–60% Off)</h2>
+      <img src="image/Amazon.png" alt="Amazon USA trending products" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
+      <p class="mb-4">Save big on trending U.S. products — limited-time Amazon discounts updated weekly.</p>
+      <a href="https://amzn.to/4heNmcJ" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg inline-block">Shop Now</a>
+    </section>
+
+    <!-- Joint Genesis -->
+    <section id="JointGenesis" class="product-card bg-orange-200 p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-2">Joint Genesis — Joint Support</h2>
+      <img src="image/jointgenesis.png" alt="Joint Genesis joint support" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
+      <p class="mb-4">Trusted by thousands — support flexible, comfortable joints naturally. 180-day money-back guarantee and global delivery.</p>
+      <a href="https://2f230znyo188nac3w3pgj4wsff.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg inline-block">Shop Now</a>
+    </section>
+
+    <!-- Thyrafemme Balance -->
+    <section id="Thyrafemme" class="product-card bg-rose-100 p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-2">Thyrafemme Balance — Hormone Support</h2>
+      <img src="image/thyrafemme.png" alt="Thyrafemme Balance" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
+      <p class="mb-4">14-in-1 botanical blend to support thyroid harmony, steady energy, and mood balance. 60-day money-back guarantee and global shipping.</p>
+      <a href="https://c05293f-n72bxebmlqxxs5ygpx.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-rose-600 text-white px-4 py-2 rounded-lg inline-block">Shop Now</a>
+    </section>
+
+    <!-- Nitric Boost Ultra -->
+    <section id="NitricBoost" class="product-card bg-indigo-50 p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-2">Nitric Boost Ultra — Male Enhancement</h2>
+      <img src="image/NitricBoost.png" alt="Nitric Boost Ultra male enhancement supplement" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
+      <p class="mb-4">Enhanced stamina, confidence, and performance with a natural formula. 180-day money-back guarantee and global delivery.</p>
+      <a href="https://f122a4mzqb0iyia8-6ul5ofl2y.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-indigo-700 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+    </section>
+
+    <!-- Okinawa Flat Belly Tonic -->
+    <section id="OkinawaFlatBelly" class="product-card bg-red-50 p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-2">Okinawa Flat Belly Tonic</h2>
+      <img src="image/OkinawaFlatBellyTonic.png" alt="Okinawa Flat Belly Tonic weight loss formula" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
+      <p class="mb-4">Unique metabolism-boosting formula for fat loss, improved digestion, and daily energy. 90-day money-back guarantee and worldwide shipping.</p>
+      <a href="https://4e8971i3t1-mwl80pnzmqa7v0v.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-red-700 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+    </section>
+
+    <!-- Audifort -->
+    <section id="Audifort" class="product-card bg-yellow-50 p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-2">Audifort — Hearing Support</h2>
+      <img src="image/Audifort.png" alt="Audifort natural hearing support supplement" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
+      <p class="mb-4">Supports hearing clarity, cognitive balance, and ear health. 90-day money-back guarantee and global shipping.</p>
+      <a href="https://bc32b6g-s8-fn9e7y4l9uq-n21.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-yellow-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
+    </section>
+
+  </main>
+
+  <!-- How We Earn -->
+  <section id="how-we-earn" class="bg-gray-100 text-gray-700 p-6 text-center max-w-4xl mx-auto mt-12 rounded-xl shadow">
+    <h2 class="text-2xl font-semibold mb-2">How We Earn</h2>
+    <p class="text-sm">
+      DealDynamo360 may earn commissions from affiliate links. This helps us continue curating top-quality health, wellness, and lifestyle deals — at no extra cost to you.
+      Find more on <a href="#Amazon" class="text-blue-600 underline">Amazon Weekly Deals</a> and product offers throughout the site.
     </p>
-    <a href="https://4e8971i3t1-mwl80pnzmqa7v0v.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-red-700 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
-  </div>
+  </section>
 
-  <!-- Audifort -->
-  <div class="product-card bg-yellow-50 p-6 rounded-2xl shadow" id="audifort">
-    <img src="image/Audifort.png" alt="Audifort natural hearing support supplement" class="rounded-lg mb-4 w-full object-cover h-48" loading="lazy">
-    <h2 class="text-xl font-bold mb-2">Audifort</h2>
-    <p class="mb-4">
-      Audifort is a gentle yet powerful formula that supports hearing clarity, cognitive balance, and overall ear health. Crafted from premium botanical extracts and minerals, it’s trusted by adults worldwide. Includes a 90-day money-back guarantee and global shipping.
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-6 text-center mt-10">
+    <p>© 2025 DealDynamo360. All rights reserved.</p>
+
+    <!-- Internal SEO Links -->
+    <div class="mt-3 space-x-4 text-sm text-gray-300">
+      <a href="#Glucotonic" class="hover:underline">Blood Sugar Support</a>
+      <a href="#SleepLean" class="hover:underline">Weight Loss</a>
+      <a href="#ProDentim" class="hover:underline">Dental Health</a>
+      <a href="#Amazon" class="hover:underline">Amazon Deals</a>
+      <a href="#NitricBoost" class="hover:underline">Male Enhancement</a>
+    </div>
+
+    <div class="mt-4 flex justify-center gap-6">
+      <a href="https://www.facebook.com/profile.php?id=61577988074170" target="_blank" class="hover:underline">Facebook</a>
+      <a href="https://www.youtube.com/@DealDynamo360" target="_blank" class="hover:underline">YouTube</a>
+      <a href="https://www.tiktok.com/@dealdynamo360" target="_blank" class="hover:underline">TikTok</a>
+      <a href="https://www.instagram.com/dealdynamo360" target="_blank" class="hover:underline">Instagram</a>
+    </div>
+
+    <p class="mt-4 text-xs text-gray-400 max-w-2xl mx-auto">
+      Affiliate Disclosure: DealDynamo360 participates in Amazon Associates and ClickBank affiliate programs.
+      We may earn a commission from qualifying purchases made through our links — at no additional cost to you.
     </p>
-    <a href="https://bc32b6g-s8-fn9e7y4l9uq-n21.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener noreferrer" class="bg-yellow-600 text-white px-4 py-2 rounded-lg inline-block">Buy Now</a>
-  </div>
+  </footer>
 
-</main>
-
-<!-- How We Earn -->
-<section class="bg-gray-100 text-gray-700 p-6 text-center max-w-4xl mx-auto mt-12 rounded-xl shadow">
-  <h2 class="text-lg font-semibold mb-2">How We Earn</h2>
-  <p class="text-sm">
-    DealDynamo360 may earn commissions when you purchase through our affiliate links.
-    This helps us continue curating top-quality health, wellness, and lifestyle deals — at no extra cost to you.
-  </p>
-</section>
-
-<!-- Footer -->
-<footer class="bg-gray-800 text-white p-6 text-center mt-10">
-  <p>© 2025 DealDynamo360. All rights reserved.</p>
-
-  <!-- ✅ Internal SEO Links -->
-  <div class="mt-3 space-x-4 text-sm text-gray-300">
-    <a href="#Glucotonic" class="hover:underline">Blood Sugar Support</a>
-    <a href="#SleepLean" class="hover:underline">Weight Loss Support</a>
-    <a href="#ProDentim" class="hover:underline">Dental Health</a>
-    <a href="#Amazon" class="hover:underline">Amazon Deals</a>
-  </div>
-
-  <div class="mt-4 flex justify-center gap-6">
-    <a href="https://www.facebook.com/profile.php?id=61577988074170" target="_blank" class="hover:underline">Facebook</a>
-    <a href="https://www.youtube.com/@DealDynamo360" target="_blank" class="hover:underline">YouTube</a>
-    <a href="https://www.tiktok.com/@dealdynamo360" target="_blank" class="hover:underline">TikTok</a>
-    <a href="https://www.instagram.com/dealdynamo360" target="_blank" class="hover:underline">Instagram</a>
-  </div>
-
-  <p class="mt-4 text-xs text-gray-400 max-w-2xl mx-auto">
-    Affiliate Disclosure: DealDynamo360 participates in Amazon Associates and ClickBank affiliate programs.
-    We may earn a commission from qualifying purchases made through our links — at no additional cost to you.
-  </p>
-</footer>
-
-<!-- Search Script -->
+  <!-- Search Script -->
+  <script>
+  function filterProducts() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.product-card');
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(input) ? '' : 'none';
+    });
+  }
+  </script>
+</body>
+</html>
