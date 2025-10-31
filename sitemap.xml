@@ -1,95 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
   <url>
     <loc>https://product-comparison-site-vmfp.vercel.app/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Product Sections -->
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#Glucotonic</loc>
+    <loc>https://product-comparison-site-vmfp.vercel.app/#glucotonic</loc>
     <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#SleepLean</loc>
+    <loc>https://product-comparison-site-vmfp.vercel.app/#sleep-lean</loc>
     <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#Mitolyn</loc>
+    <loc>https://product-comparison-site-vmfp.vercel.app/#smoothie-diet</loc>
     <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#ProDentim</loc>
+    <loc>https://product-comparison-site-vmfp.vercel.app/#amazon-deals</loc>
     <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#ProstaVive</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#SmoothieDiet</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#Amazon</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#JointGenesis</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#ThyrafemmeBalance</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#NitricBoostUltra</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#OkinawaFlatBellyTonic</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#Audifort</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 </urlset>
