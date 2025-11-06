@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset 
+  xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" 
+  xmlns:xhtml="https://www.w3.org/1999/xhtml">
+  
+  <!-- Main Page -->
   <url>
     <loc>https://product-comparison-site-vmfp.vercel.app/</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#glucotonic</loc>
-    <lastmod>2025-10-31</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#sleep-lean</loc>
-    <lastmod>2025-10-31</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#smoothie-diet</loc>
-    <lastmod>2025-10-31</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#amazon-deals</loc>
-    <lastmod>2025-10-31</lastmod>
-    <priority>0.9</priority>
-  </url>
+
+  <!-- Individual Product URLs -->
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/glucotonic</loc><priority>0.9</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/sleep-lean</loc><priority>0.9</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/mitolyn</loc><priority>0.9</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/prodentim</loc><priority>0.9</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/prostavive</loc><priority>0.9</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/21-day-smoothie-diet</loc><priority>0.9</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/amazon-weekly-deals</loc><priority>0.8</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/joint-genesis</loc><priority>0.9</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/thyrafemme-balance</loc><priority>0.9</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/nitric-boost-ultra</loc><priority>0.9</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/okinawa-flat-belly-tonic</loc><priority>0.9</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/audifort</loc><priority>0.9</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/the-brain-song</loc><priority>0.9</priority></url>
+  <url><loc>https://product-comparison-site-vmfp.vercel.app/java-burn-2-0</loc><priority>0.9</priority></url>
+
 </urlset>
