@@ -1,354 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>DealDynamo360 | Trending Digital Downloads, AI Tools & Courses</title>
+<title>DealDynamo360 | Trending Digital Downloads, AI Tools & Courses</title>
 
-  <!-- 🔥 SEO -->
-  <meta name="description" content="Discover the most popular digital downloads in 2026 — AI tools, online courses, survival guides, woodworking plans, brain training audio & more. Tested, ranked and ready to transform your life." />
+<!-- SEO -->
+<meta name="description" content="Discover the most popular digital downloads in 2026 — AI tools, online courses, survival guides, woodworking plans, brain training audio & more." />
 
-  <meta name="keywords" content="
-  digital downloads 2026,
-  best digital products,
-  AI tools online course,
-  make money online digital products,
-  brain training audio,
-  smoothie diet plan,
-  woodworking plans pdf,
-  survival guide digital,
-  instagram marketing course,
-  chatgpt course,
-  plr digital products,
-  clickbank digital products,
-  passive income digital products
-  " />
+<meta name="keywords" content="digital downloads, AI tools, ChatGPT prompts, online courses, make money online, passive income, digital products 2026" />
 
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://product-comparison-site-vmfp.vercel.app/" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://product-comparison-site-vmfp.vercel.app/" />
 
-  <!-- 🔥 OPEN GRAPH -->
-  <meta property="og:title" content="Trending Digital Downloads That Actually Work | DealDynamo360" />
-  <meta property="og:description" content="Explore AI tools, income systems and high-demand digital products." />
-  <meta property="og:image" content="https://product-comparison-site-vmfp.vercel.app/images/DealDynamo.png" />
-  <meta property="og:url" content="https://product-comparison-site-vmfp.vercel.app/" />
-  <meta property="og:type" content="website" />
+<!-- Open Graph -->
+<meta property="og:title" content="Trending Digital Downloads That Actually Work | DealDynamo360" />
+<meta property="og:description" content="Explore AI tools, income systems and high-demand digital products." />
+<meta property="og:image" content="https://product-comparison-site-vmfp.vercel.app/images/DealDynamo.png" />
+<meta property="og:type" content="website" />
 
-  <!-- 🔥 TWITTER -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Top Digital Downloads 2026 | DealDynamo360" />
-  <meta name="twitter:description" content="AI income systems, courses & trending digital products that convert." />
-  <meta name="twitter:image" content="https://product-comparison-site-vmfp.vercel.app/images/DealDynamo.png" />
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<style>
+body { font-family: Inter, system-ui; background:#f9fafb; }
+.product-card { transition:0.2s ease; }
+.product-card:hover { transform: translateY(-6px); box-shadow:0 12px 30px rgba(0,0,0,0.1); }
+</style>
 
-  <style>
-    body { font-family: Inter, system-ui; background: #f9fafb; }
-    .product-card { transition: 0.2s ease; }
-    .product-card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
-  </style>
+<!-- ✅ FIXED STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"ItemList",
+"itemListElement":[
 
-  <!-- 🔥 STRUCTURED DATA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Trending Digital Products 2026",
-    "itemListElement": [
-      {"@type":"Product","name":"21-Day Smoothie Diet"},
-      {"@type":"Product","name":"The Brain Song"},
-      {"@type":"Product","name":"BrainWave Genius"},
-      {"@type":"Product","name":"Ted’s Woodworking"},
-      {"@type":"Product","name":"The Last Wish"},
-      {"@type":"Product","name":"DWS Digital System"},
-      {"@type":"Product","name":"Effective Insta Marketing"},
-      {"@type":"Product","name":"ChatGPT Expertise PLR"},
-      {"@type":"Product","name":"AI 30"}
-    ]
-  }
-  </script>
+{"@type":"Product","name":"21-Day Smoothie Diet","image":"https://product-comparison-site-vmfp.vercel.app/image/SmoothieDiet.png","description":"Fat burning smoothie plan","offers":{"@type":"Offer","price":"37","priceCurrency":"USD"}},
+
+{"@type":"Product","name":"The Brain Song","image":"https://product-comparison-site-vmfp.vercel.app/image/BrainSong.png","description":"Brain focus audio","offers":{"@type":"Offer","price":"39","priceCurrency":"USD"}},
+
+{"@type":"Product","name":"BrainWave Genius","image":"https://product-comparison-site-vmfp.vercel.app/image/BraInWaveGenius.png","description":"Brainwave enhancement audio","offers":{"@type":"Offer","price":"49","priceCurrency":"USD"}},
+
+{"@type":"Product","name":"Ted’s Woodworking","image":"https://product-comparison-site-vmfp.vercel.app/image/TedsWoodworking.png","description":"16000 woodworking plans","offers":{"@type":"Offer","price":"67","priceCurrency":"USD"}},
+
+{"@type":"Product","name":"The Last Wish","image":"https://product-comparison-site-vmfp.vercel.app/image/TheLastWish.png","description":"Survival guide","offers":{"@type":"Offer","price":"39","priceCurrency":"USD"}},
+
+{"@type":"Product","name":"DWS System","image":"https://product-comparison-site-vmfp.vercel.app/image/DWS.png","description":"Success mindset system","offers":{"@type":"Offer","price":"47","priceCurrency":"USD"}},
+
+{"@type":"Product","name":"Effective Insta Marketing","image":"https://product-comparison-site-vmfp.vercel.app/image/IMM.png","description":"Instagram growth course","offers":{"@type":"Offer","price":"27","priceCurrency":"USD"}},
+
+{"@type":"Product","name":"ChatGPT Expertise","image":"https://product-comparison-site-vmfp.vercel.app/image/ChatGPTExpertise.png","description":"AI course with resell rights","offers":{"@type":"Offer","price":"37","priceCurrency":"USD"}},
+
+{"@type":"Product","name":"AI 30","image":"https://product-comparison-site-vmfp.vercel.app/image/ai30.png","description":"AI income system","offers":{"@type":"Offer","price":"47","priceCurrency":"USD"}},
+
+{"@type":"Product","name":"1000 ChatGPT Prompts","image":"https://product-comparison-site-vmfp.vercel.app/image/chatgptprompts.png","description":"AI marketing prompts","offers":{"@type":"Offer","price":"27","priceCurrency":"USD"}},
+
+{"@type":"Product","name":"The Healed Soul","image":"https://product-comparison-site-vmfp.vercel.app/image/thehealedsoul.png","description":"Emotional healing ebook","offers":{"@type":"Offer","price":"19","priceCurrency":"USD"}},
+
+{"@type":"Product","name":"From Rejection to Recognition","image":"https://product-comparison-site-vmfp.vercel.app/image/fromrejectiontorecognition.png","description":"Confidence transformation ebook","offers":{"@type":"Offer","price":"29","priceCurrency":"USD"}},
+
+{"@type":"Product","name":"AI Mega Prompt Bundle","image":"https://product-comparison-site-vmfp.vercel.app/image/aimegaprompts.png","description":"50,000+ AI prompts","offers":{"@type":"Offer","price":"17","priceCurrency":"USD"}}
+
+]
+}
+</script>
 
 </head>
 
-<body class="min-h-screen flex flex-col">
+<body>
 
-<!-- 🔥 HEADER -->
-<header class="bg-blue-800 text-white py-10 text-center">
-
-  <img src="image/DealDynamo360-logo.png" class="mx-auto mb-4 w-56">
-
-  <h1 class="text-3xl md:text-4xl font-extrabold">
-    Ultimate Trending Digital Downloads
-  </h1>
-
-  <p class="mt-4 text-lg text-blue-100">
-    Tested. Ranked. Ready to Transform Your Life.
-  </p>
-
-  <p class="text-sm text-blue-200 mt-2">
-    AI Tools • Online Courses • Passive Income Systems
-  </p>
-
+<header class="bg-blue-800 text-white p-8 text-center">
+<h1 class="text-3xl font-bold">🔥 DealDynamo360</h1>
+<p>Trending Digital Products That Convert</p>
 </header>
 
-<!-- SEARCH -->
 <section class="p-6 text-center bg-white">
-  <input id="searchInput" type="text"
-    placeholder="Search digital products..."
-    class="w-11/12 md:w-1/2 p-3 rounded-xl border"
-    oninput="filterProducts()">
+<input id="searchInput" type="text" placeholder="Search..."
+class="w-1/2 p-3 border rounded"
+oninput="filterProducts()">
 </section>
 
-<!-- PRODUCTS -->
-<main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+<main class="grid md:grid-cols-3 gap-6 p-6">
 
-<!-- Smoothie Diet -->
-<article class="product-card bg-pink-100 p-6 rounded-2xl">
-<img src="image/SmoothieDiet.png" class="mb-4 h-48 w-full object-cover">
-<h2 class="font-bold text-xl">21-Day Smoothie Diet</h2>
-<p>Fat-burning smoothie plan for rapid weight loss and energy.</p>
-<a href="#" class="bg-pink-600 text-white px-4 py-2 rounded-lg mt-3 inline-block">Get Access</a>
-</article>
+<!-- PRODUCTS (ALL INCLUDED) -->
 
-<!-- Brain Song -->
-<article class="product-card bg-purple-100 p-6 rounded-2xl">
-<img src="image/BrainSong.png" class="mb-4 h-48 w-full object-cover">
-<h2 class="font-bold text-xl">The Brain Song</h2>
-<p>12-minute audio to boost focus, memory, and clarity.</p>
-<a href="#" class="bg-purple-600 text-white px-4 py-2 rounded-lg mt-3 inline-block">Get Access</a>
-</article>
+<div class="product-card bg-white p-4 rounded shadow">
+<img src="image/SmoothieDiet.png">
+<h2>21-Day Smoothie Diet</h2>
+<a href="#">Get Access</a>
+</div>
 
-  <!-- Ted's Woodworking -->
-<article class="product-card bg-amber-100 p-6 rounded-2xl">
-<img src="image/TedsWoodworking.png" class="mb-4 h-48 w-full object-cover">
-<h2 class="font-bold text-xl">Ted’s Woodworking</h2>
-<p>16,000 step-by-step woodworking plans.</p>
-<a href="https://00028bg9q97hzkcgi5xhn21l8e.hop.clickbank.net" target="_blank" class="bg-amber-600 text-white px-4 py-2 rounded-lg mt-3 inline-block">Get Access</a>
-</article>
+<div class="product-card bg-white p-4 rounded shadow">
+<img src="image/BrainSong.png">
+<h2>Brain Song</h2>
+<a href="#">Get Access</a>
+</div>
 
-<!-- BrainWave Genius -->
-<article class="product-card bg-indigo-100 p-6 rounded-2xl">
-<img src="image/BraInWaveGenius.png" class="mb-4 h-48 w-full object-cover">
-<h2 class="font-bold text-xl">BrainWave Genius</h2>
-<p>Boost creativity, memory and focus using sound frequencies.</p>
-<a href="https://9d10d3gw0c-bnn5fsfqjyxzr84.hop.clickbank.net" target="_blank" class="bg-indigo-700 text-white px-4 py-2 rounded-lg mt-3 inline-block">Get Access</a>
-</article>
+<div class="product-card bg-white p-4 rounded shadow">
+<img src="image/BraInWaveGenius.png">
+<h2>BrainWave Genius</h2>
+<a href="https://9d10d3gw0c-bnn5fsfqjyxzr84.hop.clickbank.net" target="_blank">Get Access</a>
+</div>
 
+<div class="product-card bg-white p-4 rounded shadow">
+<img src="image/TedsWoodworking.png">
+<h2>Ted’s Woodworking</h2>
+<a href="https://00028bg9q97hzkcgi5xhn21l8e.hop.clickbank.net" target="_blank">Get Access</a>
+</div>
 
+<div class="product-card bg-white p-4 rounded shadow">
+<img src="image/TheLastWish.png">
+<h2>The Last Wish</h2>
+<a href="https://10c10zr40c4lol2qu1-cich-ir.hop.clickbank.net" target="_blank">Get Access</a>
+</div>
 
-<!-- Last Wish -->
-<article class="product-card bg-green-100 p-6 rounded-2xl">
-<img src="image/TheLastWish.png" class="mb-4 h-48 w-full object-cover">
-<h2 class="font-bold text-xl">The Last Wish</h2>
-<p>Digital survival guide for real-world preparedness.</p>
-<a href="https://10c10zr40c4lol2qu1-cich-ir.hop.clickbank.net" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg mt-3 inline-block">Get Access</a>
-</article>
+<div class="product-card bg-white p-4 rounded shadow">
+<img src="image/DWS.png">
+<h2>DWS System</h2>
+<a href="https://91018btvrz8mog5506ie0kaqey.hop.clickbank.net" target="_blank">Get Access</a>
+</div>
 
-<!-- DWS -->
-<article class="product-card bg-blue-100 p-6 rounded-2xl">
-<img src="image/DWS.png" class="mb-4 h-48 w-full object-cover">
-<h2 class="font-bold text-xl">DWS System</h2>
-<p>Mindset and success system for financial growth.</p>
-<a href="https://91018btvrz8mog5506ie0kaqey.hop.clickbank.net" target="_blank" class="bg-blue-700 text-white px-4 py-2 rounded-lg mt-3 inline-block">Get Access</a>
-</article>
+<div class="product-card bg-white p-4 rounded shadow">
+<img src="image/IMM.png">
+<h2>Insta Marketing</h2>
+<a href="https://heikoboos.com/Effective-Insta-Marketing/#aff=DealDynamo360" target="_blank">Get Access</a>
+</div>
 
-<!-- Insta Marketing -->
-<article class="product-card bg-pink-50 p-6 rounded-2xl">
-<img src="image/IMM.png" class="mb-4 h-48 w-full object-cover">
-<h2 class="font-bold text-xl">Effective Insta Marketing</h2>
-<p>Grow and monetize your Instagram fast.</p>
-<a href="https://heikoboos.com/Effective-Insta-Marketing/#aff=DealDynamo360" target="_blank" class="bg-pink-600 text-white px-4 py-2 rounded-lg mt-3 inline-block">Get Access</a>
-</article>
+<div class="product-card bg-white p-4 rounded shadow">
+<img src="image/ChatGPTExpertise.png">
+<h2>ChatGPT Expertise</h2>
+<a href="https://heikoboos.com/ChatGPT-Expertise-PLR/#aff=DealDynamo360" target="_blank">Get Access</a>
+</div>
 
-<!-- ChatGPT -->
-<article class="product-card bg-gray-100 p-6 rounded-2xl">
-<img src="image/ChatGPTExpertise.png" class="mb-4 h-48 w-full object-cover">
-<h2 class="font-bold text-xl">ChatGPT Expertise</h2>
-<p>AI course + resell rights package.</p>
-<a href="https://heikoboos.com/ChatGPT-Expertise-PLR/#aff=DealDynamo360" target="_blank" class="bg-black text-white px-4 py-2 rounded-lg mt-3 inline-block">Get Access</a>
-</article>
+<div class="product-card bg-white p-4 rounded shadow">
+<img src="image/ai30.png">
+<h2>AI 30</h2>
+<a href="https://78b7d2twr95lsi3-43uh5x705a.hop.clickbank.net" target="_blank">Get Access</a>
+</div>
 
-<!-- AI 30 -->
-<article class="product-card bg-slate-100 p-6 rounded-2xl">
-<img src="image/ai30.png" class="mb-4 h-48 w-full object-cover">
-<h2 class="font-bold text-xl">AI 30</h2>
-<p>AI-powered income system for online earnings.</p>
-<a href="https://78b7d2twr95lsi3-43uh5x705a.hop.clickbank.net" target="_blank" class="bg-blue-800 text-white px-4 py-2 rounded-lg mt-3 inline-block">Get Access</a>
-</article>
+<div class="product-card bg-white p-4 rounded shadow">
+<img src="image/chatgptprompts.png">
+<h2>1000 ChatGPT Prompts</h2>
+<a href="https://heikoboos.com/1000-chatgpt-prompts-for-online-marketing/#aff=DealDynamo360" target="_blank">Get Access</a>
+</div>
 
-  <!-- ChatGPT Prompts for Online Marketing -->
-<article class="product-card bg-gradient-to-br from-blue-100 to-indigo-100 p-6 rounded-2xl shadow relative" id="ChatGPTPrompts">
+<div class="product-card bg-white p-4 rounded shadow">
+<img src="image/thehealedsoul.png">
+<h2>The Healed Soul</h2>
+<a href="https://bottomlinemanifesting.com/#aff=DealDynamo360" target="_blank">Get Access</a>
+</div>
 
-  <!-- 🔥 Badge -->
-  <div class="absolute top-3 left-3 bg-indigo-700 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
-    🤖 AI POWER PACK
-  </div>
+<div class="product-card bg-white p-4 rounded shadow">
+<img src="image/fromrejectiontorecognition.png">
+<h2>Rejection to Recognition</h2>
+<a href="https://www.checkout-ds24.com/redir/633268/DealDynamo360/" target="_blank">Get Access</a>
+</div>
 
-  <!-- Product Image -->
-  <img 
-    src="image/chatgptprompts.png" 
-    alt="1000 ChatGPT prompts for online marketing digital download" 
-    class="rounded-lg mb-4 w-full object-cover h-48" 
-    loading="lazy"
-  >
-
-  <!-- Title -->
-  <h2 class="text-xl font-bold mb-2">
-    1000 ChatGPT Prompts for Online Marketing
-  </h2>
-
-  <!-- Description -->
-  <p class="mb-4">
-    Unlock a massive library of 1000+ AI-powered prompts designed for marketing, content creation, SEO, email campaigns, and affiliate growth. Perfect for scaling any digital business fast using ChatGPT.
-  </p>
-
-  <!-- CTA -->
-  <a 
-    href="https://heikoboos.com/1000-chatgpt-prompts-for-online-marketing/#aff=DealDynamo360" 
-    target="_blank" 
-    rel="nofollow sponsored noopener noreferrer"
-    onclick="trackClick('ChatGPT Prompts')"
-    class="bg-indigo-700 text-white px-4 py-2 rounded-lg inline-block hover:bg-indigo-800 transition"
-  >
-    Get Access
-  </a>
-
-</article>
-
-  <!-- The Healed Soul -->
-<article class="product-card bg-purple-50 p-6 rounded-2xl shadow relative" id="HealedSoul">
-
-  <!-- 🔥 Badge -->
-  <div class="absolute top-3 left-3 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
-    ✨ EMOTIONAL HEALING
-  </div>
-
-  <img 
-    src="image/thehealedsoul.png" 
-    alt="The Healed Soul eBook for emotional healing, manifestation and inner transformation" 
-    class="rounded-lg mb-4 w-full object-cover h-48" 
-    loading="lazy"
-  >
-
-  <h2 class="text-xl font-bold mb-2">
-    The Healed Soul (eBook)
-  </h2>
-
-  <p class="mb-4">
-    Break free from emotional pain and unlock your true potential with this powerful healing and manifestation guide. 
-    Learn how to reprogram your mindset, release past trauma, and attract the life you truly deserve.
-  </p>
-
-  <a 
-    href="https://bottomlinemanifesting.com/#aff=DealDynamo360" 
-    target="_blank" 
-    rel="nofollow sponsored noopener noreferrer"
-    onclick="trackClick('The Healed Soul')"
-    class="bg-purple-700 text-white px-4 py-2 rounded-lg inline-block"
-  >
-    Get Access
-  </a>
-
-</article>
-
-  <!-- From Rejection to Recognition -->
-<article class="product-card bg-rose-50 p-6 rounded-2xl shadow relative" id="RejectionToRecognition">
-
-  <!-- 🔥 Badge -->
-  <div class="absolute top-3 left-3 bg-rose-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
-    🔥 CONFIDENCE BOOST
-  </div>
-
-  <img 
-    src="image/fromrejectiontorecognition.png" 
-    alt="From Rejection to Recognition ebook for confidence, self-worth and personal transformation" 
-    class="rounded-lg mb-4 w-full object-cover h-48" 
-    loading="lazy"
-  >
-
-  <h2 class="text-xl font-bold mb-2">
-    From Rejection to Recognition (eBook)
-  </h2>
-
-  <p class="mb-4">
-    Turn rejection into confidence and step into your true worth. This powerful guide helps you rebuild self-belief, 
-    overcome doubt, and finally get the recognition you deserve in life and success.
-  </p>
-
-  <a 
-    href="https://www.checkout-ds24.com/redir/633268/DealDynamo360/" 
-    target="_blank" 
-    rel="nofollow sponsored noopener noreferrer"
-    onclick="trackClick('Rejection To Recognition')"
-    class="bg-rose-600 text-white px-4 py-2 rounded-lg inline-block"
-  >
-    Get Access
-  </a>
-
-</article>
-
-  <!-- AI Mega Prompt Bundle -->
-<article class="product-card bg-black text-white p-6 rounded-2xl shadow relative" id="AIMegaPrompts">
-
-  <!-- 🔥 Badge -->
-  <div class="absolute top-3 left-3 bg-green-400 text-black text-xs font-bold px-3 py-1 rounded-full shadow">
-    🔥 AI TRENDING
-  </div>
-
-  <img 
-    src="image/aimegaprompts.png" 
-    alt="AI Mega Prompt Bundle with 50000+ ChatGPT prompts for content, marketing and income generation" 
-    class="rounded-lg mb-4 w-full object-cover h-48" 
-    loading="lazy"
-  >
-
-  <h2 class="text-xl font-bold mb-2">
-    AI Mega Prompt Bundle (50,000+ Prompts)
-  </h2>
-
-  <p class="mb-4">
-    Unlock the power of AI with 50,000+ ready-to-use prompts for ChatGPT, content creation, marketing, and online income. 
-    Create posts, ads, videos, and digital products in minutes — no experience needed.
-  </p>
-
-  <ul class="text-sm mb-4 space-y-1">
-    <li>✔ Works with ChatGPT & AI tools</li>
-    <li>✔ Create content, ads & income streams</li>
-    <li>✔ Beginner-friendly</li>
-    <li>✔ Instant digital download</li>
-  </ul>
-
-  <a 
-    href="https://tipseason.gumroad.com/l/ai-mega-prompt-bundle?autocomplete=true&layout=discover&query=ai+prompts&recommended_by=search&_gl=1*1p1g71t*_ga*MTAwODY0NzAwMy4xNzc3NDA3ODY5*_ga_6LJN6D94N6*czE3Nzc0MDc4NjgkbzEkZzEkdDE3Nzc0MDkxNjEkajU0JGwwJGgw&a=942433379" 
-    target="_blank" 
-    rel="nofollow sponsored noopener noreferrer"
-    onclick="trackClick('AI Mega Prompt Bundle')"
-    class="bg-green-500 hover:bg-green-400 text-black px-4 py-2 rounded-lg inline-block font-semibold transition"
-  >
-    Get Access
-  </a>
-
-</article>
+<div class="product-card bg-black text-white p-4 rounded shadow">
+<img src="image/aimegaprompts.png">
+<h2>AI Mega Prompt Bundle</h2>
+<a href="https://tipseason.gumroad.com/l/ai-mega-prompt-bundle?a=942433379" target="_blank">Get Access</a>
+</div>
 
 </main>
 
-<!-- FOOTER -->
-<footer class="bg-gray-800 text-white text-center p-6 mt-10">
+<footer class="bg-gray-800 text-white text-center p-4">
 <p>© 2026 DealDynamo360</p>
-<p class="text-xs text-gray-400 mt-2">
-Affiliate Disclosure: We may earn commissions from purchases.
-</p>
 </footer>
 
-<!-- SEARCH SCRIPT -->
 <script>
-function filterProducts() {
-  let input = document.getElementById('searchInput').value.toLowerCase();
-  document.querySelectorAll('.product-card').forEach(card => {
-    card.style.display = card.innerText.toLowerCase().includes(input) ? "block" : "none";
-  });
+function filterProducts(){
+let input=document.getElementById("searchInput").value.toLowerCase();
+document.querySelectorAll(".product-card").forEach(card=>{
+card.style.display=card.innerText.toLowerCase().includes(input)?"block":"none";
+});
 }
 </script>
 
