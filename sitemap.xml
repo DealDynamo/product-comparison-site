@@ -3,7 +3,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,42 +11,42 @@
 
   <!-- Core Products -->
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#smoothie</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#smoothie</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#brainsong</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#brainsong</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#brainwavegenius</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#brainwavegenius</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#tedswoodworking</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#tedswoodworking</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#lastwish</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#lastwish</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#dws</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#dws</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -54,35 +54,35 @@
 
   <!-- Marketing / AI -->
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#instamarketing</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#instamarketing</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#chatgptexpertise</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#chatgptexpertise</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#ai30</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#ai30</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#chatgptprompts</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#chatgptprompts</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#aimegaprompts</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#aimegaprompts</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -90,14 +90,14 @@
 
   <!-- Emotional / Self Growth -->
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#healedsoul</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#healedsoul</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://product-comparison-site-vmfp.vercel.app/#rejectiontorecognition</loc>
+    <loc>https://product-comparison-site-vmfp-git-main-dealdynamo360-projects.vercel.app/#rejectiontorecognition</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
